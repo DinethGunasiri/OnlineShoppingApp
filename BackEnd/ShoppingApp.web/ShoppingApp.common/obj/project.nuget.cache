@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "+avfyr1aHo7aqB5mplsR2Uc6JO7RzQtaVjDszaOfhRcy8kzZSu7tk3QZAzCXu7GeTMtgqIWFTDhbSYxQNn/LYw==",
+  "success": true,
+  "projectFilePath": "F:\\ASP.NET\\Virtusa Git Assignment\\OnlineShoppingApp\\BackEnd\\ShoppingApp.web\\ShoppingApp.common\\ShoppingApp.common.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

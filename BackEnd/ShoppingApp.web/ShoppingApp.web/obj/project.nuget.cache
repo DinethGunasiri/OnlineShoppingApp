@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "isFvjidnl7BsZsxNQjgda0K3+CGIL82kHj6bfjY60YGDdWBNRkV5TrBL4p5hQJT4X3nDNbXNun/7AYxeWFn97g==",
+  "success": true,
+  "projectFilePath": "F:\\ASP.NET\\Virtusa Git Assignment\\OnlineShoppingApp\\BackEnd\\ShoppingApp.web\\ShoppingApp.web\\ShoppingApp.web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
