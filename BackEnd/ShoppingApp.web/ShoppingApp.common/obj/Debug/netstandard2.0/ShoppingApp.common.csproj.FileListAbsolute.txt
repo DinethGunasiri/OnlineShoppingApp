@@ -1,0 +1,4 @@
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.common\bin\Debug\netstandard2.0\ShoppingApp.common.deps.json
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.common\bin\Debug\netstandard2.0\ShoppingApp.common.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.common\obj\Debug\netstandard2.0\ShoppingApp.common.AssemblyInfoInputs.cache
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.common\obj\Debug\netstandard2.0\ShoppingApp.common.AssemblyInfo.cs

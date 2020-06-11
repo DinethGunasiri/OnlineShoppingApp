@@ -1,0 +1,5 @@
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.dataAccess\bin\Debug\netstandard2.0\ShoppingApp.dataAccess.deps.json
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.dataAccess\bin\Debug\netstandard2.0\ShoppingApp.dataAccess.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.dataAccess\obj\Debug\netstandard2.0\ShoppingApp.dataAccess.csprojAssemblyReference.cache
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.dataAccess\obj\Debug\netstandard2.0\ShoppingApp.dataAccess.AssemblyInfoInputs.cache
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.dataAccess\obj\Debug\netstandard2.0\ShoppingApp.dataAccess.AssemblyInfo.cs
