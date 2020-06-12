@@ -7,3 +7,8 @@ F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\Shop
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.business\obj\Debug\netstandard2.0\ShoppingApp.business.csproj.CoreCompileInputs.cache
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.business\obj\Debug\netstandard2.0\ShoppingApp.business.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.business\obj\Debug\netstandard2.0\ShoppingApp.business.pdb
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.business\bin\Debug\netstandard2.0\ShoppingApp.common.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.business\bin\Debug\netstandard2.0\ShoppingApp.dataAccess.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.business\bin\Debug\netstandard2.0\ShoppingApp.dataAccess.pdb
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.business\bin\Debug\netstandard2.0\ShoppingApp.common.pdb
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.business\obj\Debug\netstandard2.0\ShoppingApp.business.csproj.CopyComplete

@@ -2,3 +2,8 @@ F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\Shop
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.common\bin\Debug\netstandard2.0\ShoppingApp.common.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.common\obj\Debug\netstandard2.0\ShoppingApp.common.AssemblyInfoInputs.cache
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.common\obj\Debug\netstandard2.0\ShoppingApp.common.AssemblyInfo.cs
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.common\bin\Debug\netstandard2.0\ShoppingApp.common.pdb
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.common\obj\Debug\netstandard2.0\ShoppingApp.common.csprojAssemblyReference.cache
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.common\obj\Debug\netstandard2.0\ShoppingApp.common.csproj.CoreCompileInputs.cache
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.common\obj\Debug\netstandard2.0\ShoppingApp.common.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.common\obj\Debug\netstandard2.0\ShoppingApp.common.pdb
