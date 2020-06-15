@@ -30,6 +30,9 @@ namespace ShoppingApp.dataAccess.DataContext
         public ShoppingContext(DbContextOptions<ShoppingContext> options): base(options) {}
 
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<OrderItems> OrderItems { get; set; }
+        public DbSet<Order> Orders { get; set; }
 
     }
 }

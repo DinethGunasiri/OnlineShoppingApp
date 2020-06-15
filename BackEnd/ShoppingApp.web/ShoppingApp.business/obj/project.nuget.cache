@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "t3zgG3QOeuLHLajAVBSvJrCxs9K1/HYnRt/crWd9POcpkGUJ38gOYVTX1u3bcWxbRqAiyNfqOxcsCDlMsooG6A==",
+  "dgSpecHash": "YhKfZBjj+OIlL559fdy1m2LZoYjyTHvZSCWZbkxov048AjI9JF4FRXBsX3rOH56tds64f2uw6urPjoRwWSzPpA==",
   "success": true,
   "projectFilePath": "F:\\ASP.NET\\Virtusa Git Assignment\\OnlineShoppingApp\\BackEnd\\ShoppingApp.web\\ShoppingApp.business\\ShoppingApp.business.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

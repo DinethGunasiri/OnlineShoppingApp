@@ -16,17 +16,11 @@ F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\Shop
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.web\obj\Debug\netcoreapp3.1\ShoppingApp.web.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.web\obj\Debug\netcoreapp3.1\ShoppingApp.web.pdb
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.web\obj\Debug\netcoreapp3.1\ShoppingApp.web.genruntimeconfig.cache
-F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.web\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
-F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.web\bin\Debug\netcoreapp3.1\EntityFramework.dll
-F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.web\bin\Debug\netcoreapp3.1\System.CodeDom.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.web\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
-F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.web\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.web\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.web\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.web\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.web\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
-F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.web\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.web\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.web\obj\Debug\netcoreapp3.1\ShoppingApp.web.csproj.CopyComplete
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\ShoppingApp.web\ShoppingApp.web\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
