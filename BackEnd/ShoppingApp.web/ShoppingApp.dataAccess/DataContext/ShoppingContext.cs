@@ -8,7 +8,7 @@ using System.Text;
 
 namespace ShoppingApp.dataAccess.DataContext
 {
-    class ShoppingContext : DbContext
+    public class ShoppingContext : DbContext
     {
        public class OptionsBuild
         {

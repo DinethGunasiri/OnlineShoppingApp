@@ -30,7 +30,7 @@ namespace ShoppingApp.common
         public string Address { get; set; }
 
         [Required]
-        public byte zipCode { get; set; }
+        public int zipCode { get; set; }
 
         [Required]
         [StringLength(15)]
