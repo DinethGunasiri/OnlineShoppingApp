@@ -11,7 +11,7 @@ namespace OnlineShopping.data.Functions
 {
     public class CustomerFunction : ICustomer
     {
-        public  async Task<Customer> AddCustomer(string email, string fname, string lname, DateTime birthDate, string gender, string address, byte zipCode, string telephone)
+       /* public  async Task<Customer> AddCustomer(string email, string fname, string lname, DateTime birthDate, string gender, string address, byte zipCode, string telephone)
         {
             Customer newCustomer = new Customer
             {
@@ -32,6 +32,17 @@ namespace OnlineShopping.data.Functions
             }
 
             return newCustomer;
+        } */
+
+        public async Task<Customer> AddCustomer(Customer customer)
+        {
+            using(var context = new ShoppingContext(ShoppingContext.ops.dbOptions))
+            {
+                await context.Customers.AddAsync(customer);
+                await context.SaveChangesAsync();
+            }
+
+            return customer;
         }
 
         public async Task<List<Customer>> GetCustomers()

@@ -2,8 +2,10 @@
 using OnlineShopping.data.Interfacses;
 using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Http;
 
 namespace OnlineShopping.business.CustomerLogic
 {
@@ -11,7 +13,7 @@ namespace OnlineShopping.business.CustomerLogic
     {
         private ICustomer _customer =  new data.Functions.CustomerFunction();
 
-        public async Task<Object> CreateNewCustomer(string email, string fname, string lname, DateTime birthDate, string gender, string address, byte zipCode, string telephone)
+     /*   public async Task<Boolean> CreateNewCustomer(string email, string fname, string lname, DateTime birthDate, string gender, string address, byte zipCode, string telephone)
         {
             try
             {
@@ -19,7 +21,7 @@ namespace OnlineShopping.business.CustomerLogic
 
                 if(result.Email != null)
                 {
-                    return result;
+                    return true;
                 }
                 else
                 {
@@ -32,7 +34,28 @@ namespace OnlineShopping.business.CustomerLogic
                 return false;
             }
         }
+     */
 
+        public async Task<Customer> CreateCustomer(Customer customer)
+        {
+            try
+            {
+                var result = await _customer.AddCustomer(customer);
+
+                if (result.Email != null)
+                {
+                    return customer;
+                }
+                else
+                {
+                    throw new HttpResponseException(HttpStatusCode.BadRequest);
+                }
+            }
+            catch(Exception ex)
+            {
+                throw new HttpResponseException(HttpStatusCode.BadRequest);
+            }
+        }
         public async Task<List<Customer>> GetCustomers()
         {
             List<Customer> customers = await _customer.GetCustomers();

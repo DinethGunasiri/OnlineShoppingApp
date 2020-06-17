@@ -66,3 +66,7 @@ F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\O
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\OnlineShopping.data.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\OnlineShopping.business.pdb
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\OnlineShopping.data.pdb
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll

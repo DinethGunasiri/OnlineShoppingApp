@@ -8,7 +8,9 @@ namespace OnlineShopping.data.Interfacses
 {
     public interface ICustomer
     {
-        Task<Customer> AddCustomer(string email, string fname, string lname, DateTime birthDate, string gender, string address, byte zipCode, string telephone);
+        /*Task<Customer> AddCustomer(string email, string fname, string lname, DateTime birthDate, string gender, string address, byte zipCode, string telephone); */
+
+        Task<Customer> AddCustomer(Customer customer);
         Task<List<Customer>> GetCustomers();
     }
 }
