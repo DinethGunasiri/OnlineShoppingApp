@@ -1,0 +1,12 @@
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.data\bin\Debug\netcoreapp3.1\OnlineShopping.data.deps.json
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.data\bin\Debug\netcoreapp3.1\OnlineShopping.data.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.data\obj\Debug\netcoreapp3.1\OnlineShopping.data.csprojAssemblyReference.cache
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.data\obj\Debug\netcoreapp3.1\OnlineShopping.data.AssemblyInfoInputs.cache
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.data\obj\Debug\netcoreapp3.1\OnlineShopping.data.AssemblyInfo.cs
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.data\bin\Debug\netcoreapp3.1\OnlineShopping.data.runtimeconfig.json
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.data\bin\Debug\netcoreapp3.1\OnlineShopping.data.runtimeconfig.dev.json
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.data\obj\Debug\netcoreapp3.1\OnlineShopping.data.genruntimeconfig.cache
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.data\bin\Debug\netcoreapp3.1\OnlineShopping.data.pdb
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.data\obj\Debug\netcoreapp3.1\OnlineShopping.data.csproj.CoreCompileInputs.cache
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.data\obj\Debug\netcoreapp3.1\OnlineShopping.data.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.data\obj\Debug\netcoreapp3.1\OnlineShopping.data.pdb
