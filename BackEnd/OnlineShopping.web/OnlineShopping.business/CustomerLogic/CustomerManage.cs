@@ -6,6 +6,8 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Http;
+using System.Web.Http.ModelBinding;
+using System.Web.Http.Results;
 
 namespace OnlineShopping.business.CustomerLogic
 {
@@ -13,53 +15,87 @@ namespace OnlineShopping.business.CustomerLogic
     {
         private ICustomer _customer =  new data.Functions.CustomerFunction();
 
-     /*   public async Task<Boolean> CreateNewCustomer(string email, string fname, string lname, DateTime birthDate, string gender, string address, byte zipCode, string telephone)
+        // Get all Customer
+        public async Task<List<Customer>> GetCustomers()
         {
-            try
-            {
-                var result = await _customer.AddCustomer(email, fname, lname, birthDate, gender, address, zipCode, telephone);
-
-                if(result.Email != null)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-
-            }
-            catch (Exception ex)
-            {
-                return false;
-            }
+            List<Customer> customers = await _customer.GetCustomers();
+            return customers;
         }
-     */
 
+        // Get Customer by email
+        public async Task<Customer> GetCustomer(string Email)
+        {
+            var customer = await _customer.GetCustomer(Email);
+
+            if(customer == null)
+            {
+                throw new HttpResponseException(HttpStatusCode.NotFound);
+            }
+
+            return customer;
+           
+
+        }
+
+        // Create Customer
         public async Task<Customer> CreateCustomer(Customer customer)
         {
             try
             {
                 var result = await _customer.AddCustomer(customer);
 
-                if (result.Email != null)
-                {
-                    return customer;
-                }
-                else
+                if(result == null)
                 {
                     throw new HttpResponseException(HttpStatusCode.BadRequest);
                 }
+                else
+                {
+                    return result;
+                }
+
             }
             catch(Exception ex)
             {
                 throw new HttpResponseException(HttpStatusCode.BadRequest);
             }
         }
-        public async Task<List<Customer>> GetCustomers()
+
+        // Edit Customer
+        public async Task<Customer> EditCustomer(string email, Customer customer)
         {
-            List<Customer> customers = await _customer.GetCustomers();
-            return customers;
+
+            var customerDetails = await _customer.EditCustomer(email, customer);
+
+            if (customerDetails == null)
+            {
+                throw new HttpResponseException(HttpStatusCode.NotFound);
+            }
+            else
+            {
+
+                return customerDetails;
+
+            }
+
+            
         }
+
+        // Delete Customer
+
+        public async Task<Customer> DeleteCustomer(string email)
+        {
+            var customer = await _customer.DeleteCustomer(email);
+
+            if(customer == null)
+            {
+                throw new HttpResponseException(HttpStatusCode.NotFound);
+            }
+            else
+            {
+                return customer;
+            }
+        }
+
+
     }
 }

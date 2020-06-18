@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Runtime.InteropServices;
+using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -49,19 +50,30 @@ namespace OnlineShopping.web.Controllers
 
         }
 
-      /*  [HttpPost]
-        public async Task<Boolean> AddUser(string email, string fname, string lname, DateTime birthDate, string gender, string address, byte zipCode, string telephone)
+        [HttpGet("{email}")]
+        public async Task<Customer> GetCustomer(string email)
         {
-            bool result = await cManage.CreateNewCustomer(email, fname, lname, birthDate, gender, address, zipCode, telephone);
-            return result;
-        } */
+            return await cManage.GetCustomer(email);   
+        }
 
-
+        [Route("add")]
         [HttpPost]
         public async Task<Customer> CreateCustomer(Customer customer)
         {
             return await cManage.CreateCustomer(customer);
             
+        }
+
+        [HttpPut("{email}")]
+        public async Task<Customer> EditCustomer(string email, Customer customer)
+        {
+            return await cManage.EditCustomer(email, customer);
+        }
+
+        [HttpDelete("{email}")]
+        public async Task<Customer> DeleteCustomer(string email)
+        {
+            return await cManage.DeleteCustomer(email);
         }
 
     }

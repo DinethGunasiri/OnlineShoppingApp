@@ -4,6 +4,8 @@ using OnlineShopping.data.Entities;
 using OnlineShopping.data.Interfacses;
 using System;
 using System.Collections.Generic;
+using System.Net;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,29 +13,31 @@ namespace OnlineShopping.data.Functions
 {
     public class CustomerFunction : ICustomer
     {
-       /* public  async Task<Customer> AddCustomer(string email, string fname, string lname, DateTime birthDate, string gender, string address, byte zipCode, string telephone)
+        // Get all Customer
+        public async Task<List<Customer>> GetCustomers()
         {
-            Customer newCustomer = new Customer
+            List<Customer> customers = new List<Customer>();
+            using (var context = new ShoppingContext(ShoppingContext.ops.dbOptions))
             {
-                Email = email,
-                fName = fname,
-                lName = lname,
-                BirthDate = birthDate,
-                Gender = gender,
-                Address = address,
-                zipCode = zipCode,
-                Telephone = telephone
-            };
+                customers = await context.Customers.ToListAsync();
+            }
+
+            return customers;
+        }
+
+        // Get Customer details
+        public async Task<Customer> GetCustomer(string email)
+        {
+            var customer = new Customer();
 
             using (var context = new ShoppingContext(ShoppingContext.ops.dbOptions))
             {
-                await context.Customers.AddAsync(newCustomer);
-                await context.SaveChangesAsync();
+                customer = await context.Customers.SingleOrDefaultAsync(c => c.Email == email);
             }
+            return customer; 
+        }
 
-            return newCustomer;
-        } */
-
+        // Add Customer
         public async Task<Customer> AddCustomer(Customer customer)
         {
             using(var context = new ShoppingContext(ShoppingContext.ops.dbOptions))
@@ -45,15 +49,55 @@ namespace OnlineShopping.data.Functions
             return customer;
         }
 
-        public async Task<List<Customer>> GetCustomers()
+        // Edit Customer
+        public async Task<Customer> EditCustomer(string email, Customer customer)
         {
-            List<Customer> customers = new List<Customer>();
+            var customerDetails = customer;
+
+
             using (var context = new ShoppingContext(ShoppingContext.ops.dbOptions))
             {
-                customers = await context.Customers.ToListAsync();
+                customerDetails = await context.Customers.SingleOrDefaultAsync(c => c.Email == email);
+
+                if(customerDetails != null)
+                {
+                    customerDetails.fName = customer.fName;
+                    customerDetails.lName = customer.lName;
+                    customerDetails.Gender = customer.Gender;
+                    customerDetails.Address = customer.Address;
+                    customerDetails.zipCode = customer.zipCode;
+                    customerDetails.Telephone = customer.Telephone;
+
+                    await context.SaveChangesAsync();
+                }
+
+                
+                
+
+               // System.Diagnostics.Debug.WriteLine(customerDetails);
+
             }
 
-            return customers;
+            return customerDetails;
+
+        }
+
+        // Delete Customer
+        public async Task<Customer> DeleteCustomer(string email)
+        {
+            var customer = new Customer();
+
+            using (var context = new ShoppingContext(ShoppingContext.ops.dbOptions))
+            {
+                customer = await context.Customers.SingleOrDefaultAsync(c => c.Email == email);
+               
+                context.Customers.Remove(customer);
+                await context.SaveChangesAsync();
+
+
+            }
+
+            return customer;
         }
     }
 }

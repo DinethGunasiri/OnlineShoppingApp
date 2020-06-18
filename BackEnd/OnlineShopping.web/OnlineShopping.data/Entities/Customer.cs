@@ -37,5 +37,8 @@ namespace OnlineShopping.data.Entities
         [Required]
         [StringLength(15)]
         public string Telephone { get; set; }
+
+        [StringLength(20)]
+        public string Password { get; set; }
     }
 }
