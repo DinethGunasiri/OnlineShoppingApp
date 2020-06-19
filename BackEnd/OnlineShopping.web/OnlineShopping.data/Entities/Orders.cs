@@ -5,7 +5,7 @@ using System.Text;
 
 namespace OnlineShopping.data.Entities
 {
-    class Order
+    public class Orders
     {
         [Key]
         public int OrderId { get; set; }

@@ -61,11 +61,10 @@ namespace OnlineShopping.data.Functions
 
                 if(customerDetails != null)
                 {
-                    customerDetails.fName = customer.fName;
-                    customerDetails.lName = customer.lName;
+                    customerDetails.FullName = customer.FullName;
                     customerDetails.Gender = customer.Gender;
                     customerDetails.Address = customer.Address;
-                    customerDetails.zipCode = customer.zipCode;
+                    customerDetails.ZipCode = customer.ZipCode;
                     customerDetails.Telephone = customer.Telephone;
 
                     await context.SaveChangesAsync();

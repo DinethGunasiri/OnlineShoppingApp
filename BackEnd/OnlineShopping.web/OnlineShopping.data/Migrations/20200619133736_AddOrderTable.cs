@@ -22,10 +22,10 @@ namespace OnlineShopping.data.Migrations
                 {
                     table.PrimaryKey("PK_Orders", x => x.OrderId);
                     table.ForeignKey(
-                        name: "FK_Orders_Customers_CustomerId",
+                        name: "FK_Orders_AspNetUsers_CustomerId",
                         column: x => x.CustomerId,
-                        principalTable: "Customers",
-                        principalColumn: "Email",
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Orders_OrderItems_OrderItemsId",

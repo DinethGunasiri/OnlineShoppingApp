@@ -2,7 +2,7 @@
 
 namespace OnlineShopping.data.Migrations
 {
-    public partial class AddProductTable : Migration
+    public partial class AddProductsTable : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

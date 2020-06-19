@@ -1,24 +1,17 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Identity;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace OnlineShopping.data.Entities
 {
-    public class Customer
+    public class Customer : IdentityUser
     {
-        [Key]
-        [Required]
-        [StringLength(255)]
-        public string Email { get; set; }
 
         [Required]
-        [StringLength(255)]
-        public string fName { get; set; }
-
-        [Required]
-        [StringLength(255)]
-        public string lName { get; set; }
+        [StringLength(500)]
+        public string FullName { get; set; }
 
         [Required]
         public DateTime BirthDate { get; set; }
@@ -32,7 +25,7 @@ namespace OnlineShopping.data.Entities
         public string Address { get; set; }
 
         [Required]
-        public int zipCode { get; set; }
+        public int ZipCode { get; set; }
 
         [Required]
         [StringLength(15)]

@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using OnlineShopping.data.Entities;
 using System;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using System.Text;
 
 namespace OnlineShopping.data.DataContext
 {
-    class ShoppingContext : DbContext
+    public class ShoppingContext : IdentityDbContext
     {
         public class OptionsBuild
         {
@@ -30,6 +31,6 @@ namespace OnlineShopping.data.DataContext
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<OrderItems> OrderItems { get; set; }
-        public DbSet<Order> Orders { get; set; }
+        public DbSet<Orders> Orders { get; set; }
     }
 }

@@ -35,8 +35,6 @@ F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\O
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
-F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\OnlineShopping.web.csproj.CoreCompileInputs.cache
-F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\OnlineShopping.web.MvcApplicationPartsAssemblyInfo.cache
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\OnlineShopping.web.csproj.CopyComplete
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
@@ -70,3 +68,18 @@ F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\O
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\System.Web.Http.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\OnlineShopping.web.StaticWebAssets.xml
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Embedded.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\OnlineShopping.web.csproj.CoreCompileInputs.cache
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\OnlineShopping.web.MvcApplicationPartsAssemblyInfo.cs
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\OnlineShopping.web.MvcApplicationPartsAssemblyInfo.cache

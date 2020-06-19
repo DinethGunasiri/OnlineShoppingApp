@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using OnlineShopping.data.DataContext;
 
 namespace OnlineShopping.data.Migrations
 {
     [DbContext(typeof(ShoppingContext))]
-    partial class ShoppingContextModelSnapshot : ModelSnapshot
+    [Migration("20200619133637_AddOrderItemsTable")]
+    partial class AddOrderItemsTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -244,37 +246,6 @@ namespace OnlineShopping.data.Migrations
                     b.ToTable("OrderItems");
                 });
 
-            modelBuilder.Entity("OnlineShopping.data.Entities.Orders", b =>
-                {
-                    b.Property<int>("OrderId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("CustomerId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<DateTime>("OrderDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("OrderItemsId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ShippingAddress")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(200)")
-                        .HasMaxLength(200);
-
-                    b.HasKey("OrderId");
-
-                    b.HasIndex("CustomerId");
-
-                    b.HasIndex("OrderItemsId");
-
-                    b.ToTable("Orders");
-                });
-
             modelBuilder.Entity("OnlineShopping.data.Entities.Product", b =>
                 {
                     b.Property<int>("ProductId")
@@ -393,21 +364,6 @@ namespace OnlineShopping.data.Migrations
                     b.HasOne("OnlineShopping.data.Entities.Product", "Product")
                         .WithMany()
                         .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
-            modelBuilder.Entity("OnlineShopping.data.Entities.Orders", b =>
-                {
-                    b.HasOne("OnlineShopping.data.Entities.Customer", "Customer")
-                        .WithMany()
-                        .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("OnlineShopping.data.Entities.OrderItems", "OrderItems")
-                        .WithMany()
-                        .HasForeignKey("OrderItemsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

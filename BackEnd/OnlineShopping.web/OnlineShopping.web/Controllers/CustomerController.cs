@@ -5,6 +5,7 @@ using System.Net;
 using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OnlineShopping.business.CustomerLogic;
@@ -13,13 +14,14 @@ using OnlineShopping.web.Models;
 
 namespace OnlineShopping.web.Controllers
 {
+    
     [Route("api/customer")]
     [ApiController]
     public class CustomerController : ControllerBase
     {
         private CustomerManage cManage = new CustomerManage();
 
-
+        [Authorize]
         [Route("all")]
         [HttpGet]
         public async Task<List<CustomerViewModel>> GetCustomers()
@@ -34,13 +36,13 @@ namespace OnlineShopping.web.Controllers
                     CustomerViewModel currentCustomer = new CustomerViewModel
                     {
                         Email = customer.Email,
-                        fName = customer.fName,
-                        lName = customer.lName,
+                        FullName = customer.FullName,
                         BirthDate = customer.BirthDate,
                         Gender = customer.Gender,
                         Address = customer.Address,
-                        zipCode = customer.zipCode,
+                        ZipCode = customer.ZipCode,
                         Telephone = customer.Telephone
+                      //  Password = customer.Password
                     };
                     customerList.Add(currentCustomer);
                 }
@@ -56,6 +58,7 @@ namespace OnlineShopping.web.Controllers
             return await cManage.GetCustomer(email);   
         }
 
+       
         [Route("add")]
         [HttpPost]
         public async Task<Customer> CreateCustomer(Customer customer)
@@ -64,12 +67,14 @@ namespace OnlineShopping.web.Controllers
             
         }
 
+        [Authorize]
         [HttpPut("{email}")]
         public async Task<Customer> EditCustomer(string email, Customer customer)
         {
             return await cManage.EditCustomer(email, customer);
         }
 
+        [Authorize]
         [HttpDelete("{email}")]
         public async Task<Customer> DeleteCustomer(string email)
         {
