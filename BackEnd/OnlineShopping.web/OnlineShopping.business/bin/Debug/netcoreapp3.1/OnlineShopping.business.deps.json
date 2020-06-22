@@ -1423,10 +1423,19 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.5",
           "Microsoft.EntityFrameworkCore": "3.1.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.5",
-          "Microsoft.Extensions.Configuration.Json": "3.1.5"
+          "Microsoft.Extensions.Configuration.Json": "3.1.5",
+          "OnlineShopping.entity": "1.0.0"
         },
         "runtime": {
           "OnlineShopping.data.dll": {}
+        }
+      },
+      "OnlineShopping.entity/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.5"
+        },
+        "runtime": {
+          "OnlineShopping.entity.dll": {}
         }
       }
     }
@@ -2397,6 +2406,11 @@
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
     "OnlineShopping.data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineShopping.entity/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

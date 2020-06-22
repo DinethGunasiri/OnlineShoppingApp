@@ -6,8 +6,12 @@ using System.Text;
 
 namespace OnlineShopping.data.Entities
 {
-    public class Customer : IdentityUser
+    public class Customer //: IdentityUser
     {
+        [Key]
+        [Required]
+        [StringLength(250)]
+        public string Email { get; set; }
 
         [Required]
         [StringLength(500)]

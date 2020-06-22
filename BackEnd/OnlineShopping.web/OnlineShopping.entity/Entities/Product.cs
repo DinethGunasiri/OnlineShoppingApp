@@ -20,5 +20,10 @@ namespace OnlineShopping.data.Entities
 
         [Required]
         public double CurrentPrice { get; set; }
+
+        public ProductCategory Category { get; set; }
+
+       [Required]
+        public int CategoryId { get; set; }
     }
 }

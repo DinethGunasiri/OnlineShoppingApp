@@ -59,6 +59,7 @@ namespace OnlineShopping.web
 
             //services.AddDefaultIdentity<Customer>()
             //    .AddEntityFrameworkStores<ShoppingContext>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

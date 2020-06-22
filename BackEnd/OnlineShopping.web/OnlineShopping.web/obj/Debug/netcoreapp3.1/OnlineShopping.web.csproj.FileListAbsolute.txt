@@ -83,3 +83,5 @@ F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\O
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\OnlineShopping.web.csproj.CoreCompileInputs.cache
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\OnlineShopping.web.MvcApplicationPartsAssemblyInfo.cs
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\OnlineShopping.web.MvcApplicationPartsAssemblyInfo.cache
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\OnlineShopping.entity.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\OnlineShopping.entity.pdb

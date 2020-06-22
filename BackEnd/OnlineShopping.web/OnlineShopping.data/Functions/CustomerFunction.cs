@@ -52,8 +52,9 @@ namespace OnlineShopping.data.Functions
         // Edit Customer
         public async Task<Customer> EditCustomer(string email, Customer customer)
         {
-            var customerDetails = customer;
+            // var customerDetails = customer;
 
+            var customerDetails = new Customer();
 
             using (var context = new ShoppingContext(ShoppingContext.ops.dbOptions))
             {

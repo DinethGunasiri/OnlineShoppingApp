@@ -18,23 +18,45 @@ namespace OnlineShopping.business.CustomerLogic
         // Get all Customer
         public async Task<List<Customer>> GetCustomers()
         {
-            List<Customer> customers = await _customer.GetCustomers();
-            return customers;
+            try
+            {
+                List<Customer> customers = await _customer.GetCustomers();
+
+                if(customers == null)
+                {
+                    throw new HttpResponseException(HttpStatusCode.NotFound);
+                }
+                else
+                {
+                    return customers;
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new HttpResponseException(HttpStatusCode.NotFound);
+            }            
         }
 
         // Get Customer by email
         public async Task<Customer> GetCustomer(string Email)
         {
-            var customer = await _customer.GetCustomer(Email);
+            try
+            {
+                var customer = await _customer.GetCustomer(Email);
 
-            if(customer == null)
+                if (customer == null)
+                {
+                    throw new HttpResponseException(HttpStatusCode.NotFound);
+                }
+                else
+                {
+                    return customer;
+                }
+            }
+            catch
             {
                 throw new HttpResponseException(HttpStatusCode.NotFound);
-            }
-
-            return customer;
-           
-
+            }          
         }
 
         // Create Customer
@@ -64,35 +86,47 @@ namespace OnlineShopping.business.CustomerLogic
         public async Task<Customer> EditCustomer(string email, Customer customer)
         {
 
-            var customerDetails = await _customer.EditCustomer(email, customer);
+            try
+            {
+                var customerDetails = await _customer.EditCustomer(email, customer);
 
-            if (customerDetails == null)
+                if (customerDetails == null)
+                {
+                    throw new HttpResponseException(HttpStatusCode.NotFound);
+                }
+                else
+                {
+
+                    return customerDetails;
+
+                }
+            }
+            catch (Exception ex)
             {
                 throw new HttpResponseException(HttpStatusCode.NotFound);
             }
-            else
-            {
-
-                return customerDetails;
-
-            }
-
-            
         }
 
         // Delete Customer
 
         public async Task<Customer> DeleteCustomer(string email)
         {
-            var customer = await _customer.DeleteCustomer(email);
+            try
+            {
+                var customer = await _customer.DeleteCustomer(email);
 
-            if(customer == null)
+                if (customer == null)
+                {
+                    throw new HttpResponseException(HttpStatusCode.NotFound);
+                }
+                else
+                {
+                    return customer;
+                }
+            }
+            catch (Exception ex)
             {
                 throw new HttpResponseException(HttpStatusCode.NotFound);
-            }
-            else
-            {
-                return customer;
             }
         }
 

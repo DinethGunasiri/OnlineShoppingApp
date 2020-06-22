@@ -7,7 +7,7 @@ using System.Text;
 
 namespace OnlineShopping.data.DataContext
 {
-    public class ShoppingContext : IdentityDbContext
+    public class ShoppingContext : DbContext
     {
         public class OptionsBuild
         {
@@ -32,5 +32,6 @@ namespace OnlineShopping.data.DataContext
         public DbSet<Product> Products { get; set; }
         public DbSet<OrderItems> OrderItems { get; set; }
         public DbSet<Orders> Orders { get; set; }
+        public DbSet<ProductCategory> Categories { get; set; }
     }
 }

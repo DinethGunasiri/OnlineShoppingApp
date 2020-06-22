@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sUqojgbSrvXE9zGHXtJ8zFc3bHmMsh69dZvk44NH0ju0MCotNc4d6ca1MDS6c6ZSvHPO4G7QKTOyVZVoXusT6Q==",
+  "dgSpecHash": "YPgBAExUnP+OCSdxr8kpoXtyQmwMWAqRFEnB/Ffi7bDALoR79mZqNjr1Z0zaOA/1BZ+fzaoN4HGPN4+Ovp5qUg==",
   "success": true,
-  "projectFilePath": "F:\\ASP.NET\\Virtusa Git Assignment\\OnlineShoppingApp\\BackEnd\\OnlineShopping.web\\OnlineShopping.web\\OnlineShopping.web.csproj",
+  "projectFilePath": "F:\\ASP.NET\\Virtusa Git Assignment\\OnlineShoppingApp\\BackEnd\\OnlineShopping.web\\OnlineShopping.web\\OnlineShopping.service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.7\\microsoft.aspnet.webapi.core.5.2.7.nupkg.sha512",

@@ -10,3 +10,5 @@ F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\O
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.business\bin\Debug\netcoreapp3.1\OnlineShopping.data.pdb
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.business\obj\Debug\netcoreapp3.1\OnlineShopping.business.csproj.CopyComplete
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.business\obj\Debug\netcoreapp3.1\OnlineShopping.business.csproj.CoreCompileInputs.cache
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.business\bin\Debug\netcoreapp3.1\OnlineShopping.entity.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.business\bin\Debug\netcoreapp3.1\OnlineShopping.entity.pdb
