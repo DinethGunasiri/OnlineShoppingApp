@@ -52,14 +52,15 @@ namespace OnlineShopping.web.Controllers
 
         }
 
-        [HttpGet("{email}")]
+        [Route("email/{email}")]
+        [HttpGet]
         public async Task<Customer> GetCustomer(string email)
         {
             return await cManage.GetCustomer(email);   
         }
 
        
-        [Route("add")]
+        [Route("new")]
         [HttpPost]
         public async Task<Customer> CreateCustomer(Customer customer)
         {
@@ -68,14 +69,16 @@ namespace OnlineShopping.web.Controllers
         }
 
         [Authorize]
-        [HttpPut("{email}")]
+        [Route("edit/{email}")]
+        [HttpPut]
         public async Task<Customer> EditCustomer(string email, Customer customer)
         {
             return await cManage.EditCustomer(email, customer);
         }
 
         [Authorize]
-        [HttpDelete("{email}")]
+        [Route("delete/{email}")]
+        [HttpDelete]
         public async Task<Customer> DeleteCustomer(string email)
         {
             return await cManage.DeleteCustomer(email);

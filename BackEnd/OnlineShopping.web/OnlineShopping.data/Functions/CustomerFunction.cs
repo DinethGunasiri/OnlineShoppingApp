@@ -70,10 +70,6 @@ namespace OnlineShopping.data.Functions
 
                     await context.SaveChangesAsync();
                 }
-
-                
-                
-
                // System.Diagnostics.Debug.WriteLine(customerDetails);
 
             }

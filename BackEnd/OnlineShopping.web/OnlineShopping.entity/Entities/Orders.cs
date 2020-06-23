@@ -17,13 +17,11 @@ namespace OnlineShopping.data.Entities
         [StringLength(200)]
         public string ShippingAddress { get; set; }
 
-        [Required]
         public Customer Customer { get; set; }
 
         [Required]
         public string CustomerId { get; set; }
 
-        [Required]
         public OrderItems OrderItems { get; set; }
 
         [Required]

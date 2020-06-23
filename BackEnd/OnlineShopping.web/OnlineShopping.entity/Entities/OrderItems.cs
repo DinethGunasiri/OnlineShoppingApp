@@ -10,7 +10,6 @@ namespace OnlineShopping.data.Entities
         [Key]
         public int ItemId { get; set; }
 
-        [Required]
         public Product Product { get; set; }
 
         [Required]
