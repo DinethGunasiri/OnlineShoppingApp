@@ -74,9 +74,6 @@ F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\O
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\OnlineShopping.service.csprojAssemblyReference.cache
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\OnlineShopping.service.AssemblyInfoInputs.cache
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\OnlineShopping.service.AssemblyInfo.cs
-F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\OnlineShopping.service.csproj.CoreCompileInputs.cache
-F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\OnlineShopping.service.MvcApplicationPartsAssemblyInfo.cs
-F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\OnlineShopping.service.MvcApplicationPartsAssemblyInfo.cache
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\OnlineShopping.service.RazorTargetAssemblyInfo.cache
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\OnlineShopping.service.csproj.CopyComplete
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\staticwebassets\OnlineShopping.service.StaticWebAssets.Manifest.cache
@@ -85,3 +82,6 @@ F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\O
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\OnlineShopping.service.pdb
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\OnlineShopping.service.genruntimeconfig.cache
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\bin\Debug\netcoreapp3.1\OnlineShopping.service.StaticWebAssets.xml
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\OnlineShopping.service.csproj.CoreCompileInputs.cache
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\OnlineShopping.service.MvcApplicationPartsAssemblyInfo.cs
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.web\obj\Debug\netcoreapp3.1\OnlineShopping.service.MvcApplicationPartsAssemblyInfo.cache

@@ -33,7 +33,7 @@ namespace OnlineShopping.web
         {
 
             services.AddCors(options => {
-                options.AddPolicy("CorsPolicy", builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().AllowCredentials().Build());
+                options.AddPolicy("CorsPolicy", builder => builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader().Build());
             });
 
             services.AddControllers();
@@ -52,6 +52,7 @@ namespace OnlineShopping.web
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
                     };
                 });
+            services.AddCors();
             services.AddMvc();
 
             //services.AddDbContext<ShoppingContext>(options =>
@@ -75,6 +76,8 @@ namespace OnlineShopping.web
             app.UseRouting();
 
             app.UseAuthentication();
+
+            app.UseCors("CorsPolicy");
 
             app.UseAuthorization();
 

@@ -1,0 +1,58 @@
+.main-div {
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+  }
+  
+  #logForm {
+    width: 100%;
+  }
+
+  mat-card {
+      width: 80%;
+      height: 525px;
+      background-color: whitesmoke;
+  }
+  
+  mat-card-title {
+      text-align: center;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  .loginBtn {
+    text-align: center;
+    margin-top: 40px;
+    
+  }
+  
+  button {
+    font-size: 20px;
+  }
+  
+  #email {
+      margin-top: 20px;
+  }
+  
+  #password {
+      margin-top: 20px;
+  }
+  
+  .userIcon {
+    text-align: center;
+  }
+  
+  #accountIcon {
+   font-size: 150px;
+  }
+  
+  .text {
+      text-align: right;
+      margin-top: 30px;
+  }
+  

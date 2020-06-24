@@ -50,15 +50,23 @@ namespace OnlineShopping.web.Controllers
         
         public async Task<Customer> AuthenticateUser(Customer login)
         {
+            Customer customer = new Customer();
 
-            Customer customer = await cManage.GetCustomer(login.Email);
-
-            if(customer.Password != null)
+            if (login.Email != null && login.Password != null)
             {
-                if(login.Email==customer.Email && login.Password==customer.Password)
+
+                Customer customer2 = await cManage.GetCustomer(login.Email);
+
+                if (customer2.Password != null)
                 {
-                    customer = new Customer { Email = customer.Email, Password = customer.Password, FullName = customer.FullName, BirthDate = customer.BirthDate, Gender = customer.Gender, Address = customer.Address, ZipCode = customer.ZipCode, Telephone = customer.Telephone };
+                    if (login.Email == customer2.Email && login.Password == customer2.Password)
+                    {
+                        System.Diagnostics.Debug.WriteLine(login.Email);
+                        customer = new Customer { Email = customer2.Email, Password = customer2.Password, FullName = customer2.FullName, BirthDate = customer2.BirthDate, Gender = customer2.Gender, Address = customer2.Address, ZipCode = customer2.ZipCode, Telephone = customer2.Telephone };
+                    }
                 }
+
+                return customer;
             }
 
             return customer;
