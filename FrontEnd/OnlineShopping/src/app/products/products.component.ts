@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductServiceService } from '../product-service.service';
+import { ProductServiceService } from '../Services/product-service.service';
 
 @Component({
   selector: 'app-products',
@@ -22,5 +22,4 @@ export class ProductsComponent implements OnInit {
       console.log(this.products);
     });
   }
-
 }

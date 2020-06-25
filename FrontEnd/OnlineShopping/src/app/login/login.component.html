@@ -17,7 +17,7 @@
                [(ngModel)] = "emailTxt"
                name="emailTxt"
                required>
-        <mat-hint>Errors appear instantly!</mat-hint>
+        <mat-hint></mat-hint>
         <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
           Please enter a valid email address
         </mat-error>
@@ -27,7 +27,7 @@
       </mat-form-field>
       </div>
       <br />
-  
+     
       <div>
       <mat-form-field class="example-full-width" id="password">
         <mat-label>Password</mat-label>
@@ -58,4 +58,4 @@
     </mat-card>
     </form>
   </div>
-  
+  <notifier-container id="notification"></notifier-container>

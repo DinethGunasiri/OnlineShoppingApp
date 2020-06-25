@@ -18,7 +18,8 @@
             <span class="material-icons">search</span>
         </mat-form-field>
        <!-- <button id="login" mat-raised-button routerLink="/login">Login</button> -->
-       <span id="lblSign">Click <a id="customerF" routerLink="/customer-form">HERE</a> to Sign Up</span>
-       <button id="signup" mat-raised-button routerLink="/login">Login</button>
+       <span *ngIf= isLogged [(ngModel)] = "fullName">Welcome {{fullName}}</span>
+       <span *ngIf= !isLogged id="lblSign">Click <a id="customerF" routerLink="/customer-form">HERE</a> to Sign Up</span>
+       <button *ngIf= !isLogged id="signup" mat-raised-button routerLink="/login">Login</button>
     </div>
 </mat-toolbar>
