@@ -3,6 +3,7 @@ import { FormControl, FormGroupDirective, NgForm, Validators, FormGroup } from '
 import { ErrorStateMatcher } from '@angular/material/core';
 import { LoginServiceService } from '../login-service.service';
 import { CustomerServiceService } from '../customer-service.service';
+import { CookieService } from 'ngx-cookie-service';
 
 export class MyErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {
@@ -39,7 +40,8 @@ export class LoginComponent implements OnInit {
   customerDetails2: any = [];
 
   constructor(private loginService: LoginServiceService,
-              private customerSrvice: CustomerServiceService) { }
+              private customerSrvice: CustomerServiceService,
+              private cookieService: CookieService) { }
 
   ngOnInit(): void {
   }
@@ -75,7 +77,8 @@ export class LoginComponent implements OnInit {
   onSetToken(email: any, password: any) {
     this.loginService.loginCustomer(email, password).subscribe((data: []) => {
         this.token = data;
-        sessionStorage.setItem('Token', this.token.token.result);
+        this.cookieService.set('Token', this.token.token.result);
+       // sessionStorage.setItem('Token', this.token.token.result);
 
         if (this.token.token.result != null) {
           this.customerSrvice.getCustomers().subscribe((data2: []) => {

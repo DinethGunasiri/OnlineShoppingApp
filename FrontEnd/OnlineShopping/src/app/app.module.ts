@@ -20,7 +20,8 @@ import {MatIconModule} from '@angular/material/icon';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import {MatCardModule} from '@angular/material/card';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { AuthInterceptorService } from './auth-interceptor.service';
+import {AuthInterceptorService} from './auth-interceptor.service';
+import {CookieService} from 'ngx-cookie-service';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,8 @@ import { AuthInterceptorService } from './auth-interceptor.service';
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptorService,
       multi: true
-    }
+    },
+    CookieService
   ],
   bootstrap: [AppComponent]
 })
