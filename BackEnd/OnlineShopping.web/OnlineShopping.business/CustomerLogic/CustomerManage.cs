@@ -42,11 +42,13 @@ namespace OnlineShopping.business.CustomerLogic
         public async Task<Customer> GetCustomer(string Email)
         {
             try
-            {
+             {
                 var customer = await _customer.GetCustomer(Email);
 
                 if (customer == null)
                 {
+                   // return null;
+
                     throw new HttpResponseException(HttpStatusCode.NotFound);
                 }
                 else

@@ -4,6 +4,7 @@ using OnlineShopping.data.Entities;
 using OnlineShopping.data.Interfacses;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Text;
@@ -30,11 +31,11 @@ namespace OnlineShopping.data.Functions
         {
             var customer = new Customer();
 
-            using (var context = new ShoppingContext(ShoppingContext.ops.dbOptions))
+            using(var context = new ShoppingContext(ShoppingContext.ops.dbOptions))
             {
-                customer = await context.Customers.SingleOrDefaultAsync(c => c.Email == email);
+                customer = await context.Customers.SingleAsync(c => c.Email == email);
             }
-            return customer; 
+            return customer;
         }
 
         // Add Customer

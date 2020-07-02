@@ -52,11 +52,12 @@ namespace OnlineShopping.web.Controllers
 
         }
 
+        [Authorize]
         [Route("email/{email}")]
         [HttpGet]
         public async Task<Customer> GetCustomer(string email)
         {
-            return await cManage.GetCustomer(email);   
+            return await cManage.GetCustomer(email);
         }
 
        

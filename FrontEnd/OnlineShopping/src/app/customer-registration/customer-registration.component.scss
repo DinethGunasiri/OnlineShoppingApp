@@ -1,0 +1,38 @@
+.main-div {
+ /*   height: 80vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    display: flex; */
+    height: 70vh;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    display: flex;
+    width: 700px;
+}
+
+.example-form {
+    min-width: 150px;
+    max-width: 700px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  td {
+    padding-right: 8px;
+  }
+
+  #namesDiv {
+      margin-bottom: 5px;  
+      margin-top: 5px;
+    }
+
+.btnTable {
+    margin: 0 auto;
+    margin-top: 30px;
+}

@@ -12,7 +12,7 @@ export class DataService {
 
   constructor() {
   }
-  
+
   callNavBar() {
     this.isLoggedChange.next(true);
   }

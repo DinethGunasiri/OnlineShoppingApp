@@ -1,1 +1,237 @@
-<p>customer-registration works!</p>
+<div class="main-div">
+    <mat-card>
+        <mat-card-title >Customer Registration</mat-card-title>
+        <div>
+            <form class="example-form" #ngForm="ngForm" (ngSubmit)="onClickSave(ngForm)">
+                <mat-form-field class="example-full-width">
+                  <input matInput disabled value="Personal Details">
+                  <mat-icon matSuffix>account_circle</mat-icon>
+                </mat-form-field>
+              
+                <table class="example-full-width" id="namesDiv" cellspacing="0">
+                <tr>
+                  <td>
+                      <mat-form-field class="example-full-width">
+                         <mat-label>First name</mat-label>
+                        <input matInput required
+                        [formControl]="inputControl"
+                        [errorStateMatcher]="matcher"
+                        name="fNameTxt"
+                        [(ngModel)] = "fNameTxt">
+                        <mat-error *ngIf="inputControl.hasError('required')">
+                        First name is <strong>required</strong>
+                         </mat-error>
+                     <mat-icon matSuffix>mode_edit</mat-icon>
+                  </mat-form-field></td>
+                  <td>
+                      <mat-form-field class="example-full-width">
+                        <mat-label>Last Name</mat-label>
+                        <input matInput required
+                        [formControl]="inputControl"
+                        [errorStateMatcher]="matcher"
+                        name="lNameTxt"
+                        [(ngModel)] ="lNameTxt">
+                        <mat-error *ngIf="inputControl.hasError('required')">
+                        Last name is <strong>required</strong>
+                        </mat-error>
+                          <mat-icon matSuffix>mode_edit</mat-icon>
+                    </mat-form-field>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field appearance="fill" class="example-full-width">
+                            <mat-label>Select Gender</mat-label>
+                            <mat-select required
+                            [formControl]="inputControl"
+                            [errorStateMatcher]="matcher"
+                            [(ngModel)]="genderSelect">
+                              <mat-error *ngIf="inputControl.hasError('required')">
+                                Gender is <strong>required</strong>
+                              </mat-error>
+                              <mat-option *ngFor="let gender of genders" [value]="gender.value">
+                                {{gender.viewValue}}
+                              </mat-option>
+                            </mat-select>
+                            <mat-icon matSuffix>wc</mat-icon>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field appearance="fill" class="example-full-width">
+                            <mat-label>Choose a date</mat-label>
+                            <input required matInput [matDatepicker]="picker"
+                            [formControl]="inputControl"
+                            [errorStateMatcher]="matcher"
+                            name="birthDate"
+                            [(ngModel)] = "birthDate">
+                              <mat-error *ngIf="inputControl.hasError('required')">
+                                Birthdate is <strong>required</strong>
+                              </mat-error>
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                          </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width" id="email">
+                            <mat-label>Email Address</mat-label>
+                             <input matInput 
+                                   [formControl]="emailFormControl"
+                                   [errorStateMatcher]="matcher"
+                                   placeholder="Ex. pat@example.com"
+                                   required
+                                   name="emailTxt"
+                                   [(ngModel)] = "emailTxt">
+                            <mat-hint></mat-hint>
+                            <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+                              Please enter a valid email address
+                            </mat-error>
+                            <mat-error *ngIf="emailFormControl.hasError('required')">
+                              Email is <strong>required</strong>
+                            </mat-error>
+                            <mat-icon matSuffix>email</mat-icon>
+                          </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Telephone</mat-label>
+                            <span matPrefix>+ &nbsp;</span>
+                            <input type="tel" 
+                            matInput 
+                            required
+                            placeholder="555-555-1234"
+                            [formControl]="inputControl"
+                            [errorStateMatcher]="matcher"
+                            name="telephoneTxt"
+                            [(ngModel)] = "telephoneTxt">
+                              <mat-error *ngIf="inputControl.hasError('required')">
+                                Telephone number is <strong>required</strong>
+                              </mat-error>
+                            <mat-icon matSuffix>local_phone</mat-icon>
+                          </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput 
+                            required 
+                            type="password" 
+                            placeholder="Password"
+                            [formControl]="inputControl"
+                            [errorStateMatcher]="matcher"
+                            name="passwordTxt"
+                            [(ngModel)] = "passwordTxt">
+                              <mat-error *ngIf="inputControl.hasError('required')">
+                                Password is <strong>required</strong>
+                              </mat-error>
+                            <mat-icon matSuffix>vpn_key</mat-icon>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input required matInput 
+                            type="password" 
+                            placeholder="Confirm Password"
+                            [formControl]="inputControl"
+                            [errorStateMatcher]="matcher"
+                            name="conPasswordTxt"
+                            [(ngModel)] = " conPasswordTxt">
+                              <mat-error *ngIf="inputControl.hasError('required')">
+                                Password confirmation is <strong>required</strong>
+                              </mat-error>
+                            <mat-icon matSuffix>vpn_key</mat-icon>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                </table>
+
+                <mat-form-field class="example-full-width">
+                    <input required matInput disabled 
+                    value="Shipping Details">
+                    <mat-icon matSuffix>local_shipping</mat-icon>
+                </mat-form-field>
+              
+                <p>
+                  <mat-form-field class="example-full-width">
+                    <mat-label>Address</mat-label>
+                    <textarea required matInput placeholder="Ex. 100 Main St"
+                    [formControl]="inputControl"
+                    [errorStateMatcher]="matcher"
+                    name="addressTxt1"
+                    [(ngModel)] = "addressTxt1">
+                    <mat-error *ngIf="inputControl.hasError('required')">
+                    Address is <strong>required</strong>
+                    </mat-error></textarea>
+                    <mat-icon matSuffix>mode_edit</mat-icon>
+                  </mat-form-field>
+                  <mat-form-field class="example-full-width">
+                    <mat-label>Street name</mat-label>
+                    <textarea matInput required
+                    name="stretTxt"
+                    [(ngModel)] = "streetTxt">
+                    <mat-error *ngIf="inputControl.hasError('required')">
+                      Street is <strong>required</strong>
+                    </mat-error>
+                  </textarea>
+                    <mat-icon matSuffix>mode_edit</mat-icon>
+                  </mat-form-field>
+                </p>
+              
+                <table class="example-full-width" cellspacing="0"><tr>
+                  <td><mat-form-field class="example-full-width">
+                    <mat-label>City</mat-label>
+                    <input required matInput placeholder="Ex. San Francisco"
+                    [formControl]="inputControl"
+                    [errorStateMatcher]="matcher"
+                    name="cityTxt"
+                    [(ngModel)] = "cityTxt">
+                    <mat-error *ngIf="inputControl.hasError('required')">
+                    City is <strong>required</strong>
+                    </mat-error>
+                    <mat-icon matSuffix>mode_edit</mat-icon>
+                  </mat-form-field></td>
+                  <td><mat-form-field class="example-full-width">
+                    <mat-label>State/Province</mat-label>
+                    <input required matInput placeholder="Ex. California"
+                    name="stateTxt"
+                    [(ngModel)] = "stateTxt">
+                    <mat-icon matSuffix>mode_edit</mat-icon>
+                    <mat-error *ngIf="inputControl.hasError('required')">
+                      State/Province is <strong>required</strong>
+                    </mat-error>
+                  </mat-form-field></td>
+                  <td><mat-form-field class="example-full-width">
+                    <mat-label>Postal Code</mat-label>
+                    <input required matInput #postalCode maxlength="5" 
+                    placeholder="Ex. 94105"
+                    [formControl]="inputControl"
+                    [errorStateMatcher]="matcher"
+                    name="postalCodeTxt"
+                    [(ngModel)] = "postalCodeTxt"l>
+                    <mat-error *ngIf="inputControl.hasError('required')">
+                    Zip code is <strong>required</strong>
+                    </mat-error>
+                    <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+                    <mat-icon matSuffix>mode_edit</mat-icon>
+                  </mat-form-field></td>
+                </tr></table>
+                <div >
+                    <table class="btnTable">
+                        <tr>
+                            <td>
+                                <button type="submit" mat-raised-button [disabled]="ngForm.invalid" color="primary">Submit</button>
+                            </td>
+                            <td>
+                                <button type="reset" mat-raised-button color="accent">Clear</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+               
+              </form>
+        </div>
+    </mat-card>
+</div>
+<notifier-container id="notification"></notifier-container>

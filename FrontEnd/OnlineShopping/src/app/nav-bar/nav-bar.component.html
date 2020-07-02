@@ -1,5 +1,5 @@
 <mat-toolbar color="primary"  class="navbar">
-    <span>Virtusa Shopping</span>
+    <span>Online Shopping</span>
     <div class="manu">
        <!-- <a class="nav-link" routerLink="/login"><span>Home</span></a> -->
        <button id="homeBtn" mat-button routerLink="/products">Home</button> 
@@ -8,6 +8,7 @@
         <button mat-menu-item>Cat 1</button>
         <button mat-menu-item>Cat 2</button>
         </mat-menu>
+        <button id="homeBtn" mat-button>Contact Us</button>
     </div>
     
     <div>
@@ -18,8 +19,10 @@
             <span class="material-icons">search</span>
         </mat-form-field>
        <!-- <button id="login" mat-raised-button routerLink="/login">Login</button> -->
-       <span *ngIf= isLogged [(ngModel)] = "fullName">Welcome {{fullName}}</span>
+       <span id="msgWelcom" *ngIf= isLogged [(ngModel)] = "fullName">Welcome {{fullName}}</span>
+       <label id="logout" *ngIf= isLogged (click)="onLogout()">Log out</label>
        <span *ngIf= !isLogged id="lblSign">Click <a id="customerF" routerLink="/customer-form">HERE</a> to Sign Up</span>
        <button *ngIf= !isLogged id="signup" mat-raised-button routerLink="/login">Login</button>
     </div>
 </mat-toolbar>
+<notifier-container id="notification"></notifier-container>

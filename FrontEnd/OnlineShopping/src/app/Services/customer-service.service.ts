@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { catchError, map } from 'rxjs/operators';
+import { throwError } from 'rxjs';
+import { NotificationService } from '../Services/notification-service.service';
 
 @Injectable({
   providedIn: 'root'
@@ -17,6 +20,7 @@ export class CustomerServiceService {
   getCustomer(email) {
     return this.http.get(`${this.customeruri}/email/${email}`);
   }
+  
 
   postCustomer(email, fullName, birthDate, gender, address, zipCode, telephone, password) {
     const customer = {
@@ -29,6 +33,7 @@ export class CustomerServiceService {
       Telephone: telephone,
       Password: password
     };
+    console.log(customer);
     return this.http.post(`${this.customeruri}/new`, customer);
   }
 

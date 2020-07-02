@@ -29,7 +29,8 @@ namespace OnlineShopping.data.Entities
         public string Address { get; set; }
 
         [Required]
-        public int ZipCode { get; set; }
+        [StringLength(6)]
+        public string ZipCode { get; set; }
 
         [Required]
         [StringLength(15)]

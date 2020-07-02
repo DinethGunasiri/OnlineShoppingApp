@@ -25,6 +25,9 @@ import {CookieService} from 'ngx-cookie-service';
 import {NotifierModule} from 'angular-notifier';
 import {ToastrModule} from 'ngx-toastr';
 import {DataService} from './Services/data.service';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatNativeDateModule} from '@angular/material/core';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -54,7 +57,10 @@ import {DataService} from './Services/data.service';
     FormsModule,
     ReactiveFormsModule,
     NotifierModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSelectModule
   ],
   providers: [
     {

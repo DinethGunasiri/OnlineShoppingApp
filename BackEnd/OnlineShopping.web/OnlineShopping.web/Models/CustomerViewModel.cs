@@ -17,7 +17,7 @@ namespace OnlineShopping.web.Models
 
         public string Address { get; set; }
 
-        public int ZipCode { get; set; }
+        public string ZipCode { get; set; }
 
         public string Telephone { get; set; }
 
