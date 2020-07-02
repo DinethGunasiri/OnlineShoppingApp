@@ -14,7 +14,6 @@
   mat-card {
       width: 80%;
       height: 525px;
-      background-color: whitesmoke;
   }
   
   mat-card-title {
@@ -54,4 +53,8 @@
   .text {
       text-align: right;
       margin-top: 30px;
+  }
+
+  #logout {
+    cursor: pointer;
   }
