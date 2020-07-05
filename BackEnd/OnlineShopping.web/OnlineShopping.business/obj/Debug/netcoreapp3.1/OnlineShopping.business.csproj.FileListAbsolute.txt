@@ -9,6 +9,20 @@ F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\O
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.business\bin\Debug\netcoreapp3.1\OnlineShopping.data.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.business\bin\Debug\netcoreapp3.1\OnlineShopping.data.pdb
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.business\obj\Debug\netcoreapp3.1\OnlineShopping.business.csproj.CopyComplete
-F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.business\obj\Debug\netcoreapp3.1\OnlineShopping.business.csproj.CoreCompileInputs.cache
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.business\bin\Debug\netcoreapp3.1\OnlineShopping.entity.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.business\bin\Debug\netcoreapp3.1\OnlineShopping.entity.pdb
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.business\obj\Debug\netcoreapp3.1\OnlineShopping.business.csproj.CoreCompileInputs.cache
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.business\bin\Debug\netcoreapp3.1\OnlineShopping.business.deps.json
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.business\bin\Debug\netcoreapp3.1\OnlineShopping.business.dll
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.business\bin\Debug\netcoreapp3.1\OnlineShopping.business.pdb
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.business\bin\Debug\netcoreapp3.1\OnlineShopping.data.dll
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.business\bin\Debug\netcoreapp3.1\OnlineShopping.entity.dll
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.business\bin\Debug\netcoreapp3.1\OnlineShopping.data.pdb
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.business\bin\Debug\netcoreapp3.1\OnlineShopping.entity.pdb
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.business\obj\Debug\netcoreapp3.1\OnlineShopping.business.csprojAssemblyReference.cache
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.business\obj\Debug\netcoreapp3.1\OnlineShopping.business.AssemblyInfoInputs.cache
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.business\obj\Debug\netcoreapp3.1\OnlineShopping.business.AssemblyInfo.cs
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.business\obj\Debug\netcoreapp3.1\OnlineShopping.business.csproj.CoreCompileInputs.cache
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.business\obj\Debug\netcoreapp3.1\OnlineShopping.business.csproj.CopyComplete
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.business\obj\Debug\netcoreapp3.1\OnlineShopping.business.dll
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.business\obj\Debug\netcoreapp3.1\OnlineShopping.business.pdb

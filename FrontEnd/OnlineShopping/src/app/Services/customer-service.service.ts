@@ -14,13 +14,12 @@ export class CustomerServiceService {
   constructor(private http: HttpClient) { }
 
   getCustomers() {
-    return this.http.get(`${this.customeruri}/all`);
+    return this.http.get(`${this.customeruri}`);
   }
 
   getCustomer(email) {
-    return this.http.get(`${this.customeruri}/email/${email}`);
+    return this.http.get(`${this.customeruri}/${email}`);
   }
-  
 
   postCustomer(email, fullName, birthDate, gender, address, zipCode, telephone, password) {
     const customer = {
@@ -34,7 +33,7 @@ export class CustomerServiceService {
       Password: password
     };
     console.log(customer);
-    return this.http.post(`${this.customeruri}/new`, customer);
+    return this.http.post(`${this.customeruri}`, customer);
   }
 
   editCustomer(email, fullName, birthDate, gender, address, zipCode, telephone) {
@@ -46,11 +45,16 @@ export class CustomerServiceService {
       ZipCode: zipCode,
       Telephone: telephone
     };
-    return this.http.put(`${this.customeruri}/edit/${email}`, customer);
+    return this.http.put(`${this.customeruri}/${email}`, customer);
   }
 
   deleteCustomer(email) {
-    return this.http.delete(`${this.customeruri}/delete/${email}`);
+    return this.http.delete(`${this.customeruri}/${email}`);
+  }
+
+  checkCustomer(email) {
+    console.log(email);
+    return this.http.get(`${this.customeruri}/check/${email}`);
   }
 
 }

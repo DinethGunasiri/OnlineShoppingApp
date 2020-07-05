@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OnlineShopping.data.Functions
 {
-    public class OrderFunction : IOrder
+    public class OrderRepository : IOrder
     {
         public async Task<Orders> CreateOrder(Orders order)
         {

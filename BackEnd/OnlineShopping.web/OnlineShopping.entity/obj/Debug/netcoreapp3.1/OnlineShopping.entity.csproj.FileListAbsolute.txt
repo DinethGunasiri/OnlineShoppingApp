@@ -4,6 +4,15 @@ F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\O
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.entity\obj\Debug\netcoreapp3.1\OnlineShopping.entity.AssemblyInfoInputs.cache
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.entity\obj\Debug\netcoreapp3.1\OnlineShopping.entity.AssemblyInfo.cs
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.entity\bin\Debug\netcoreapp3.1\OnlineShopping.entity.pdb
-F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.entity\obj\Debug\netcoreapp3.1\OnlineShopping.entity.csproj.CoreCompileInputs.cache
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.entity\obj\Debug\netcoreapp3.1\OnlineShopping.entity.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.entity\obj\Debug\netcoreapp3.1\OnlineShopping.entity.pdb
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping.web\OnlineShopping.entity\obj\Debug\netcoreapp3.1\OnlineShopping.entity.csproj.CoreCompileInputs.cache
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.entity\bin\Debug\netcoreapp3.1\OnlineShopping.entity.deps.json
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.entity\bin\Debug\netcoreapp3.1\OnlineShopping.entity.dll
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.entity\bin\Debug\netcoreapp3.1\OnlineShopping.entity.pdb
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.entity\obj\Debug\netcoreapp3.1\OnlineShopping.entity.csprojAssemblyReference.cache
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.entity\obj\Debug\netcoreapp3.1\OnlineShopping.entity.AssemblyInfoInputs.cache
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.entity\obj\Debug\netcoreapp3.1\OnlineShopping.entity.AssemblyInfo.cs
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.entity\obj\Debug\netcoreapp3.1\OnlineShopping.entity.csproj.CoreCompileInputs.cache
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.entity\obj\Debug\netcoreapp3.1\OnlineShopping.entity.dll
+F:\ASP.NET\BackEnd\OnlineShopping.web\OnlineShopping.entity\obj\Debug\netcoreapp3.1\OnlineShopping.entity.pdb

@@ -19,15 +19,19 @@ namespace OnlineShopping.web.Controllers
     [ApiController]
     public class CustomerController : ControllerBase
     {
-        private CustomerManage cManage = new CustomerManage();
+        private CustomerManage _customerManage; // = new CustomerManage();
+
+        public CustomerController()
+        {
+            _customerManage = new CustomerManage();
+        }
 
         [Authorize]
-        [Route("all")]
         [HttpGet]
         public async Task<List<CustomerViewModel>> GetCustomers()
         {
             List<CustomerViewModel> customerList = new List<CustomerViewModel>();
-            var customers = await cManage.GetCustomers();
+            var customers = await _customerManage.GetCustomers().ConfigureAwait(false);
 
             if(customers.Count > 0)
             {
@@ -53,36 +57,51 @@ namespace OnlineShopping.web.Controllers
         }
 
         [Authorize]
-        [Route("email/{email}")]
+        [Route("{email}")]
         [HttpGet]
         public async Task<Customer> GetCustomer(string email)
         {
-            return await cManage.GetCustomer(email);
+            return await _customerManage.GetCustomer(email).ConfigureAwait(false);
         }
 
        
-        [Route("new")]
         [HttpPost]
         public async Task<Customer> CreateCustomer(Customer customer)
         {
-            return await cManage.CreateCustomer(customer);
+            return await _customerManage.CreateCustomer(customer).ConfigureAwait(false);
             
         }
 
         [Authorize]
-        [Route("edit/{email}")]
+        [Route("{email}")]
         [HttpPut]
         public async Task<Customer> EditCustomer(string email, Customer customer)
         {
-            return await cManage.EditCustomer(email, customer);
+            return await _customerManage.EditCustomer(email, customer).ConfigureAwait(false);
         }
 
         [Authorize]
-        [Route("delete/{email}")]
+        [Route("{email}")]
         [HttpDelete]
         public async Task<Customer> DeleteCustomer(string email)
         {
-            return await cManage.DeleteCustomer(email);
+            return await _customerManage.DeleteCustomer(email).ConfigureAwait(false);
+        }
+
+        [Route("check/{email}")]
+        [HttpGet]
+        public async Task<Customer> CheckCustomer(string email)
+        {
+            var customer = await _customerManage.CheckCustomer(email).ConfigureAwait(false);
+
+            if (customer != null)
+            {
+                return customer;
+            }
+            else
+            {
+                return null;
+            }
         }
 
     }

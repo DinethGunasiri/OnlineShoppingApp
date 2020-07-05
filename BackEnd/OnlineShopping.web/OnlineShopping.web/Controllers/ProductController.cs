@@ -16,16 +16,20 @@ namespace OnlineShopping.web.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-        private ProductManage pManage = new ProductManage();
+        private ProductManage _productManage; // = new ProductManage();
+
+        public ProductController()
+        {
+            _productManage = new ProductManage();
+        }
 
         // Get all Product
 
-        [Route("all")]
         [HttpGet]
         public async Task<List<ProductViewModel>> GetProducts()
         {
             List<ProductViewModel> productsList = new List<ProductViewModel>();
-            var products = await pManage.GetProducts();
+            var products = await _productManage.GetProducts().ConfigureAwait(false);
 
             if(products.Count > 0)
             {
@@ -46,11 +50,11 @@ namespace OnlineShopping.web.Controllers
 
         // Get by ID
 
-        [Route("id/{id}")]
+        [Route("{id}")]
         [HttpGet]
         public async Task<ProductViewModel> GetProductById(int id)
         {
-            var product = await pManage.GetProductById(id);
+            var product = await _productManage.GetProductById(id).ConfigureAwait(false);
 
             ProductViewModel currentProduct = new ProductViewModel
             {
@@ -66,7 +70,7 @@ namespace OnlineShopping.web.Controllers
 
         //Get by Name
 
-        [Route("name/{name}")]
+        [Route("{name}")]
         [HttpGet]
         public async Task<List<ProductViewModel>> GetProductByName(string name)
         {
@@ -74,7 +78,7 @@ namespace OnlineShopping.web.Controllers
 
             // System.Diagnostics.Debug.WriteLine(name);
 
-            var products = await pManage.GetProductByName(name);
+            var products = await _productManage.GetProductByName(name).ConfigureAwait(false);
 
             if (products != null)
             {
@@ -96,31 +100,30 @@ namespace OnlineShopping.web.Controllers
 
         // Create Product
         [Authorize]
-        [Route("new")]
         [HttpPost]
 
         public async Task<Product> CreateProduct(Product product)
         {
-           return await pManage.CreateProduct(product);
+           return await _productManage.CreateProduct(product).ConfigureAwait(false);
         }
 
         // Edit Product
         [Authorize]
-        [Route("edit/{id}")]
+        [Route("{id}")]
         [HttpPut]
         public async Task<Product> EditProduct(int id, Product product)
         {
-            return await pManage.EditProduct(id, product);
+            return await _productManage.EditProduct(id, product).ConfigureAwait(false);
         }
 
 
         // Delete Product
         [Authorize]
-        [Route("delete/{id}")]
+        [Route("{id}")]
         [HttpDelete]
         public async Task<Product> DeleteProduct(int id)
         {
-            return await pManage.DeleteProduct(id);
+            return await _productManage.DeleteProduct(id).ConfigureAwait(false);
         }
 
     }

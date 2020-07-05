@@ -11,15 +11,15 @@ export class ProductServiceService {
   constructor(private http: HttpClient) { }
 
   getProducts() {
-   return this.http.get(`${this.producturi}/all`);
+   return this.http.get(`${this.producturi}`);
   }
 
   getProductById(id) {
-    return this.http.get(`${this.producturi}/id/${id}`);
+    return this.http.get(`${this.producturi}/${id}`);
   }
 
   getProductByName(name) {
-    return this.http.get(`${this.producturi}/name/${name}`);
+    return this.http.get(`${this.producturi}/${name}`);
   }
 
   postProduct(productName, productDescription, currentPrice, category) {
@@ -29,7 +29,7 @@ export class ProductServiceService {
       CurrentPrice: currentPrice,
       Category: category
     };
-    return this.http.post(`${this.producturi}/new`, product);
+    return this.http.post(`${this.producturi}`, product);
   }
 
   editProduct(productId, productName, productDescription, currentPrice, category) {
@@ -39,10 +39,10 @@ export class ProductServiceService {
       CurrentPrice: currentPrice,
       Category: category
     };
-    return this.http.put(`${this.producturi}/edit/${productId}`, product);
+    return this.http.put(`${this.producturi}/${productId}`, product);
   }
 
   deleteProdcut(productId) {
-    return this.http.delete(`${this.producturi}/delete/${productId}`);
+    return this.http.delete(`${this.producturi}/${productId}`);
   }
 }

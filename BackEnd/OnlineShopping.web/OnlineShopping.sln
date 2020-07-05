@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineShopping.data", "Onli
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineShopping.business", "OnlineShopping.business\OnlineShopping.business.csproj", "{15BD10D2-3BC5-4814-AC89-5E741CB89804}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineShopping.entity", "OnlineShopping.entity\OnlineShopping.entity.csproj", "{5E4254AC-502C-4484-A558-D050A5999D1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OnlineShopping.entity", "OnlineShopping.entity\OnlineShopping.entity.csproj", "{5E4254AC-502C-4484-A558-D050A5999D1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

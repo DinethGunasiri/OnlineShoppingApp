@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace OnlineShopping.data.Functions
 {
-    public class ProductFunction : IProduct
+    public class ProductRipository : IProduct
     {        
 
         // Add Product

@@ -11,11 +11,11 @@ export class OrderItemServiceService {
   constructor(private http: HttpClient) { }
 
   getOrderItems() {
-    return this.http.get(`${this.productItemuri}/all`);
+    return this.http.get(`${this.productItemuri}`);
   }
 
   getOrderItem(id) {
-    return this.http.get(`${this.productItemuri}/id/${id}`);
+    return this.http.get(`${this.productItemuri}/${id}`);
   }
 
   postOrderItem(productId, quantity, purchasePrice) {
@@ -24,7 +24,7 @@ export class OrderItemServiceService {
       Quantity: quantity,
       PurchasePrice: purchasePrice
     };
-    return this.http.post(`${this.productItemuri}/new/`, item);
+    return this.http.post(`${this.productItemuri}`, item);
   }
 
   editOrderItem(itemId, productId, quantity, purchasePrice) {
@@ -33,10 +33,10 @@ export class OrderItemServiceService {
       Quantity: quantity,
       PurchasePrice: purchasePrice
     };
-    return this.http.put(`${this.productItemuri}/edit/${itemId}`, item);
+    return this.http.put(`${this.productItemuri}/${itemId}`, item);
   }
 
   deleteOrderItem(itemId) {
-    return this.http.delete(`${this.productItemuri}/delete/${itemId}`);
+    return this.http.delete(`${this.productItemuri}/${itemId}`);
   }
 }

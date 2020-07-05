@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace OnlineShopping.data.Functions
 {
-    public class OrderItemFunctions : IOrderItem
+    public class OrderItemRepository : IOrderItem
     {
         // Get All Order Items
         public async Task<List<OrderItems>> GetOrderItems()

@@ -13,6 +13,7 @@ namespace OnlineShopping.data.Interfacses
         Task<Customer> AddCustomer(Customer customer);
         Task<Customer> EditCustomer(string email, Customer customer);
         Task<Customer> DeleteCustomer(string email);
+        Task<Customer> CheckCustomer(string email);
         
     }
 }

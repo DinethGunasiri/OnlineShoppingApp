@@ -15,14 +15,19 @@ namespace OnlineShopping.service.Controllers
     [ApiController]
     public class OrderController : ControllerBase
     {
-        private OrderManage oManage = new OrderManage();
+        private OrderManage _orderManage; // = new OrderManage();
 
-        [Route("all")]
+        public OrderController()
+        {
+            _orderManage = new OrderManage();
+        }
+
+       
         [HttpGet]
         public async Task<List<OrderViewModel>> GetOrders()
         {
             List<OrderViewModel> orderList = new List<OrderViewModel>();
-            var orders = await oManage.GetOrders();
+            var orders = await _orderManage.GetOrders().ConfigureAwait(false);
 
             if(orders.Count > 0)
             {
@@ -42,11 +47,11 @@ namespace OnlineShopping.service.Controllers
             return orderList;
         }
 
-        [Route("id/{id}")]
+        [Route("{id}")]
         [HttpGet]
         public async Task<OrderViewModel> GetOrder(int id)
         {
-            var order = await oManage.GetOrder(id);
+            var order = await _orderManage.GetOrder(id).ConfigureAwait(false);
 
             OrderViewModel currentOrder = new OrderViewModel
             {
@@ -59,18 +64,18 @@ namespace OnlineShopping.service.Controllers
             return currentOrder;
         }
 
-        [Route("new")]
+       
         [HttpPost]
         public async Task<Orders> CreateOrder(Orders orders)
         {
-            return await oManage.CreateOrder(orders);
+            return await _orderManage.CreateOrder(orders).ConfigureAwait(false);
         }
 
-        [Route("delete/{id}")]
+        [Route("{id}")]
         [HttpDelete]
         public async Task<Orders> DeleteOrder(int id)
         {
-            return await oManage.DeleteOrder(id);
+            return await _orderManage.DeleteOrder(id).ConfigureAwait(false);
         }
     }
 }

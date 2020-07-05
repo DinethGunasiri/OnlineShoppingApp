@@ -42,10 +42,11 @@
                     <td>
                         <mat-form-field appearance="fill" class="example-full-width">
                             <mat-label>Select Gender</mat-label>
-                            <mat-select required
+                            <mat-select 
                             [formControl]="inputControl"
                             [errorStateMatcher]="matcher"
-                            [(ngModel)]="genderSelect">
+                            [(ngModel)]="genderSelect"
+                            required>
                               <mat-error *ngIf="inputControl.hasError('required')">
                                 Gender is <strong>required</strong>
                               </mat-error>
@@ -59,7 +60,7 @@
                     <td>
                         <mat-form-field appearance="fill" class="example-full-width">
                             <mat-label>Choose a date</mat-label>
-                            <input required matInput [matDatepicker]="picker"
+                            <input matInput required [matDatepicker]="picker"
                             [formControl]="inputControl"
                             [errorStateMatcher]="matcher"
                             name="birthDate"
@@ -77,10 +78,10 @@
                         <mat-form-field class="example-full-width" id="email">
                             <mat-label>Email Address</mat-label>
                              <input matInput 
+                                    required
                                    [formControl]="emailFormControl"
                                    [errorStateMatcher]="matcher"
                                    placeholder="Ex. pat@example.com"
-                                   required
                                    name="emailTxt"
                                    [(ngModel)] = "emailTxt">
                             <mat-hint></mat-hint>
@@ -131,7 +132,7 @@
                     </td>
                     <td>
                         <mat-form-field class="example-full-width">
-                            <input required matInput 
+                            <input matInput required 
                             type="password" 
                             placeholder="Confirm Password"
                             [formControl]="inputControl"
@@ -148,7 +149,7 @@
                 </table>
 
                 <mat-form-field class="example-full-width">
-                    <input required matInput disabled 
+                    <input matInput disabled 
                     value="Shipping Details">
                     <mat-icon matSuffix>local_shipping</mat-icon>
                 </mat-form-field>
@@ -156,7 +157,7 @@
                 <p>
                   <mat-form-field class="example-full-width">
                     <mat-label>Address</mat-label>
-                    <textarea required matInput placeholder="Ex. 100 Main St"
+                    <textarea matInput required placeholder="Ex. 100 Main St"
                     [formControl]="inputControl"
                     [errorStateMatcher]="matcher"
                     name="addressTxt1"
@@ -170,7 +171,9 @@
                     <mat-label>Street name</mat-label>
                     <textarea matInput required
                     name="stretTxt"
-                    [(ngModel)] = "streetTxt">
+                    [(ngModel)] = "streetTxt"
+                    [formControl]="inputControl"
+                    [errorStateMatcher]="matcher">
                     <mat-error *ngIf="inputControl.hasError('required')">
                       Street is <strong>required</strong>
                     </mat-error>
@@ -182,11 +185,11 @@
                 <table class="example-full-width" cellspacing="0"><tr>
                   <td><mat-form-field class="example-full-width">
                     <mat-label>City</mat-label>
-                    <input required matInput placeholder="Ex. San Francisco"
-                    [formControl]="inputControl"
-                    [errorStateMatcher]="matcher"
+                    <input matInput required placeholder="Ex. San Francisco"
                     name="cityTxt"
-                    [(ngModel)] = "cityTxt">
+                    [(ngModel)] = "cityTxt"
+                    [formControl]="inputControl"
+                    [errorStateMatcher]="matcher">
                     <mat-error *ngIf="inputControl.hasError('required')">
                     City is <strong>required</strong>
                     </mat-error>
@@ -194,9 +197,11 @@
                   </mat-form-field></td>
                   <td><mat-form-field class="example-full-width">
                     <mat-label>State/Province</mat-label>
-                    <input required matInput placeholder="Ex. California"
+                    <input matInput required placeholder="Ex. California"
                     name="stateTxt"
-                    [(ngModel)] = "stateTxt">
+                    [(ngModel)] = "stateTxt"
+                    [formControl]="inputControl"
+                    [errorStateMatcher]="matcher">
                     <mat-icon matSuffix>mode_edit</mat-icon>
                     <mat-error *ngIf="inputControl.hasError('required')">
                       State/Province is <strong>required</strong>
@@ -204,7 +209,7 @@
                   </mat-form-field></td>
                   <td><mat-form-field class="example-full-width">
                     <mat-label>Postal Code</mat-label>
-                    <input required matInput #postalCode maxlength="5" 
+                    <input matInput required #postalCode maxlength="5" 
                     placeholder="Ex. 94105"
                     [formControl]="inputControl"
                     [errorStateMatcher]="matcher"
@@ -221,7 +226,7 @@
                     <table class="btnTable">
                         <tr>
                             <td>
-                                <button type="submit" mat-raised-button [disabled]="ngForm.invalid" color="primary">Submit</button>
+                                <button type="submit" mat-raised-button [disabled]="" color="primary">Submit</button>
                             </td>
                             <td>
                                 <button type="reset" mat-raised-button color="accent">Clear</button>

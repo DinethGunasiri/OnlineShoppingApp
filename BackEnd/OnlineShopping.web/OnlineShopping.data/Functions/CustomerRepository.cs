@@ -12,8 +12,13 @@ using System.Threading.Tasks;
 
 namespace OnlineShopping.data.Functions
 {
-    public class CustomerFunction : ICustomer
+    public class CustomerRepository : ICustomer
     {
+        public CustomerRepository()
+        {
+
+        }
+
         // Get all Customer
         public async Task<List<Customer>> GetCustomers()
         {
@@ -93,6 +98,13 @@ namespace OnlineShopping.data.Functions
 
 
             }
+
+            return customer;
+        }
+
+        public Task<Customer> CheckCustomer(string email)
+        {
+            var customer = GetCustomer(email);
 
             return customer;
         }
