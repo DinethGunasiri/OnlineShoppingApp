@@ -37,6 +37,7 @@ namespace OnlineShopping.web.Controllers
                 {
                     ProductViewModel currentProduct = new ProductViewModel
                     {
+                        ProductId = product.ProductId,
                         ProductName = product.ProductName,
                         ProductDescription = product.ProductDescription,
                         CategoryId = product.CategoryId,

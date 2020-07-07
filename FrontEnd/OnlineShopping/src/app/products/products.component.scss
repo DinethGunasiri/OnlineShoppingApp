@@ -1,0 +1,11 @@
+p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+  }
+
+  #addToCart {
+      margin: 0 auto;
+      display: flex;
+  }
