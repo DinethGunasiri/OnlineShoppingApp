@@ -11,6 +11,7 @@ import { NotificationService } from '../Services/notification-service.service';
 export class NavBarComponent implements OnInit {
   isLogged: boolean;
   fullName: any;
+  count = 0;
 
   constructor(private cookieService: CookieService,
               private notifyService: NotificationService,
@@ -20,11 +21,20 @@ export class NavBarComponent implements OnInit {
                     this.ngOnInit();
                   }
                 });
+
+                this.dataService.cartCountChange.subscribe(value => {
+                 // console.log(value);
+                  this.count = Number(value);
+
+                  if (this.count != null) {
+                    this.ngOnInit();
+                  }
+                });
               }
 
   ngOnInit(): void {
-    console.log(this.isLogged);
-  //  this.cookieService.deleteAll();
+   // console.log(this.isLogged);
+   // console.log(this.count);
     this.onChekingLoggin();
   }
 
@@ -32,9 +42,21 @@ export class NavBarComponent implements OnInit {
     if (this.cookieService.get('Loged') == 'true') {
       this.isLogged = true;
       this.fullName = this.cookieService.get('fullName');
+      if (this.cookieService.get('count') == null) {
+        this.count = this.count;
+      }
+      else {
+        this.count = Number(this.cookieService.get('count'));
+      }
     }
     else {
       this.isLogged = false;
+      if (this.cookieService.get('count') == null) {
+        this.count = this.count;
+      }
+      else {
+        this.count = Number(this.cookieService.get('count'));
+      }
     }
   }
 

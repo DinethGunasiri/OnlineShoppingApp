@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ProductServiceService } from '../Services/product-service.service';
+import { CookieService } from 'ngx-cookie-service';
+import { DataService } from '../Services/data.service';
 
 
 @Component({
@@ -11,7 +13,9 @@ import { ProductServiceService } from '../Services/product-service.service';
 
 export class ProductsComponent implements OnInit {
 
-  constructor(private productService: ProductServiceService) { }
+  constructor(private productService: ProductServiceService,
+              private cookieService: CookieService,
+              private dataSevice: DataService) { }
 
 
   products: any = [];
@@ -19,7 +23,9 @@ export class ProductsComponent implements OnInit {
   productName: any;
   productDescription: any;
   price: number;
-  i: number;
+  count = 0;
+  cart: any = [];
+
 
   images: any = [
     {url: '../../assets/banana.jpg'},
@@ -39,13 +45,40 @@ export class ProductsComponent implements OnInit {
 
   ngOnInit(): void {
     this.getProducts();
+    
+    // this.cookieService.delete('count');
+    // this.cookieService.delete('cart');
   }
 
   getProducts() {
     this.productService.getProducts().subscribe((data: string []) => {
       this.products = data;
-      console.log(this.products);
-      console.log(this.images[0]);
     });
+  }
+
+  addToCart(id) {
+
+    if (!this.cookieService.get('cart')) {
+      this.cart.push(id);
+    }
+    else {
+      this.cart = [];
+      this.cart.push(this.cookieService.get('cart'));
+      this.cookieService.delete('cart');
+      this.cart.push(id);
+    }
+   
+    this.cookieService.set('cart', this.cart);
+
+    if (!this.cookieService.get('count')) {
+      this.count = this.count + 1;
+    }
+    else {
+      this.count = Number(this.cookieService.get('count')) ;
+      this.count = this.count + 1;
+    }
+
+    this.cookieService.set('count', this.count.toString());
+    this.dataSevice.callNavBar();
   }
 }

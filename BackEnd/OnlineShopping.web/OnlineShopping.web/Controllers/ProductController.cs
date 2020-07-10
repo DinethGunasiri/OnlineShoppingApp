@@ -51,7 +51,7 @@ namespace OnlineShopping.web.Controllers
 
         // Get by ID
 
-        [Route("{id}")]
+        [Route("id/{id}")]
         [HttpGet]
         public async Task<ProductViewModel> GetProductById(int id)
         {
