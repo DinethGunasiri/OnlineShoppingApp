@@ -14,5 +14,6 @@ namespace OnlineShopping.service.Models
         public int Quantity { get; set; }
 
         public double PurchasePrice { get; set; }
+        public int OrderId { get; set; }
     }
 }

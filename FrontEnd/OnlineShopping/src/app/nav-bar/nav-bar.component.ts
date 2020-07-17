@@ -2,6 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { CookieService } from 'ngx-cookie-service';
 import { DataService } from '../Services/data.service';
 import { NotificationService } from '../Services/notification-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav-bar',
@@ -15,7 +16,8 @@ export class NavBarComponent implements OnInit {
 
   constructor(private cookieService: CookieService,
               private notifyService: NotificationService,
-              private dataService: DataService) {
+              private dataService: DataService,
+              private router: Router) {
                 this.dataService.isLoggedChange.subscribe(value => {
                   if (value == true) {
                     this.ngOnInit();
@@ -64,12 +66,20 @@ export class NavBarComponent implements OnInit {
      this.cookieService.delete('Token');
      this.cookieService.delete('fullName');
      this.cookieService.delete('Loged');
+     this.cookieService.delete('Email');
      this.isLogged = false;
-   // this.cookieService.deleteAll();
-    // this.isLogged = false;
      console.log(this.isLogged);
      this.notifyService.showSuccess('Logged out successfully', 'Log out');
-   // this.ngOnInit();
+  }
+
+  clickShoppingCart() {
+    console.log(this.count);
+    if (this.count == 0) { 
+      this.notifyService.showWarning('Shopping cart is empty!', 'Shopping Cart');
+    }
+    else {
+      this.router.navigate(['/cart']);
+    }
   }
 
 }

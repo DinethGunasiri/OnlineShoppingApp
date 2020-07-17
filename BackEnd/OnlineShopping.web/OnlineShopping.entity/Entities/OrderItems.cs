@@ -20,5 +20,12 @@ namespace OnlineShopping.data.Entities
 
         [Required]
         public double PurchasePrice { get; set; }
+
+        public Orders Order { get; set; }
+
+        [Required]
+        public int OrderId { get; set; }
+
+
     }
 }

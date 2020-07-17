@@ -32,8 +32,15 @@ namespace OnlineShopping.web.Controllers
         public async Task<IActionResult> Login([FromBody] UserLoginModel UserLogin)
         {
             Customer login = new Customer();
+
+            byte[] data = System.Text.Encoding.ASCII.GetBytes(UserLogin.Password);
+            data = new System.Security.Cryptography.SHA256Managed().ComputeHash(data);
+            String hash = System.Text.Encoding.ASCII.GetString(data);
+
+            var encriptPassword = hash;
+
             login.Email = UserLogin.Email;
-            login.Password = UserLogin.Password;
+            login.Password = hash;
             IActionResult responce = Unauthorized();
 
             Customer user = await AuthenticateUser(login);

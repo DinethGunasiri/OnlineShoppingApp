@@ -30,8 +30,8 @@ namespace OnlineShopping.data.DataContext
 
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Product> Products { get; set; }
-        public DbSet<OrderItems> OrderItems { get; set; }
         public DbSet<Orders> Orders { get; set; }
+        public DbSet<OrderItems> OrderItems { get; set; }
         public DbSet<ProductCategory> Categories { get; set; }
     }
 }

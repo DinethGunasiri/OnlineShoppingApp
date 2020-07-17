@@ -81,16 +81,12 @@ export class CustomerRegistrationComponent implements OnInit {
     else {
      this.customerService.checkCustomer(this.emailTxt).subscribe((data) => {
       this.notifyService.showError('Email already exsists, please log in', 'Password Error');
-      console.log(this.testEmail);
      }, error => {
-      this.fullAddress = this.addressTxt1 + ', ' + this.streetTxt + ', ' + this.cityTxt + ', ' + this.stateTxt;
-      console.log(this.fullAddress);
+      this.fullAddress = this.addressTxt1 + '@ ' + this.streetTxt + '@ ' + this.cityTxt + '@ ' + this.stateTxt;
       this.fullName = this.fNameTxt + ' ' + this.lNameTxt;
-      console.log(this.fullName);
       this.customerService.postCustomer
         (this.emailTxt, this.fullName, this.birthDate,
           this.genderSelect, this.fullAddress, this.postalCodeTxt, this.telephoneTxt, this.passwordTxt).subscribe((data) => {
-          console.log(data);
         });
       this.router.navigate(['products']);
       this.notifyService.showSuccess('Successfully registered, please log in', 'Registration successful');
@@ -98,17 +94,3 @@ export class CustomerRegistrationComponent implements OnInit {
     }
   }
 }
-
-/*
-  this.fullAddress = this.addressTxt1 + ', ' + this.streetTxt + ', ' + this.cityTxt + ', ' + this.stateTxt;
-        console.log(this.fullAddress);
-        this.fullName = this.fNameTxt + ' ' + this.lNameTxt;
-        console.log(this.fullName);
-        this.customerService.postCustomer
-        (this.emailTxt, this.fullName, this.birthDate,
-          this.genderSelect, this.fullAddress, this.postalCodeTxt, this.telephoneTxt, this.passwordTxt).subscribe((data) => {
-          console.log(data);
-        });
-        this.router.navigate(['products']);
-        this.notifyService.showSuccess('Successfully registered, please log in', 'Registration successful');
-        */

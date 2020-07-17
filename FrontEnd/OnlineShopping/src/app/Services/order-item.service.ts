@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class OrderItemServiceService {
 
-  private productItemuri = 'http://localhost:44371/api/items';
+  private productItemuri = 'https://localhost:44371/api/items';
 
   constructor(private http: HttpClient) { }
 
@@ -18,12 +18,14 @@ export class OrderItemServiceService {
     return this.http.get(`${this.productItemuri}/${id}`);
   }
 
-  postOrderItem(productId, quantity, purchasePrice) {
+  postOrderItem(productId, quantity, purchasePrice, orderId) {
     const item = {
       ProductId: productId,
       Quantity: quantity,
-      PurchasePrice: purchasePrice
+      PurchasePrice: purchasePrice,
+      OrderId: orderId
     };
+    console.log(item);
     return this.http.post(`${this.productItemuri}`, item);
   }
 

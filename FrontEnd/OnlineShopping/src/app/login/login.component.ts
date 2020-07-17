@@ -38,12 +38,8 @@ export class LoginComponent implements OnInit {
 
   emailTxt: any;
   passwordTxt: any;
-  dbEmail: any;
-  dbPassword: any;
-  passwordEncript: any;
   token: any = [];
   customerDetails: any;
-  customerDetails2: any = [];
   isLoged: any = 'false';
   customers: any = [];
 
@@ -60,36 +56,9 @@ export class LoginComponent implements OnInit {
   }
 
   onLogin(form: NgForm) {
- //   this. status = this.onGetCustomer(this.emailTxt, this.passwordTxt);
     this.onSetToken(this.emailTxt, this.passwordTxt);
   }
 
- /* onGetCustomer(email: any, password: any) {
-      this.customerSrvice.getCustomer(email).subscribe((data) => {
-        this.customerDetails = data;
-        console.log(this.customerDetails);
-        this.dbEmail = this.customerDetails.email;
-        this.dbPassword = this.customerDetails.password;
-
-        if (password == this.dbPassword && email == this.dbEmail)
-            {
-              this.isLoged = 'true';
-              this.cookieService.set('Loged', this.isLoged);
-              this.cookieService.set('fullName', this.customerDetails.fullName);
-              this.router.navigate(['products']);
-              this.notifyService.showSuccess(`Welcome ${this.customerDetails.fullName}`, 'Login Successfull');
-              this.dataService.callNavBar();
-            }
-            else {
-              this.notifyService.showError(`Invalid user name or password`, 'Login Error');
-            }
-    }, error => {
-      console.log(error);
-      this.notifyService.showError(`Invalid user name or password`, 'Login Error');
-    });
-      console.log('test');
-    // this.onCheckCustomer(this.customerDetails);
-  } */
 
   onSetToken(email: any, password: any) {
     this.loginService.loginCustomer(email, password).subscribe((data: []) => {
@@ -99,19 +68,14 @@ export class LoginComponent implements OnInit {
         if (this.token.token.result != null) {
 
           this.customerSrvice.getCustomer(email).subscribe((data2: []) => {
-            this.customerDetails = data;
-
+            this.customerDetails = data2;
             this.isLoged = 'true';
             this.cookieService.set('Loged', this.isLoged);
             this.cookieService.set('fullName', this.customerDetails.fullName);
+            this.cookieService.set('Email', email);
             this.router.navigate(['products']);
             this.notifyService.showSuccess(`Welcome ${this.customerDetails.fullName}`, 'Login Successfull');
             this.dataService.callNavBar();
-          });
-
-          this.customerSrvice.getCustomers().subscribe((data2: []) => {
-            this.customerDetails2 = data2;
-            console.log(this.customerDetails2);
           });
         }
       }, error => {

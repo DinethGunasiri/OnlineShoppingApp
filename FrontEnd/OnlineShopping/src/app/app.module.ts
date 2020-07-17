@@ -32,6 +32,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatTableModule} from '@angular/material/table';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatGridListModule,
     MatStepperModule,
     MatTableModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatDividerModule
   ],
   providers: [
     {

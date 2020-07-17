@@ -38,7 +38,6 @@ namespace OnlineShopping.service.Controllers
                         OrderId = order.OrderId,
                         CustomerId = order.CustomerId,
                         OrderDate = order.OrderDate,
-                        OrderItemsId = order.OrderItemsId,
                         ShippingAddress = order.ShippingAddress
                     };
                     orderList.Add(currentOrder);
@@ -58,7 +57,6 @@ namespace OnlineShopping.service.Controllers
                 OrderId = order.OrderId,
                 CustomerId = order.CustomerId,
                 OrderDate = order.OrderDate,
-                OrderItemsId = order.OrderItemsId,
                 ShippingAddress = order.ShippingAddress
             };
             return currentOrder;

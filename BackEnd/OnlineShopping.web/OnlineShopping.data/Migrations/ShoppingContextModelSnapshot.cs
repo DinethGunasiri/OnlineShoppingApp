@@ -52,8 +52,10 @@ namespace OnlineShopping.data.Migrations
                         .HasColumnType("nvarchar(15)")
                         .HasMaxLength(15);
 
-                    b.Property<int>("ZipCode")
-                        .HasColumnType("int");
+                    b.Property<string>("ZipCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(6)")
+                        .HasMaxLength(6);
 
                     b.HasKey("Email");
 
@@ -97,9 +99,6 @@ namespace OnlineShopping.data.Migrations
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("OrderItemsId")
-                        .HasColumnType("int");
-
                     b.Property<string>("ShippingAddress")
                         .IsRequired()
                         .HasColumnType("nvarchar(200)")
@@ -108,8 +107,6 @@ namespace OnlineShopping.data.Migrations
                     b.HasKey("OrderId");
 
                     b.HasIndex("CustomerId");
-
-                    b.HasIndex("OrderItemsId");
 
                     b.ToTable("Orders");
                 });
@@ -175,12 +172,6 @@ namespace OnlineShopping.data.Migrations
                     b.HasOne("OnlineShopping.data.Entities.Customer", "Customer")
                         .WithMany()
                         .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("OnlineShopping.data.Entities.OrderItems", "OrderItems")
-                        .WithMany()
-                        .HasForeignKey("OrderItemsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

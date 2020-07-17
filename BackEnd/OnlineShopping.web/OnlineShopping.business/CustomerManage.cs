@@ -44,7 +44,21 @@ namespace OnlineShopping.business.CustomerLogic
         // Create Customer
         public async Task<Customer> CreateCustomer(Customer customer)
         {
-             var result = await _custDataAccess.AddCustomer(customer).ConfigureAwait(false);
+            if (customer != null)
+            {
+                var password = customer.Password;
+                byte[] data = System.Text.Encoding.ASCII.GetBytes(password);
+                data = new System.Security.Cryptography.SHA256Managed().ComputeHash(data);
+                String hash = System.Text.Encoding.ASCII.GetString(data);
+
+                System.Diagnostics.Debug.WriteLine(hash);
+
+                customer.Password = hash;
+            }
+
+
+
+            var result = await _custDataAccess.AddCustomer(customer).ConfigureAwait(false);
 
             return result;
                        

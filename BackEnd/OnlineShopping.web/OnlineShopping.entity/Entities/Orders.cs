@@ -21,10 +21,5 @@ namespace OnlineShopping.data.Entities
 
         [Required]
         public string CustomerId { get; set; }
-
-        public OrderItems OrderItems { get; set; }
-
-        [Required]
-        public int OrderItemsId { get; set; }
     }
 }

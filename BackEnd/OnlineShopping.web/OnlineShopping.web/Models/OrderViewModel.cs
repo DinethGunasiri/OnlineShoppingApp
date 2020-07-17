@@ -14,7 +14,5 @@ namespace OnlineShopping.service.Models
         public string ShippingAddress { get; set; }
 
         public string CustomerId { get; set; }
-
-        public int OrderItemsId { get; set; }
     }
 }

@@ -1,36 +1,188 @@
-<div>
-  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
-      <ng-container matColumnDef="productName">
-        <th mat-header-cell *matHeaderCellDef class="mat-colo-right"> Product Name </th>
-        <td mat-cell *matCellDef="let element" class="mat-colo-right"> {{element.productName}} </td>
-        <td mat-footer-cell *matFooterCellDef>  </td>
-      </ng-container>
+
+
+<mat-horizontal-stepper #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+      <ng-template matStepLabel>Your Items</ng-template>
       
-      <ng-container matColumnDef="currentPrice">
-        <th mat-header-cell *matHeaderCellDef class="mat-colo-right"> Product Price </th>
-        <td mat-cell *matCellDef="let element" class="mat-colo-right"> {{element.currentPrice}} </td>
-        <td mat-footer-cell *matFooterCellDef></td>
-      </ng-container>
+      <div>
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      
+            <ng-container matColumnDef="productName">
+              <th mat-header-cell *matHeaderCellDef class="mat-colo-right"> Product Name </th>
+              <td mat-cell *matCellDef="let element" class="mat-colo-right"> {{element.productName}} </td>
+              <td mat-footer-cell *matFooterCellDef>  </td>
+            </ng-container>
+            
+            <ng-container matColumnDef="currentPrice">
+              <th mat-header-cell *matHeaderCellDef class="mat-colo-right"> Product Price </th>
+              <td mat-cell *matCellDef="let element" class="mat-colo-right"> {{element.currentPrice}} </td>
+              <td mat-footer-cell *matFooterCellDef></td>
+            </ng-container>
+      
+            <ng-container matColumnDef="quantity">
+              <th mat-header-cell *matHeaderCellDef class="mat-colo-right"> Quantity </th>
+              <td mat-cell *matCellDef="let element; let i = index" class="mat-colo-right"><input type="number" min="-1" max="10" id="quantity" (click)="getQuantity($event, element.currentPrice, i)" (keydown)="false" value="1"></td>
+              <td mat-footer-cell *matFooterCellDef class="mat-colo-right">Total</td>
+            </ng-container>
+      
+            <ng-container matColumnDef="totalPrice">
+              <th mat-header-cell *matHeaderCellDef class="mat-colo-right"> Total Price </th>
+                <td mat-cell *matCellDef="let element ; let i = index"  class="mat-colo-right">
+                  <div>
+                    {{priceArray[i]}}
+                  </div>
+                </td>
+                <td mat-footer-cell *matFooterCellDef class="mat-colo-right"> {{total | currency}} </td>
+            </ng-container>
+          
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
+        </table>
+      </div>
 
-      <ng-container matColumnDef="quantity">
-        <th mat-header-cell *matHeaderCellDef class="mat-colo-right"> Quantity </th>
-        <td mat-cell *matCellDef="let element; let i = index" class="mat-colo-right"><input type="number" min="-1" max="10" id="quantity" (click)="getQuantity($event, element.currentPrice, i)" (keydown)="false" value="1"></td>
-        <td mat-footer-cell *matFooterCellDef class="mat-colo-right">Total</td>
-      </ng-container>
 
-      <ng-container matColumnDef="totalPrice">
-        <th mat-header-cell *matHeaderCellDef class="mat-colo-right"> Total Price </th>
-          <td mat-cell *matCellDef="let element ; let i = index"  class="mat-colo-right">
-            <div>
-              {{priceArray[i]}}
-            </div>
-          </td>
-          <td mat-footer-cell *matFooterCellDef class="mat-colo-right"> {{total | currency}} </td>
-      </ng-container>
+      <div>
+        <button class="chkBtnGroup" mat-raised-button color="primary" (click)="clickCheckOut()" matStepperNext>Check Out</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Check Out</ng-template>
+          <table>
+            <td>
+            <mat-card>
+                <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+                
+                  <ng-container matColumnDef="productName">
+                    <th mat-header-cell *matHeaderCellDef class="mat-colo-right"> Product Name </th>
+                    <td mat-cell *matCellDef="let element" class="mat-colo-right"> {{element.productName}} </td>
+                    <td mat-footer-cell *matFooterCellDef>  </td>
+                  </ng-container>
+                  
+                  <ng-container matColumnDef="currentPrice">
+                    <th mat-header-cell *matHeaderCellDef class="mat-colo-right"> Product Price </th>
+                    <td mat-cell *matCellDef="let element" class="mat-colo-right"> {{element.currentPrice}} </td>
+                    <td mat-footer-cell *matFooterCellDef></td>
+                  </ng-container>
+            
+                  <ng-container matColumnDef="quantity">
+                    <th mat-header-cell *matHeaderCellDef class="mat-colo-right"> Quantity </th>
+                    <td mat-cell *matCellDef="let element; let i = index" class="mat-colo-right"><input type="number" id="quantity" readonly (keydown)="false" value="{{checkOutQuantity[i]}}"></td>
+                    <td mat-footer-cell *matFooterCellDef class="mat-colo-right">Total</td>
+                  </ng-container>
+            
+                  <ng-container matColumnDef="totalPrice">
+                    <th mat-header-cell *matHeaderCellDef class="mat-colo-right"> Total Price </th>
+                      <td mat-cell *matCellDef="let element ; let i = index"  class="mat-colo-right">
+                        <div>
+                          {{priceArray[i]}}
+                        </div>
+                      </td>
+                      <td mat-footer-cell *matFooterCellDef class="mat-colo-right"> {{total | currency}} </td>
+                  </ng-container>
+                
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
+              </table>
+            </mat-card>
+           </td>
+           <!-- User Form  -->
+           <td style="width: 35%">
+            <mat-card> 
+              <form class="example-form" [formGroup] = "shippingForm">
+                <mat-form-field class="example-full-width">
+                  <input matInput disabled value="Shipping Details">
+                </mat-form-field>
+              
+                <table class="example-full-width" cellspacing="0"><tr>
+                  <td><mat-form-field class="example-full-width">
+                    <mat-label>First name</mat-label>
+                    <input matInput
+                     formControlName="fName" #fname
+                    >
+                  </mat-form-field></td>
+                  <td><mat-form-field class="example-full-width">
+                    <mat-label>Last Name</mat-label>
+                    <input matInput
+                    formControlName="lName" #lName
+                    >
+                  </mat-form-field></td>
+                </tr></table>
+              
+                <p>
+                  <mat-form-field class="example-full-width">
+                    <mat-label>Address</mat-label>
+                    <textarea matInput placeholder="Ex. 100 Main St"
+                    formControlName="address" #address
+                    ></textarea>
+                  </mat-form-field>
+                  <mat-form-field class="example-full-width">
+                    <mat-label>Street</mat-label>
+                    <textarea matInput
+                    formControlName="street" #street
+                    ></textarea>
+                  </mat-form-field>
+                </p>
+              
+                <table class="example-full-width" cellspacing="0"><tr>
+                  <td><mat-form-field class="example-full-width">
+                    <mat-label>City</mat-label>
+                    <input matInput placeholder="Ex. San Francisco"
+                    formControlName="city" #city
+                    >
+                  </mat-form-field></td>
+                  <td><mat-form-field class="example-full-width">
+                    <mat-label>State</mat-label>
+                    <input matInput placeholder="Ex. California"
+                    formControlName="state" #state
+                    >
+                  </mat-form-field></td>
+                  <td><mat-form-field class="example-full-width">
+                    <mat-label>Postal Code</mat-label>
+                    <input matInput #postalCode maxlength="5" placeholder="Ex. 94105"
+                    formControlName="postalCode" #postalCode
+                    >
+                    <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+                  </mat-form-field></td>
+                </tr></table>
+              </form> 
+              </mat-card>
+           </td>
+          </table>
+      
+          <mat-divider></mat-divider>
+      <div class="chkBtnGroup">     
+        <button mat-raised-button color="primary" matStepperPrevious>Back</button>
+        <button class="chkCompleteBtn" mat-raised-button color="primary" matStepperNext [disabled]="shippingForm.invalid || orderComplete" (click)="clickComplete()">Complete</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
     
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-    <tr mat-footer-row *matFooterRowDef="displayedColumns"></tr>
-  </table>
-</div>
+    <mat-card class="example-card2">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title class="orderTitle">ORDER COMPLETE</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          Dear Customer,<br>
+          Your order has been recorded. We will send your order within 
+           2 to 3 days.<br>
+          Thank you,<br>
+          Customer Team.
+        </p>
+      </mat-card-content>
+    </mat-card>
+
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>

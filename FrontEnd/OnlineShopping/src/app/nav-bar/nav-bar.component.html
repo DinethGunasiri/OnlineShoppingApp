@@ -12,7 +12,7 @@
     </div>
     
     <div>
-        <mat-icon routerLink="/cart" id="shoppingCrt" matBadge="{{count}}" matBadgeColor="warn">shopping_cart</mat-icon>
+        <label (click)="clickShoppingCart()"><mat-icon id="shoppingCrt" matBadge="{{count}}"  matBadgeColor="warn">shopping_cart</mat-icon></label>
         <mat-form-field class="form-field" id="searchBox">
             <mat-label>Search</mat-label>
             <input matInput type="text" >

@@ -59,7 +59,8 @@ namespace OnlineShopping.service.Controllers
                 ItemId = orderItem.ItemId,
                 ProductId = orderItem.ProductId,
                 PurchasePrice = orderItem.PurchasePrice,
-                Quantity = orderItem.Quantity
+                Quantity = orderItem.Quantity,
+                OrderId = orderItem.OrderId
             };
 
             return currentItems;
