@@ -6,8 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ProductServiceService {
 
-  private producturi = 'https://localhost:44371/api/product';
-
+ // private producturi = 'https://localhost:44371/api/product';
+ private producturi = 'https://localhost:44355/api/product';
   constructor(private http: HttpClient) { }
 
   getProducts() {
@@ -15,11 +15,11 @@ export class ProductServiceService {
   }
 
   getProductById(id) {
-    return this.http.get(`${this.producturi}/id/${id}`);
+    return this.http.get(`${this.producturi}/${id}`);
   }
 
   getProductByName(name) {
-    return this.http.get(`${this.producturi}/${name}`);
+    return this.http.get(`${this.producturi}/name/${name}`);
   }
 
   postProduct(productName, productDescription, currentPrice, category) {

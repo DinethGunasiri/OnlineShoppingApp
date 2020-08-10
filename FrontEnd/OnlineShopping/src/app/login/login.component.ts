@@ -63,18 +63,20 @@ export class LoginComponent implements OnInit {
   onSetToken(email: any, password: any) {
     this.loginService.loginCustomer(email, password).subscribe((data: []) => {
         this.token = data;
-        this.cookieService.set('Token', this.token.token.result);
+       // this.cookieService.set('Token', this.token.token.result);
+        this.cookieService.set('Token', this.token.token);
 
-        if (this.token.token.result != null) {
+        if (this.token.token != null) {
 
           this.customerSrvice.getCustomer(email).subscribe((data2: []) => {
             this.customerDetails = data2;
+            console.log(this.customerDetails);
             this.isLoged = 'true';
             this.cookieService.set('Loged', this.isLoged);
-            this.cookieService.set('fullName', this.customerDetails.fullName);
+            this.cookieService.set('fullName', this.customerDetails.fName + ' ' + this.customerDetails.lName);
             this.cookieService.set('Email', email);
             this.router.navigate(['products']);
-            this.notifyService.showSuccess(`Welcome ${this.customerDetails.fullName}`, 'Login Successfull');
+            this.notifyService.showSuccess(`Welcome ${this.customerDetails.fName}`, 'Login Successfull');
             this.dataService.callNavBar();
           });
         }

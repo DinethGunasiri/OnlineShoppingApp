@@ -1,0 +1,54 @@
+<mat-accordion>
+    <mat-expansion-panel hideToggle>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Order History of {{customerName}}
+        </mat-panel-title>
+        <mat-panel-description>
+          Paymnet History
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <p>These are the orders you have done using our web site.</p>
+    </mat-expansion-panel>
+    <mat-expansion-panel id="panel" 
+                         *ngFor="let order of ordres; let i"
+                         (opened)="panelOpenState = true"
+                         (opened) = "getOrderItems(order.orderId)"
+                         (closed)="panelOpenState = false"
+                         >
+      <mat-expansion-panel-header>
+        <mat-panel-description>
+         Order id :- {{order.orderId}}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <table mat-table [dataSource] = "dataSource" [dataSource] = "dataSource2" class="mat-elevation-z8">
+         <ng-container matColumnDef="productname" >
+            <th mat-header-cell *matHeaderCellDef> Product Name </th>
+            <td mat-cell *matCellDef="let element; let i = index"> {{products[i]}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="quantity">
+            <th mat-header-cell *matHeaderCellDef> Quantity </th>
+            <td mat-cell *matCellDef="let element"> {{element.quantity}} </td>
+          </ng-container>
+
+          <ng-container matColumnDef="price">
+            <th mat-header-cell *matHeaderCellDef> Unit Price </th>
+            <td mat-cell *matCellDef="let element"> {{element.purchasePrice}} </td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+      <div>
+        <label>Shipping Address</label>
+        <p>{{order.shippingAddress}}</p>
+        <label>Order Date</label>
+        <p>{{order.orderDate}}</p>
+        <label>Payment Type</label>
+        <p>{{order.paymentType}}</p>
+        <span>Bill Amount</span>
+        <p>{{order.totalPrice | currency}}</p>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>

@@ -5,8 +5,9 @@
         <table>
             <tr>
                 <td>
-                    
+                    <span class="discountBt" *ngIf="product.discount != 0" matBadge="{{product.discount}}% Free" matBadgeColor="accent"></span>
                     <img src="{{images[i].url}}" alt="" height=200 width=200>
+                    
                 </td>
             </tr>
             <tr>
@@ -14,9 +15,16 @@
                     <input hidden value="{{product.productId}}">
                     {{product.productName}}
                 </td>
-            <tr>
-                <td>Rs. 
+           
+            <tr *ngIf="product.discount != 0">
+                <td  class="strikethrough">Rs. 
                     {{product.currentPrice}} /=
+                </td>
+                
+            </tr>
+             <tr>
+                <td>Rs.
+                    {{product.currentPrice - ((product.currentPrice * product.discount)/100)}}
                 </td>
             </tr>
             <tr>

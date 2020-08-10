@@ -68,7 +68,6 @@ export class NavBarComponent implements OnInit {
      this.cookieService.delete('Loged');
      this.cookieService.delete('Email');
      this.isLogged = false;
-     console.log(this.isLogged);
      this.notifyService.showSuccess('Logged out successfully', 'Log out');
   }
 

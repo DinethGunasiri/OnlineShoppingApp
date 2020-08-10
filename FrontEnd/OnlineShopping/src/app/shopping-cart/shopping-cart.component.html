@@ -17,13 +17,13 @@
             
             <ng-container matColumnDef="currentPrice">
               <th mat-header-cell *matHeaderCellDef class="mat-colo-right"> Product Price </th>
-              <td mat-cell *matCellDef="let element" class="mat-colo-right"> {{element.currentPrice}} </td>
+              <td mat-cell *matCellDef="let element" class="mat-colo-right"> {{element.currentPrice - ((element.currentPrice * element.discount)/100)}} </td>
               <td mat-footer-cell *matFooterCellDef></td>
             </ng-container>
       
             <ng-container matColumnDef="quantity">
               <th mat-header-cell *matHeaderCellDef class="mat-colo-right"> Quantity </th>
-              <td mat-cell *matCellDef="let element; let i = index" class="mat-colo-right"><input type="number" min="-1" max="10" id="quantity" (click)="getQuantity($event, element.currentPrice, i)" (keydown)="false" value="1"></td>
+              <td mat-cell *matCellDef="let element; let i = index" class="mat-colo-right"><input type="number" min="-1" max="10" id="quantity" (click)="getQuantity($event, element.currentPrice, i, element.discount)" (keydown)="false" value="1"></td>
               <td mat-footer-cell *matFooterCellDef class="mat-colo-right">Total</td>
             </ng-container>
       
@@ -35,6 +35,14 @@
                   </div>
                 </td>
                 <td mat-footer-cell *matFooterCellDef class="mat-colo-right"> {{total | currency}} </td>
+            </ng-container>
+
+            <ng-container matColumnDef="action">
+              <th mat-header-cell *matHeaderCellDef class="mat-colo-right"></th>
+              <td mat-cell *matCellDef="let element; let i = index" class="mat-colo-right"><button mat-mini-fab color="primary" (click)="clickRemoveButton($event, element.currentPrice, i, element.discount)">
+                <mat-icon>delete</mat-icon>
+              </button></td>
+              <td mat-footer-cell *matFooterCellDef></td>
             </ng-container>
           
           <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -65,7 +73,7 @@
                   
                   <ng-container matColumnDef="currentPrice">
                     <th mat-header-cell *matHeaderCellDef class="mat-colo-right"> Product Price </th>
-                    <td mat-cell *matCellDef="let element" class="mat-colo-right"> {{element.currentPrice}} </td>
+                    <td mat-cell *matCellDef="let element" class="mat-colo-right"> {{element.currentPrice - ((element.currentPrice * element.discount)/100)}} </td>
                     <td mat-footer-cell *matFooterCellDef></td>
                   </ng-container>
             
@@ -83,6 +91,12 @@
                         </div>
                       </td>
                       <td mat-footer-cell *matFooterCellDef class="mat-colo-right"> {{total | currency}} </td>
+                  </ng-container>
+
+                  <ng-container matColumnDef="action">
+                    <th mat-header-cell *matHeaderCellDef class="mat-colo-right"></th>
+                    <td mat-cell *matCellDef="let element" class="mat-colo-right"></td>
+                    <td mat-footer-cell *matFooterCellDef></td>
                   </ng-container>
                 
                 <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -130,19 +144,19 @@
                 </p>
               
                 <table class="example-full-width" cellspacing="0"><tr>
-                  <td><mat-form-field class="example-full-width">
+                  <td><mat-form-field class="example-full-width2">
                     <mat-label>City</mat-label>
                     <input matInput placeholder="Ex. San Francisco"
                     formControlName="city" #city
                     >
                   </mat-form-field></td>
-                  <td><mat-form-field class="example-full-width">
+                  <td><mat-form-field class="example-full-width2">
                     <mat-label>State</mat-label>
                     <input matInput placeholder="Ex. California"
                     formControlName="state" #state
                     >
                   </mat-form-field></td>
-                  <td><mat-form-field class="example-full-width">
+                  <td><mat-form-field class="example-full-width2">
                     <mat-label>Postal Code</mat-label>
                     <input matInput #postalCode maxlength="5" placeholder="Ex. 94105"
                     formControlName="postalCode" #postalCode
@@ -150,6 +164,56 @@
                     <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
                   </mat-form-field></td>
                 </tr></table>
+
+                <mat-form-field class="example-full-width">
+                  <input matInput disabled value="Payment Details">
+                </mat-form-field>
+                
+                <table>
+                  <tr>
+                    <td>
+                      <span (click)="setPaymentMathod('Visa')">
+                        <img id="paymentMethods" src="../../assets/visa.png">
+                      </span>
+                    </td>
+                    <td>
+                      <span (click)="setPaymentMathod('Mastercard')"><img id="paymentMethods2" src="../../assets/master.png"></span>
+                    </td>
+                    <td>
+                      <span (click)="setPaymentMathod('Amex')"><img id="paymentMethods" src="../../assets/amex.png"></span>
+                    </td>
+                  </tr>                 
+                </table>      
+                <table>                 
+                  <tr>
+                    <td>
+                      <mat-form-field class="methodName">
+                        <mat-label>Payment Type</mat-label>
+                        <input formControlName="paymentMethod" readonly type="text" matInput [(ngModel)]="paymentMethod">
+                      </mat-form-field>
+                    </td>
+                    <td>
+                      <mat-form-field class="cardNumber">
+                        <mat-label>Card Number</mat-label>
+                        <input formControlName="cardNumber" type="tel" maxlength="16" matInput placeholder="5555 5555 5555 5555">
+                      </mat-form-field>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <mat-form-field class="example-full-width">
+                        <mat-label>Expire Date</mat-label>
+                        <input formControlName="expireDate" type="tel" maxlength="7" matInput placeholder="MM/YYYY (10/2024)">
+                      </mat-form-field>
+                    </td>
+                    <td>
+                      <mat-form-field class="example-full-width">
+                        <mat-label>CVN</mat-label>
+                        <input formControlName="cvn" type="tel" maxlength="3" matInput placeholder="">
+                      </mat-form-field>
+                    </td>
+                  </tr>
+                </table>
               </form> 
               </mat-card>
            </td>
@@ -158,7 +222,7 @@
           <mat-divider></mat-divider>
       <div class="chkBtnGroup">     
         <button mat-raised-button color="primary" matStepperPrevious>Back</button>
-        <button class="chkCompleteBtn" mat-raised-button color="primary" matStepperNext [disabled]="shippingForm.invalid || orderComplete" (click)="clickComplete()">Complete</button>
+        <button class="chkCompleteBtn" mat-raised-button color="primary" matStepperNext [disabled]="shippingForm.invalid || orderComplete || !methodType" (click)="clickComplete()">Complete</button>
       </div>
     </form>
   </mat-step>

@@ -9,6 +9,7 @@
         <button mat-menu-item>Cat 2</button>
         </mat-menu>
         <button id="homeBtn" mat-button>Contact Us</button>
+        <button id="homeBtn" *ngIf="isLogged" routerLink="/myorders" mat-button>My Orders</button>
     </div>
     
     <div>

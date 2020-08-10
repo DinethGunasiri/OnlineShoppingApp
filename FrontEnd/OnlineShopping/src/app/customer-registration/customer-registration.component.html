@@ -2,7 +2,7 @@
     <mat-card>
         <mat-card-title >Customer Registration</mat-card-title>
         <div>
-            <form class="example-form" #ngForm="ngForm" (ngSubmit)="onClickSave(ngForm)">
+           <!-- <form class="example-form" #ngForm="ngForm" (ngSubmit)="onClickSave(ngForm)">
                 <mat-form-field class="example-full-width">
                   <input matInput disabled value="Personal Details">
                   <mat-icon matSuffix>account_circle</mat-icon>
@@ -226,6 +226,175 @@
                     <table class="btnTable">
                         <tr>
                             <td>
+                                <button type="submit" mat-raised-button [disabled]="ngForm.pristine" color="primary">Submit</button>
+                            </td>
+                            <td>
+                                <button type="reset" mat-raised-button color="accent">Clear</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+               
+              </form> -->
+
+
+
+
+
+              <form class="example-form" [formGroup] ="createForm" (ngSubmit)="onClickSave()">
+                <mat-form-field class="example-full-width">
+                  <input matInput disabled value="Personal Details">
+                  <mat-icon matSuffix>account_circle</mat-icon>
+                </mat-form-field>
+              
+                <table class="example-full-width" id="namesDiv" cellspacing="0">
+                <tr>
+                  <td>
+                      <mat-form-field class="example-full-width">
+                         <mat-label>First name</mat-label>
+                        <input matInput
+                        formControlName = "fNameTxt">
+                     <mat-icon matSuffix>mode_edit</mat-icon>
+                  </mat-form-field></td>
+                  <td>
+                      <mat-form-field class="example-full-width">
+                        <mat-label>Last Name</mat-label>
+                        <input matInput
+                        formControlName ="lNameTxt">
+                          <mat-icon matSuffix>mode_edit</mat-icon>
+                    </mat-form-field>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field appearance="fill" class="example-full-width">
+                            <mat-label>Select Gender</mat-label>
+                            <mat-select 
+                            formControlName="genderSelect"
+                            required>
+                              <mat-option *ngFor="let gender of genders" [value]="gender.value">
+                                {{gender.viewValue}}
+                              </mat-option>
+                            </mat-select>
+                            <mat-icon matSuffix>wc</mat-icon>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field appearance="fill" class="example-full-width">
+                            <mat-label>Choose a date</mat-label>
+                            <input matInput required [matDatepicker]="picker"
+                            name="birthDate"
+                            formControlName = "birthDate">
+                            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                            <mat-datepicker #picker></mat-datepicker>
+                          </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width" id="email">
+                            <mat-label>Email Address</mat-label>
+                             <input matInput 
+                                    required
+                                   placeholder="Ex. pat@example.com"
+                                   name="emailTxt"
+                                   formControlName = "emailTxt">
+                            <mat-hint></mat-hint>
+                            <mat-icon matSuffix>email</mat-icon>
+                          </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <mat-label>Telephone</mat-label>
+                            <span matPrefix>+ &nbsp;</span>
+                            <input type="tel" 
+                            matInput 
+                            required
+                            placeholder="555-555-1234"
+                            name="telephoneTxt"
+                            formControlName = "telephoneTxt">
+                            <mat-icon matSuffix>local_phone</mat-icon>
+                          </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput 
+                            required 
+                            type="password" 
+                            placeholder="Password"
+                            name="passwordTxt"
+                            formControlName = "passwordTxt">
+                            <mat-icon matSuffix>vpn_key</mat-icon>
+                        </mat-form-field>
+                    </td>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput required 
+                            type="password" 
+                            placeholder="Confirm Password"
+                            name="conPasswordTxt"
+                            formControlName = "conPasswordTxt">
+                            <mat-icon matSuffix>vpn_key</mat-icon>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                </table>
+
+                <mat-form-field class="example-full-width">
+                    <input matInput disabled 
+                    value="Shipping Details">
+                    <mat-icon matSuffix>local_shipping</mat-icon>
+                </mat-form-field>
+              
+                <p>
+                  <mat-form-field class="example-full-width">
+                    <mat-label>Address</mat-label>
+                    <textarea matInput required placeholder="Ex. 100 Main St"
+                    name="addressTxt1"
+                    formControlName = "addressTxt1"></textarea>
+                    <mat-icon matSuffix>mode_edit</mat-icon>
+                  </mat-form-field>
+                  <mat-form-field class="example-full-width">
+                    <mat-label>Street name</mat-label>
+                    <textarea matInput required
+                    name="stretTxt"
+                    formControlName = "streetTxt">
+                  </textarea>
+                    <mat-icon matSuffix>mode_edit</mat-icon>
+                  </mat-form-field>
+                </p>
+              
+                <table class="example-full-width" cellspacing="0"><tr>
+                  <td><mat-form-field class="example-full-width">
+                    <mat-label>City</mat-label>
+                    <input matInput required placeholder="Ex. San Francisco"
+                    name="cityTxt"
+                    formControlName = "cityTxt">
+                    <mat-icon matSuffix>mode_edit</mat-icon>
+                  </mat-form-field></td>
+                  <td><mat-form-field class="example-full-width">
+                    <mat-label>State/Province</mat-label>
+                    <input matInput required placeholder="Ex. California"
+                    name="stateTxt"
+                    formControlName = "stateTxt">
+                    <mat-icon matSuffix>mode_edit</mat-icon>
+                  </mat-form-field></td>
+                  <td><mat-form-field class="example-full-width">
+                    <mat-label>Postal Code</mat-label>
+                    <input matInput required #postalCode maxlength="5" 
+                    placeholder="Ex. 94105"
+                    name="postalCodeTxt"
+                    formControlName = "postalCodeTxt">                   
+                    <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
+                    <mat-icon matSuffix>mode_edit</mat-icon>
+                  </mat-form-field></td>
+                </tr></table>
+                <div >
+                    <table class="btnTable">
+                        <tr>
+                            <td>
                                 <button type="submit" mat-raised-button [disabled]="" color="primary">Submit</button>
                             </td>
                             <td>
@@ -236,6 +405,17 @@
                 </div>
                
               </form>
+
+
+
+
+
+
+
+
+
+
+
         </div>
     </mat-card>
 </div>

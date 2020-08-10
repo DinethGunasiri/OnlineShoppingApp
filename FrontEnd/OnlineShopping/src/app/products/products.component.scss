@@ -9,3 +9,20 @@ p {
       margin: 0 auto;
       display: flex;
   }
+
+  .strikethrough {
+    text-decoration: line-through;
+}
+
+.mat-badge-content {
+    width: auto;
+    display: grid;
+    min-width: 32px;
+    min-height: 28px;
+    text-align: center;
+    align-items: center;
+    padding: 5px 3px;
+    top: -20px;
+    right: -22px;
+    font-size: 15px;
+}

@@ -33,6 +33,9 @@ import {MatStepperModule} from '@angular/material/stepper';
 import {MatTableModule} from '@angular/material/table';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDividerModule} from '@angular/material/divider';
+import {OrderHistoryComponent} from '../app/order-history/order-history.component';
+import {MatRadioModule} from '@angular/material/radio';
+
 
 @NgModule({
   declarations: [
@@ -41,7 +44,8 @@ import {MatDividerModule} from '@angular/material/divider';
     CustomerRegistrationComponent,
     ProductsComponent,
     NavBarComponent,
-    ShoppingCartComponent
+    ShoppingCartComponent,
+    OrderHistoryComponent
   ],
   imports: [
     BrowserModule,
@@ -70,7 +74,8 @@ import {MatDividerModule} from '@angular/material/divider';
     MatStepperModule,
     MatTableModule,
     MatExpansionModule,
-    MatDividerModule
+    MatDividerModule,
+    MatRadioModule
   ],
   providers: [
     {

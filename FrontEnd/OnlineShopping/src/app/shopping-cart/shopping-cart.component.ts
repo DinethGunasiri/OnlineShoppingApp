@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 import { CustomerServiceService } from '../Services/customer-service.service';
 import { OrderItemServiceService } from '../Services/order-item.service';
 import { OrderService } from '../Services/order.service';
+import { NotificationService } from '../Services/notification-service.service';
 
 @Component({
   selector: 'app-shopping-cart',
@@ -32,7 +33,7 @@ export class ShoppingCartComponent implements OnInit {
   userEmail: any;
   dataSource: any;
   checkOutQuantity: any = [];
-  displayedColumns: string[] = ['productName', 'currentPrice', 'quantity', 'totalPrice'];
+  displayedColumns: string[] = ['productName', 'currentPrice', 'quantity', 'totalPrice', 'action'];
   fName: any;
   lName: any;
   address: any;
@@ -47,6 +48,11 @@ export class ShoppingCartComponent implements OnInit {
   month: any;
   year: any;
   orderComplete = 'false';
+  methodType = 'false';
+  paymentMethod: any;
+  cardNumber: number;
+  expireDate: any;
+  cvn: number;
 
 
   constructor(private cookieService: CookieService,
@@ -56,7 +62,8 @@ export class ShoppingCartComponent implements OnInit {
               private router: Router,
               private customerService: CustomerServiceService,
               private itemService: OrderItemServiceService,
-              private orderService: OrderService) {
+              private orderService: OrderService,
+              private notification: NotificationService) {
                 this.shippingForm = formBuilder.group({
                   fName: ['', Validators.required],
                   lName: ['', Validators.required],
@@ -64,7 +71,11 @@ export class ShoppingCartComponent implements OnInit {
                   street: ['', Validators.required],
                   city: ['', Validators.required],
                   state: ['', Validators.required],
-                  postalCode: ['', Validators.required]
+                  postalCode: ['', Validators.required],
+                  paymentMethod: ['', Validators.required],
+                  cardNumber: ['', Validators.required],
+                  expireDate: ['', Validators.required],
+                  cvn: ['', Validators.required]
                 });
               }
 
@@ -91,7 +102,9 @@ export class ShoppingCartComponent implements OnInit {
     for ( this.x = 0; this.x < this.Ids.length; this.x ++) {
       this.productService.getProductById(this.Ids[this.x]).subscribe((data: any []) => {
         this.products.push(data);
-        this.priceArray.push(data['currentPrice']);
+      //  console.log(data['currentPrice'] - (data['currentPrice'] * data['discount']) / 100);
+      //  this.priceArray.push(data['currentPrice']);
+        this.priceArray.push(data['currentPrice'] - (data['currentPrice'] * data['discount']) / 100);
         this.checkOutQuantity.push(1);
         this.dataSource = new MatTableDataSource(this.products);
         this.getTotalCost();
@@ -100,15 +113,17 @@ export class ShoppingCartComponent implements OnInit {
   }
 
   getTotalCost() {
-   this.total = this.products.map(t => t.currentPrice).reduce((acc, value) => acc + value, 0);
+   this.total = this.products.map(t => t.currentPrice - (t.currentPrice * t.discount) / 100).reduce((acc, value) => acc + value, 0);
   }
 
-  getQuantity(e, price, i) {
+  getQuantity(e, price, i, discount) {
     this.quantity = e.target.value;
-    this.price = price * e.target.value;
+    this.price = (price - (price * discount) / 100 ) * e.target.value;
+
+    console.log(this.price);
 
     if (this.price == 0) {
-        this.price = price;
+        this.price = price - (price * discount) / 100;
 
         // Remove Row from table
         this.dataSource.data.splice(i, 1);
@@ -135,11 +150,13 @@ export class ShoppingCartComponent implements OnInit {
       if (e.target.value != -1) {
         this.priceArray[i] = ((this.price));
         this.total = (this.total) - (this.price);
+        console.log(this.price);
       }
     }
     else { // quantity add price calculation
-      this.priceArray[i] = ((price * e.target.value));
-      this.total = (this.total - price) + (price * e.target.value);
+      this.priceArray[i] = ((price - ((price * discount) / 100)) * e.target.value);
+      this.total = (this.total - (price - (price * discount) / 100)) + ((price - (price * discount) / 100) * e.target.value);
+      console.log((price - ((price * discount) / 100)) * e.target.value);
     }
     this.indexNo = i;
     this.checkOutQuantity[i] = Number(this.quantity);
@@ -152,12 +169,13 @@ export class ShoppingCartComponent implements OnInit {
     }
     else {
       this.customerService.getCustomer(this.userEmail).subscribe((data) => {
-        this.shippingForm.get('fName').setValue(data['fullName'].split(' ')[0]);
-        this.shippingForm.get('lName').setValue(data['fullName'].split(' ')[1]);
-        this.shippingForm.get('address').setValue(data['address'].split('@')[0]);
-        this.shippingForm.get('street').setValue(data['address'].split('@')[1]);
-        this.shippingForm.get('city').setValue(data['address'].split('@')[2]);
-        this.shippingForm.get('state').setValue(data['address'].split('@')[3]);
+        console.log(data);
+        this.shippingForm.get('fName').setValue(data['fName']);
+        this.shippingForm.get('lName').setValue(data['lName']);
+        this.shippingForm.get('address').setValue(data['address']);
+        this.shippingForm.get('street').setValue(data['streetName']);
+        this.shippingForm.get('city').setValue(data['city']);
+        this.shippingForm.get('state').setValue(data['state']);
         this.shippingForm.get('postalCode').setValue(data['zipCode']);
       });
     }
@@ -168,39 +186,68 @@ export class ShoppingCartComponent implements OnInit {
   }
 
   clickComplete() {
-    this.fName = this.shippingForm.get('fName').value;
-    this.lName =  this.shippingForm.get('lName').value;
-    this.address = this.shippingForm.get('address').value;
-    this.street = this.shippingForm.get('street').value;
-    this.city = this.shippingForm.get('city').value;
-    this.state = this.shippingForm.get('state').value;
-    this.postalCode = this.shippingForm.get('postalCode').value;
 
-    this.currentDate = new Date();
-    this.date = String(this.currentDate.getDate()).padStart(2, '0');
-    this.month = String(this.currentDate.getMonth() + 1).padStart(2, '0'); //January is 0!
-    this.year = this.currentDate.getFullYear();
-
-    this.currentDate = (this.year + '-' + this.month + '-' + this.date).toString();
-    this.fullAddress = this.address + '@ ' + this.street + '@ ' + this.city + '@ ' + this.state;
+      this.fName = this.shippingForm.get('fName').value;
+      this.lName =  this.shippingForm.get('lName').value;
+      this.address = this.shippingForm.get('address').value;
+      this.street = this.shippingForm.get('street').value;
+      this.city = this.shippingForm.get('city').value;
+      this.state = this.shippingForm.get('state').value;
+      this.postalCode = this.shippingForm.get('postalCode').value;
   
-    this.orderService.postOrder(this.currentDate, this.fullAddress, this.userEmail).subscribe((data) => {
-      this.postOrderItems(data['orderId']);
-    });
-
+      this.currentDate = new Date();
+      this.date = String(this.currentDate.getDate()).padStart(2, '0');
+      this.month = String(this.currentDate.getMonth() + 1).padStart(2, '0'); //January is 0!
+      this.year = this.currentDate.getFullYear();
+  
+      this.currentDate = (this.year + '-' + this.month + '-' + this.date).toString();
+      this.fullAddress = this.address + ', ' + this.street + ', ' + this.city + ', ' + this.state;
+      
+      this.orderService.postOrder(this.currentDate, this.fullAddress, this.userEmail, this.total, this.paymentMethod).subscribe((data) => {
+        console.log(data);
+        this.postOrderItems(data['orderId']);
+      });
+    
   }
 
   postOrderItems(orderId: any) {
-     // console.log(orderId);
+      console.log(orderId);
       for (this.x = 0; this.x < this.products.length; this.x++) {
          // console.log(this.checkOutQuantity[0]);
        this.itemService.postOrderItem(this.products[this.x].productId, this.checkOutQuantity[this.x],
-          this.products[this.x].currentPrice, orderId).subscribe((data) => {
+          this.products[this.x].currentPrice - ((this.products[this.x].currentPrice * this.products[this.x].discount) / 100 ),
+           orderId).subscribe((data) => {
             this.orderComplete = 'true';
             this.cookieService.delete('cart');
             this.cookieService.delete('count');
             this.dataService.callNavBar();
         });
     }
+  }
+
+  clickRemoveButton(e, price, i, discount) {
+    
+     this.total = this.total - (price - (price * discount) / 100 );
+     // Remove Row from table
+     this.dataSource.data.splice(i, 1);
+     this.dataSource._updateChangeSubscription();
+
+     // Remove value from priceArray
+     this.priceArray.splice(i, 1);
+     this.Ids.splice(i, 1);
+     this.checkOutQuantity.splice(i, 1);
+     this.cookieService.delete('cart');
+     this.cookieService.set('cart', this.Ids);
+
+     // Reduce Shopping cart product count
+     this.count = Number(this.cookieService.get('count'));
+     this.count = this.count - 1;
+     this.cookieService.set('count', this.count.toString());
+     this.dataService.callNavBar();
+  }
+
+  setPaymentMathod(method) {
+    this.paymentMethod = method;
+    this.methodType = 'true';
   }
 }

@@ -6,7 +6,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class OrderItemServiceService {
 
-  private productItemuri = 'https://localhost:44371/api/items';
+  // private productItemuri = 'https://localhost:44371/api/items';
+  private productItemuri = 'https://localhost:44355/api/items';
 
   constructor(private http: HttpClient) { }
 

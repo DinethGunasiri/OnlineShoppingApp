@@ -5,7 +5,8 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class OrderService {
-  private ordersuri = 'https://localhost:44371/api/order';
+  // private ordersuri = 'https://localhost:44371/api/order';
+  private ordersuri = 'https://localhost:44355/api/order';
 
   constructor(private http: HttpClient) { }
 
@@ -17,13 +18,14 @@ export class OrderService {
     return this.http.get(`${this.ordersuri}/${id}`);
   }
 
-  postOrder(Date, address, email) {
+  postOrder(Date, address, email, total, paymentType) {
     const order = {
       orderDate: Date,
       ShippingAddress: address,
-      CustomerId: email
+      CustomerId: email,
+      TotalPrice: total,
+      PaymentType: paymentType
     };
-    // console.log(order);
     return this.http.post(`${this.ordersuri}`, order);
   }
 }
