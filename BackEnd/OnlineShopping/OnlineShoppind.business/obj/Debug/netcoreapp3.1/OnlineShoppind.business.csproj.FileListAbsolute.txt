@@ -1,0 +1,12 @@
+F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShoppind.business\bin\Debug\netcoreapp3.1\OnlineShoppind.business.deps.json
+F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShoppind.business\bin\Debug\netcoreapp3.1\OnlineShoppind.business.dll
+F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShoppind.business\bin\Debug\netcoreapp3.1\OnlineShoppind.business.pdb
+F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShoppind.business\bin\Debug\netcoreapp3.1\OnlineShopping.data.dll
+F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShoppind.business\bin\Debug\netcoreapp3.1\OnlineShopping.data.pdb
+F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShoppind.business\obj\Debug\netcoreapp3.1\OnlineShoppind.business.csprojAssemblyReference.cache
+F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShoppind.business\obj\Debug\netcoreapp3.1\OnlineShoppind.business.AssemblyInfoInputs.cache
+F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShoppind.business\obj\Debug\netcoreapp3.1\OnlineShoppind.business.AssemblyInfo.cs
+F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShoppind.business\obj\Debug\netcoreapp3.1\OnlineShoppind.business.csproj.CopyComplete
+F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShoppind.business\obj\Debug\netcoreapp3.1\OnlineShoppind.business.dll
+F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShoppind.business\obj\Debug\netcoreapp3.1\OnlineShoppind.business.pdb
+F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShoppind.business\obj\Debug\netcoreapp3.1\OnlineShoppind.Business.csproj.CoreCompileInputs.cache

@@ -1,0 +1,36 @@
+2020-08-06 16:30:34.314 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-06 16:30:34.965 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-06 16:30:34.965 +05:30 [INF] Hosting environment: Development
+2020-08-06 16:30:34.966 +05:30 [INF] Content root path: F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShopping
+2020-08-06 16:30:35.211 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-06 16:30:35.518 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-06 16:30:35.578 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-06 16:30:35.591 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-06 16:30:35.654 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 66.5317ms
+2020-08-06 16:30:35.658 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-06 16:30:35.662 +05:30 [INF] Request finished in 459.6683ms 200 application/json; charset=utf-8
+2020-08-06 16:30:44.404 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/product  
+2020-08-06 16:30:44.435 +05:30 [INF] CORS policy execution successful.
+2020-08-06 16:30:44.440 +05:30 [INF] Request finished in 37.0431ms 204 
+2020-08-06 16:30:44.447 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/product  
+2020-08-06 16:30:45.016 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+2020-08-06 16:30:45.098 +05:30 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo: 'System.DateTime', Current time: 'System.DateTime'.
+2020-08-06 16:30:45.099 +05:30 [INF] CORS policy execution successful.
+2020-08-06 16:30:45.100 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping)'
+2020-08-06 16:30:45.107 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShoppind.Business.DTOs.ProductDTO] GetProducts() on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-08-06 16:30:46.000 +05:30 [INF] Start : Getting product details
+2020-08-06 16:30:47.036 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-06 16:30:48.001 +05:30 [INF] Executed DbCommand (40ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+2020-08-06 16:30:48.157 +05:30 [INF] Completed : Products
+2020-08-06 16:30:48.158 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnlineShoppind.Business.DTOs.ProductDTO, OnlineShopping.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-06 16:30:48.167 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping) in 3060.4386ms
+2020-08-06 16:30:48.167 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping)'
+2020-08-06 16:30:48.173 +05:30 [INF] Request finished in 3726.3774ms 200 application/json; charset=utf-8

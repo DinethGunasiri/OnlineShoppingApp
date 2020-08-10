@@ -1,0 +1,9 @@
+F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShopping.entities\bin\Debug\netcoreapp3.1\OnlineShopping.entities.deps.json
+F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShopping.entities\bin\Debug\netcoreapp3.1\OnlineShopping.entities.dll
+F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShopping.entities\bin\Debug\netcoreapp3.1\OnlineShopping.entities.pdb
+F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShopping.entities\obj\Debug\netcoreapp3.1\OnlineShopping.entities.csprojAssemblyReference.cache
+F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShopping.entities\obj\Debug\netcoreapp3.1\OnlineShopping.entities.AssemblyInfoInputs.cache
+F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShopping.entities\obj\Debug\netcoreapp3.1\OnlineShopping.entities.AssemblyInfo.cs
+F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShopping.entities\obj\Debug\netcoreapp3.1\OnlineShopping.entities.csproj.CoreCompileInputs.cache
+F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShopping.entities\obj\Debug\netcoreapp3.1\OnlineShopping.entities.dll
+F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShopping.entities\obj\Debug\netcoreapp3.1\OnlineShopping.entities.pdb
