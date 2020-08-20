@@ -6,12 +6,12 @@ using System;
 
 namespace OnlineShopping
 {
-    public class Program
+    public static class Program
     {
         public static void Main(string[] args)
         {
             Log.Logger = new LoggerConfiguration()
-                .WriteTo.File("loger/log/Thecodebuzz-log.txt", rollingInterval: RollingInterval.Day)
+                .WriteTo.File("logger/log/Thecodebuzz-log.txt", rollingInterval: RollingInterval.Day)
                 .CreateLogger();
 
                 CreateHostBuilder(args).Build().Run();

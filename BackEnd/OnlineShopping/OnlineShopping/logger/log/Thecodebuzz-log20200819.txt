@@ -1,0 +1,542 @@
+2020-08-19 14:31:39.980 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 14:31:41.139 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 14:31:41.140 +05:30 [INF] Hosting environment: Development
+2020-08-19 14:31:41.140 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-19 14:31:41.275 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-19 14:31:42.118 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-19 14:31:42.206 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-19 14:31:42.224 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-19 14:31:42.328 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 111.0676ms
+2020-08-19 14:31:42.332 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-19 14:31:42.336 +05:30 [INF] Request finished in 1076.6966ms 200 application/json; charset=utf-8
+2020-08-19 14:45:31.006 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 14:45:31.795 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 14:45:31.795 +05:30 [INF] Hosting environment: Development
+2020-08-19 14:45:31.795 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-19 14:45:31.903 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-19 14:45:32.187 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-19 14:45:32.239 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-19 14:45:32.248 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-19 14:45:32.320 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 71.8706ms
+2020-08-19 14:45:32.324 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-19 14:45:32.329 +05:30 [INF] Request finished in 428.686ms 200 application/json; charset=utf-8
+2020-08-19 14:45:40.712 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/product  
+2020-08-19 14:45:40.727 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:45:40.731 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping)'
+2020-08-19 14:45:40.743 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShoppind.Business.DTOs.ProductDTO] GetProducts() on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-08-19 14:45:41.645 +05:30 [INF] Start : Getting product details
+2020-08-19 14:45:42.503 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:45:43.506 +05:30 [INF] Executed DbCommand (128ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+2020-08-19 14:45:43.616 +05:30 [INF] Completed : Products
+2020-08-19 14:45:43.617 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnlineShoppind.Business.DTOs.ProductDTO, OnlineShopping.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-19 14:45:43.626 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping) in 2882.8017ms
+2020-08-19 14:45:43.626 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping)'
+2020-08-19 14:45:43.631 +05:30 [INF] Request finished in 2919.9036ms 200 application/json; charset=utf-8
+2020-08-19 14:45:52.448 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/login  
+2020-08-19 14:45:52.455 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:45:52.457 +05:30 [INF] Request finished in 9.0871ms 204 
+2020-08-19 14:45:52.464 +05:30 [INF] Request starting HTTP/2.0 POST https://localhost:44355/api/login application/json 54
+2020-08-19 14:45:52.467 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:45:52.467 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.LoginController.Login (OnlineShopping)'
+2020-08-19 14:45:52.479 +05:30 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(OnlineShoppind.business.DTOs.CustomerDto) on controller OnlineShopping.Controllers.LoginController (OnlineShopping).
+2020-08-19 14:45:52.513 +05:30 [INF] Start: Customer login
+2020-08-19 14:45:52.546 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:45:52.769 +05:30 [INF] Executed DbCommand (104ms) [Parameters=[@__p_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Email], [c].[Address], [c].[BirthDate], [c].[City], [c].[Gender], [c].[Password], [c].[State], [c].[StreetName], [c].[Telephone], [c].[ZipCode], [c].[fName], [c].[lName]
+FROM [Customers] AS [c]
+WHERE [c].[Email] = @__p_0
+2020-08-19 14:45:53.142 +05:30 [INF] Complete: Login complete
+2020-08-19 14:45:53.142 +05:30 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2020-08-19 14:45:53.143 +05:30 [INF] Executed action OnlineShopping.Controllers.LoginController.Login (OnlineShopping) in 663.6931ms
+2020-08-19 14:45:53.143 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.LoginController.Login (OnlineShopping)'
+2020-08-19 14:45:53.144 +05:30 [INF] Request finished in 679.6936ms 200 application/json; charset=utf-8
+2020-08-19 14:45:53.155 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/customer/dinethlahiru@gmail.com  
+2020-08-19 14:45:53.155 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:45:53.156 +05:30 [INF] Request finished in 0.489ms 204 
+2020-08-19 14:45:53.159 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/customer/dinethlahiru@gmail.com  
+2020-08-19 14:45:53.316 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:45:53.318 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:45:53.318 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.CustomerController.GetCustomer (OnlineShopping)'
+2020-08-19 14:45:53.323 +05:30 [INF] Route matched with {action = "GetCustomer", controller = "Customer"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCustomer(System.String) on controller OnlineShopping.Controllers.CustomerController (OnlineShopping).
+2020-08-19 14:45:53.326 +05:30 [INF] Start: Getting customer details by email
+2020-08-19 14:45:53.337 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:45:53.346 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Email], [c].[Address], [c].[BirthDate], [c].[City], [c].[Gender], [c].[Password], [c].[State], [c].[StreetName], [c].[Telephone], [c].[ZipCode], [c].[fName], [c].[lName]
+FROM [Customers] AS [c]
+WHERE [c].[Email] = @__p_0
+2020-08-19 14:45:53.346 +05:30 [INF] Complete: Customer
+2020-08-19 14:45:53.346 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShoppind.business.DTOs.CustomerDto'.
+2020-08-19 14:45:53.352 +05:30 [INF] Executed action OnlineShopping.Controllers.CustomerController.GetCustomer (OnlineShopping) in 28.8743ms
+2020-08-19 14:45:53.352 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.CustomerController.GetCustomer (OnlineShopping)'
+2020-08-19 14:45:53.352 +05:30 [INF] Request finished in 192.912ms 200 application/json; charset=utf-8
+2020-08-19 14:45:53.466 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/product  
+2020-08-19 14:45:53.466 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:45:53.467 +05:30 [INF] Request finished in 0.5458ms 204 
+2020-08-19 14:45:53.473 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/product  
+2020-08-19 14:45:53.474 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:45:53.474 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:45:53.474 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping)'
+2020-08-19 14:45:53.474 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShoppind.Business.DTOs.ProductDTO] GetProducts() on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-08-19 14:45:53.475 +05:30 [INF] Start : Getting product details
+2020-08-19 14:45:53.476 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:45:53.480 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+2020-08-19 14:45:53.482 +05:30 [INF] Completed : Products
+2020-08-19 14:45:53.482 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnlineShoppind.Business.DTOs.ProductDTO, OnlineShopping.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-19 14:45:53.484 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping) in 9.7602ms
+2020-08-19 14:45:53.484 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping)'
+2020-08-19 14:45:53.485 +05:30 [INF] Request finished in 11.4704ms 200 application/json; charset=utf-8
+2020-08-19 14:46:04.072 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/product/6  
+2020-08-19 14:46:04.072 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/product/5  
+2020-08-19 14:46:04.072 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/product/13  
+2020-08-19 14:46:04.072 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/product/14  
+2020-08-19 14:46:04.073 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:04.073 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:04.074 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:04.074 +05:30 [INF] Request finished in 2.3782ms 204 
+2020-08-19 14:46:04.074 +05:30 [INF] Request finished in 2.3677ms 204 
+2020-08-19 14:46:04.074 +05:30 [INF] Request finished in 1.5937ms 204 
+2020-08-19 14:46:04.074 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:04.074 +05:30 [INF] Request finished in 2.0673ms 204 
+2020-08-19 14:46:04.083 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/product/5  
+2020-08-19 14:46:04.083 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/product/6  
+2020-08-19 14:46:04.084 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/product/14  
+2020-08-19 14:46:04.087 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/product/13  
+2020-08-19 14:46:04.088 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:46:04.088 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:46:04.088 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:46:04.088 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:46:04.088 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:04.088 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:04.088 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:04.088 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:04.088 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:46:04.088 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:46:04.088 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:46:04.088 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:46:04.092 +05:30 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct(Int32) on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-08-19 14:46:04.092 +05:30 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct(Int32) on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-08-19 14:46:04.092 +05:30 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct(Int32) on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-08-19 14:46:04.093 +05:30 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct(Int32) on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-08-19 14:46:04.097 +05:30 [INF] Start: Getting product details according to ProductId
+2020-08-19 14:46:04.097 +05:30 [INF] Start: Getting product details according to ProductId
+2020-08-19 14:46:04.097 +05:30 [INF] Start: Getting product details according to ProductId
+2020-08-19 14:46:04.097 +05:30 [INF] Start: Getting product details according to ProductId
+2020-08-19 14:46:04.098 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:46:04.098 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:46:04.099 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:46:04.099 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:46:04.113 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+WHERE [p].[ProductId] = @__p_0
+2020-08-19 14:46:04.114 +05:30 [INF] Complete: Product
+2020-08-19 14:46:04.114 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShoppind.Business.DTOs.ProductDTO'.
+2020-08-19 14:46:04.116 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping) in 23.5153ms
+2020-08-19 14:46:04.116 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:46:04.116 +05:30 [INF] Request finished in 32.3233ms 200 application/json; charset=utf-8
+2020-08-19 14:46:04.137 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+WHERE [p].[ProductId] = @__p_0
+2020-08-19 14:46:04.138 +05:30 [INF] Complete: Product
+2020-08-19 14:46:04.138 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShoppind.Business.DTOs.ProductDTO'.
+2020-08-19 14:46:04.138 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+WHERE [p].[ProductId] = @__p_0
+2020-08-19 14:46:04.138 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping) in 46.0691ms
+2020-08-19 14:46:04.138 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:46:04.138 +05:30 [INF] Request finished in 55.7737ms 200 application/json; charset=utf-8
+2020-08-19 14:46:04.139 +05:30 [INF] Complete: Product
+2020-08-19 14:46:04.139 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShoppind.Business.DTOs.ProductDTO'.
+2020-08-19 14:46:04.139 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping) in 46.2957ms
+2020-08-19 14:46:04.140 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:46:04.140 +05:30 [INF] Request finished in 56.9588ms 200 application/json; charset=utf-8
+2020-08-19 14:46:04.142 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+WHERE [p].[ProductId] = @__p_0
+2020-08-19 14:46:04.143 +05:30 [INF] Complete: Product
+2020-08-19 14:46:04.143 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShoppind.Business.DTOs.ProductDTO'.
+2020-08-19 14:46:04.143 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping) in 50.8895ms
+2020-08-19 14:46:04.143 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:46:04.143 +05:30 [INF] Request finished in 56.5398ms 200 application/json; charset=utf-8
+2020-08-19 14:46:08.877 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/customer/dinethlahiru@gmail.com  
+2020-08-19 14:46:08.878 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:08.879 +05:30 [INF] Request finished in 2.689ms 204 
+2020-08-19 14:46:08.885 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/customer/dinethlahiru@gmail.com  
+2020-08-19 14:46:08.887 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:46:08.888 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:08.888 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.CustomerController.GetCustomer (OnlineShopping)'
+2020-08-19 14:46:08.888 +05:30 [INF] Route matched with {action = "GetCustomer", controller = "Customer"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCustomer(System.String) on controller OnlineShopping.Controllers.CustomerController (OnlineShopping).
+2020-08-19 14:46:08.891 +05:30 [INF] Start: Getting customer details by email
+2020-08-19 14:46:08.892 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:46:08.899 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Email], [c].[Address], [c].[BirthDate], [c].[City], [c].[Gender], [c].[Password], [c].[State], [c].[StreetName], [c].[Telephone], [c].[ZipCode], [c].[fName], [c].[lName]
+FROM [Customers] AS [c]
+WHERE [c].[Email] = @__p_0
+2020-08-19 14:46:08.899 +05:30 [INF] Complete: Customer
+2020-08-19 14:46:08.899 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShoppind.business.DTOs.CustomerDto'.
+2020-08-19 14:46:08.900 +05:30 [INF] Executed action OnlineShopping.Controllers.CustomerController.GetCustomer (OnlineShopping) in 11.5745ms
+2020-08-19 14:46:08.900 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.CustomerController.GetCustomer (OnlineShopping)'
+2020-08-19 14:46:08.900 +05:30 [INF] Request finished in 14.9701ms 200 application/json; charset=utf-8
+2020-08-19 14:46:20.736 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/order  
+2020-08-19 14:46:20.737 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:20.738 +05:30 [INF] Request finished in 1.6821ms 204 
+2020-08-19 14:46:20.743 +05:30 [INF] Request starting HTTP/2.0 POST https://localhost:44355/api/order application/json 205
+2020-08-19 14:46:20.744 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:46:20.744 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:20.751 +05:30 [INF] Authorization was successful.
+2020-08-19 14:46:20.751 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.OrderController.InsertOrder (OnlineShopping)'
+2020-08-19 14:46:20.755 +05:30 [INF] Route matched with {action = "InsertOrder", controller = "Order"}. Executing controller action with signature OnlineShoppind.Business.DTOs.OrderDTO InsertOrder(OnlineShoppind.Business.DTOs.OrderDTO) on controller OnlineShopping.Controllers.OrderController (OnlineShopping).
+2020-08-19 14:46:20.771 +05:30 [INF] Start: Inserting Order details
+2020-08-19 14:46:20.797 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:46:21.393 +05:30 [INF] Executed DbCommand (378ms) [Parameters=[@p0='?' (Size = 250), @p1='?' (DbType = DateTime2), @p2='?' (Size = 255), @p3='?' (Size = 200), @p4='?' (DbType = Double)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Orders] ([CustomerId], [OrderDate], [PaymentType], [ShippingAddress], [TotalPrice])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [OrderId]
+FROM [Orders]
+WHERE @@ROWCOUNT = 1 AND [OrderId] = scope_identity();
+2020-08-19 14:46:21.477 +05:30 [INF] Complete: Insert Order details
+2020-08-19 14:46:21.477 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShoppind.Business.DTOs.OrderDTO'.
+2020-08-19 14:46:21.479 +05:30 [INF] Executed action OnlineShopping.Controllers.OrderController.InsertOrder (OnlineShopping) in 723.8426ms
+2020-08-19 14:46:21.479 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.OrderController.InsertOrder (OnlineShopping)'
+2020-08-19 14:46:21.480 +05:30 [INF] Request finished in 736.8783ms 200 application/json; charset=utf-8
+2020-08-19 14:46:21.494 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/items  
+2020-08-19 14:46:21.494 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/items  
+2020-08-19 14:46:21.496 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:21.497 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:21.497 +05:30 [INF] Request finished in 3.2873ms 204 
+2020-08-19 14:46:21.497 +05:30 [INF] Request finished in 4.436ms 204 
+2020-08-19 14:46:21.497 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/items  
+2020-08-19 14:46:21.497 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:21.498 +05:30 [INF] Request finished in 0.5088ms 204 
+2020-08-19 14:46:21.498 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/items  
+2020-08-19 14:46:21.498 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:21.498 +05:30 [INF] Request finished in 0.2705ms 204 
+2020-08-19 14:46:21.499 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/items/email/2034  
+2020-08-19 14:46:21.499 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:21.500 +05:30 [INF] Request finished in 0.8294ms 204 
+2020-08-19 14:46:21.517 +05:30 [INF] Request starting HTTP/2.0 POST https://localhost:44355/api/items application/json 63
+2020-08-19 14:46:21.518 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:46:21.518 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:21.519 +05:30 [INF] Authorization was successful.
+2020-08-19 14:46:21.519 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.OrderItemController.InsertItem (OnlineShopping)'
+2020-08-19 14:46:21.522 +05:30 [INF] Route matched with {action = "InsertItem", controller = "OrderItem"}. Executing controller action with signature OnlineShoppind.Business.DTOs.ItemDTO InsertItem(OnlineShoppind.Business.DTOs.ItemDTO) on controller OnlineShopping.Controllers.OrderItemController (OnlineShopping).
+2020-08-19 14:46:21.526 +05:30 [INF] Request starting HTTP/2.0 POST https://localhost:44355/api/items application/json 64
+2020-08-19 14:46:21.527 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:46:21.527 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:21.528 +05:30 [INF] Authorization was successful.
+2020-08-19 14:46:21.528 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.OrderItemController.InsertItem (OnlineShopping)'
+2020-08-19 14:46:21.528 +05:30 [INF] Route matched with {action = "InsertItem", controller = "OrderItem"}. Executing controller action with signature OnlineShoppind.Business.DTOs.ItemDTO InsertItem(OnlineShoppind.Business.DTOs.ItemDTO) on controller OnlineShopping.Controllers.OrderItemController (OnlineShopping).
+2020-08-19 14:46:21.528 +05:30 [INF] Start: Inserting OrderItem
+2020-08-19 14:46:21.530 +05:30 [INF] Request starting HTTP/2.0 POST https://localhost:44355/api/items application/json 63
+2020-08-19 14:46:21.532 +05:30 [INF] Start: Inserting OrderItem
+2020-08-19 14:46:21.533 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:46:21.533 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:21.534 +05:30 [INF] Authorization was successful.
+2020-08-19 14:46:21.534 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.OrderItemController.InsertItem (OnlineShopping)'
+2020-08-19 14:46:21.534 +05:30 [INF] Route matched with {action = "InsertItem", controller = "OrderItem"}. Executing controller action with signature OnlineShoppind.Business.DTOs.ItemDTO InsertItem(OnlineShoppind.Business.DTOs.ItemDTO) on controller OnlineShopping.Controllers.OrderItemController (OnlineShopping).
+2020-08-19 14:46:21.535 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:46:21.535 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:46:21.535 +05:30 [INF] Start: Inserting OrderItem
+2020-08-19 14:46:21.537 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/items/email/2034  
+2020-08-19 14:46:21.537 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:46:21.537 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:46:21.537 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:21.538 +05:30 [INF] Authorization was successful.
+2020-08-19 14:46:21.538 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.OrderItemController.SendEmail (OnlineShopping)'
+2020-08-19 14:46:21.542 +05:30 [INF] Route matched with {action = "SendEmail", controller = "OrderItem"}. Executing controller action with signature Void SendEmail(Int32) on controller OnlineShopping.Controllers.OrderItemController (OnlineShopping).
+2020-08-19 14:46:21.587 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Double), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [OrderItems] ([OrderId], [ProductId], [PurchasePrice], [Quantity])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [ItemId]
+FROM [OrderItems]
+WHERE @@ROWCOUNT = 1 AND [ItemId] = scope_identity();
+2020-08-19 14:46:21.593 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Double), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [OrderItems] ([OrderId], [ProductId], [PurchasePrice], [Quantity])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [ItemId]
+FROM [OrderItems]
+WHERE @@ROWCOUNT = 1 AND [ItemId] = scope_identity();
+2020-08-19 14:46:21.595 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Double), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [OrderItems] ([OrderId], [ProductId], [PurchasePrice], [Quantity])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [ItemId]
+FROM [OrderItems]
+WHERE @@ROWCOUNT = 1 AND [ItemId] = scope_identity();
+2020-08-19 14:46:21.597 +05:30 [INF] Complete: Insert rderItems
+2020-08-19 14:46:21.598 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShoppind.Business.DTOs.ItemDTO'.
+2020-08-19 14:46:21.599 +05:30 [INF] Executed action OnlineShopping.Controllers.OrderItemController.InsertItem (OnlineShopping) in 65.6089ms
+2020-08-19 14:46:21.600 +05:30 [INF] Complete: Insert rderItems
+2020-08-19 14:46:21.600 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.OrderItemController.InsertItem (OnlineShopping)'
+2020-08-19 14:46:21.600 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShoppind.Business.DTOs.ItemDTO'.
+2020-08-19 14:46:21.600 +05:30 [INF] Request finished in 69.4318ms 200 application/json; charset=utf-8
+2020-08-19 14:46:21.601 +05:30 [INF] Executed action OnlineShopping.Controllers.OrderItemController.InsertItem (OnlineShopping) in 78.4084ms
+2020-08-19 14:46:21.601 +05:30 [INF] Request starting HTTP/2.0 POST https://localhost:44355/api/items application/json 65
+2020-08-19 14:46:21.601 +05:30 [INF] Complete: Insert rderItems
+2020-08-19 14:46:21.601 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.OrderItemController.InsertItem (OnlineShopping)'
+2020-08-19 14:46:21.601 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShoppind.Business.DTOs.ItemDTO'.
+2020-08-19 14:46:21.601 +05:30 [INF] Request finished in 83.6814ms 200 application/json; charset=utf-8
+2020-08-19 14:46:21.601 +05:30 [INF] Executed action OnlineShopping.Controllers.OrderItemController.InsertItem (OnlineShopping) in 73.5259ms
+2020-08-19 14:46:21.601 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:46:21.601 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.OrderItemController.InsertItem (OnlineShopping)'
+2020-08-19 14:46:21.601 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:21.601 +05:30 [INF] Request finished in 75.0576ms 200 application/json; charset=utf-8
+2020-08-19 14:46:21.603 +05:30 [INF] Authorization was successful.
+2020-08-19 14:46:21.603 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.OrderItemController.InsertItem (OnlineShopping)'
+2020-08-19 14:46:21.603 +05:30 [INF] Route matched with {action = "InsertItem", controller = "OrderItem"}. Executing controller action with signature OnlineShoppind.Business.DTOs.ItemDTO InsertItem(OnlineShoppind.Business.DTOs.ItemDTO) on controller OnlineShopping.Controllers.OrderItemController (OnlineShopping).
+2020-08-19 14:46:21.606 +05:30 [INF] Start: Inserting OrderItem
+2020-08-19 14:46:21.606 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:46:21.632 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Double), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [OrderItems] ([OrderId], [ProductId], [PurchasePrice], [Quantity])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [ItemId]
+FROM [OrderItems]
+WHERE @@ROWCOUNT = 1 AND [ItemId] = scope_identity();
+2020-08-19 14:46:21.634 +05:30 [INF] Complete: Insert rderItems
+2020-08-19 14:46:21.634 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShoppind.Business.DTOs.ItemDTO'.
+2020-08-19 14:46:21.635 +05:30 [INF] Executed action OnlineShopping.Controllers.OrderItemController.InsertItem (OnlineShopping) in 31.8442ms
+2020-08-19 14:46:21.635 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.OrderItemController.InsertItem (OnlineShopping)'
+2020-08-19 14:46:21.635 +05:30 [INF] Request finished in 34.3939ms 200 application/json; charset=utf-8
+2020-08-19 14:46:21.666 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:46:21.676 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [o].[OrderId], [o].[CustomerId], [o].[OrderDate], [o].[PaymentType], [o].[ShippingAddress], [o].[TotalPrice]
+FROM [Orders] AS [o]
+WHERE [o].[OrderId] = @__p_0
+2020-08-19 14:46:22.120 +05:30 [INF] Executed action OnlineShopping.Controllers.OrderItemController.SendEmail (OnlineShopping) in 578.5395ms
+2020-08-19 14:46:22.121 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.OrderItemController.SendEmail (OnlineShopping)'
+2020-08-19 14:46:22.121 +05:30 [INF] Request finished in 583.9016ms 200 
+2020-08-19 14:46:49.331 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/customer/dinethlahiru@gmail.com  
+2020-08-19 14:46:49.332 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:49.333 +05:30 [INF] Request finished in 1.8958ms 204 
+2020-08-19 14:46:49.343 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/customer/dinethlahiru@gmail.com  
+2020-08-19 14:46:49.345 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:46:49.345 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:46:49.345 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.CustomerController.GetCustomer (OnlineShopping)'
+2020-08-19 14:46:49.346 +05:30 [INF] Route matched with {action = "GetCustomer", controller = "Customer"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetCustomer(System.String) on controller OnlineShopping.Controllers.CustomerController (OnlineShopping).
+2020-08-19 14:46:49.348 +05:30 [INF] Start: Getting customer details by email
+2020-08-19 14:46:49.349 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:46:49.357 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 250)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Email], [c].[Address], [c].[BirthDate], [c].[City], [c].[Gender], [c].[Password], [c].[State], [c].[StreetName], [c].[Telephone], [c].[ZipCode], [c].[fName], [c].[lName]
+FROM [Customers] AS [c]
+WHERE [c].[Email] = @__p_0
+2020-08-19 14:46:49.358 +05:30 [INF] Complete: Customer
+2020-08-19 14:46:49.359 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShoppind.business.DTOs.CustomerDto'.
+2020-08-19 14:46:49.360 +05:30 [INF] Executed action OnlineShopping.Controllers.CustomerController.GetCustomer (OnlineShopping) in 13.4454ms
+2020-08-19 14:46:49.364 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.CustomerController.GetCustomer (OnlineShopping)'
+2020-08-19 14:46:49.364 +05:30 [INF] Request finished in 21.5599ms 200 application/json; charset=utf-8
+2020-08-19 14:47:02.046 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/order  
+2020-08-19 14:47:02.047 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:47:02.047 +05:30 [INF] Request finished in 1.5556ms 204 
+2020-08-19 14:47:02.053 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/order  
+2020-08-19 14:47:02.054 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:47:02.054 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:47:02.054 +05:30 [INF] Authorization was successful.
+2020-08-19 14:47:02.055 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.OrderController.GetOrders (OnlineShopping)'
+2020-08-19 14:47:02.057 +05:30 [INF] Route matched with {action = "GetOrders", controller = "Order"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShoppind.Business.DTOs.OrderDTO] GetOrders() on controller OnlineShopping.Controllers.OrderController (OnlineShopping).
+2020-08-19 14:47:02.058 +05:30 [INF] Start: Getting Orders details
+2020-08-19 14:47:02.061 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:47:02.070 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[OrderId], [o].[CustomerId], [o].[OrderDate], [o].[PaymentType], [o].[ShippingAddress], [o].[TotalPrice]
+FROM [Orders] AS [o]
+2020-08-19 14:47:02.071 +05:30 [INF] Complete: Getting Orders details
+2020-08-19 14:47:02.071 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnlineShoppind.Business.DTOs.OrderDTO, OnlineShopping.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-19 14:47:02.072 +05:30 [INF] Executed action OnlineShopping.Controllers.OrderController.GetOrders (OnlineShopping) in 14.9009ms
+2020-08-19 14:47:02.072 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.OrderController.GetOrders (OnlineShopping)'
+2020-08-19 14:47:02.072 +05:30 [INF] Request finished in 19.1808ms 200 application/json; charset=utf-8
+2020-08-19 14:47:03.325 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/items  
+2020-08-19 14:47:03.326 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:47:03.326 +05:30 [INF] Request finished in 1.1516ms 204 
+2020-08-19 14:47:03.331 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/items  
+2020-08-19 14:47:03.334 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:47:03.335 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:47:03.335 +05:30 [INF] Authorization was successful.
+2020-08-19 14:47:03.335 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.OrderItemController.GetItems (OnlineShopping)'
+2020-08-19 14:47:03.340 +05:30 [INF] Route matched with {action = "GetItems", controller = "OrderItem"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShoppind.Business.DTOs.ItemDTO] GetItems() on controller OnlineShopping.Controllers.OrderItemController (OnlineShopping).
+2020-08-19 14:47:03.341 +05:30 [INF] Start: Getting OrderItems
+2020-08-19 14:47:03.343 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:47:03.352 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[ItemId], [o].[OrderId], [o].[ProductId], [o].[PurchasePrice], [o].[Quantity]
+FROM [OrderItems] AS [o]
+2020-08-19 14:47:03.353 +05:30 [INF] Complete: Getting OrderItems
+2020-08-19 14:47:03.354 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnlineShoppind.Business.DTOs.ItemDTO, OnlineShopping.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-19 14:47:03.356 +05:30 [INF] Executed action OnlineShopping.Controllers.OrderItemController.GetItems (OnlineShopping) in 16.0411ms
+2020-08-19 14:47:03.356 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.OrderItemController.GetItems (OnlineShopping)'
+2020-08-19 14:47:03.356 +05:30 [INF] Request finished in 25.3276ms 200 application/json; charset=utf-8
+2020-08-19 14:47:03.373 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/product/14  
+2020-08-19 14:47:03.373 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/product/13  
+2020-08-19 14:47:03.374 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:47:03.374 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:47:03.374 +05:30 [INF] Request finished in 1.1955ms 204 
+2020-08-19 14:47:03.374 +05:30 [INF] Request finished in 1.1985ms 204 
+2020-08-19 14:47:03.375 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/product/6  
+2020-08-19 14:47:03.375 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:47:03.376 +05:30 [INF] Request finished in 1.2568ms 204 
+2020-08-19 14:47:03.377 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/product/5  
+2020-08-19 14:47:03.377 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:47:03.377 +05:30 [INF] Request finished in 0.5034ms 204 
+2020-08-19 14:47:03.384 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/product/13  
+2020-08-19 14:47:03.384 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/product/14  
+2020-08-19 14:47:03.385 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/product/5  
+2020-08-19 14:47:03.385 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:47:03.385 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:47:03.385 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:47:03.385 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:47:03.385 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:47:03.385 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:47:03.386 +05:30 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct(Int32) on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-08-19 14:47:03.386 +05:30 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct(Int32) on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-08-19 14:47:03.386 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:47:03.386 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:47:03.386 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:47:03.386 +05:30 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct(Int32) on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-08-19 14:47:03.386 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/product/6  
+2020-08-19 14:47:03.386 +05:30 [INF] Start: Getting product details according to ProductId
+2020-08-19 14:47:03.386 +05:30 [INF] Start: Getting product details according to ProductId
+2020-08-19 14:47:03.387 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:47:03.387 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:47:03.387 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:47:03.387 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:47:03.387 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:47:03.387 +05:30 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct(Int32) on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-08-19 14:47:03.388 +05:30 [INF] Start: Getting product details according to ProductId
+2020-08-19 14:47:03.389 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:47:03.389 +05:30 [INF] Start: Getting product details according to ProductId
+2020-08-19 14:47:03.389 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:47:03.394 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+WHERE [p].[ProductId] = @__p_0
+2020-08-19 14:47:03.394 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+WHERE [p].[ProductId] = @__p_0
+2020-08-19 14:47:03.394 +05:30 [INF] Complete: Product
+2020-08-19 14:47:03.395 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+WHERE [p].[ProductId] = @__p_0
+2020-08-19 14:47:03.395 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShoppind.Business.DTOs.ProductDTO'.
+2020-08-19 14:47:03.395 +05:30 [INF] Complete: Product
+2020-08-19 14:47:03.395 +05:30 [INF] Complete: Product
+2020-08-19 14:47:03.395 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShoppind.Business.DTOs.ProductDTO'.
+2020-08-19 14:47:03.395 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShoppind.Business.DTOs.ProductDTO'.
+2020-08-19 14:47:03.395 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping) in 9.3176ms
+2020-08-19 14:47:03.395 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping) in 8.0067ms
+2020-08-19 14:47:03.395 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:47:03.395 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping) in 9.4302ms
+2020-08-19 14:47:03.395 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:47:03.395 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:47:03.395 +05:30 [INF] Request finished in 9.0353ms 200 application/json; charset=utf-8
+2020-08-19 14:47:03.395 +05:30 [INF] Request finished in 11.5337ms 200 application/json; charset=utf-8
+2020-08-19 14:47:03.395 +05:30 [INF] Request finished in 11.5448ms 200 application/json; charset=utf-8
+2020-08-19 14:47:03.396 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+WHERE [p].[ProductId] = @__p_0
+2020-08-19 14:47:03.396 +05:30 [INF] Complete: Product
+2020-08-19 14:47:03.396 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShoppind.Business.DTOs.ProductDTO'.
+2020-08-19 14:47:03.397 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping) in 10.6825ms
+2020-08-19 14:47:03.397 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:47:03.397 +05:30 [INF] Request finished in 12.0749ms 200 application/json; charset=utf-8
+2020-08-19 14:47:08.308 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/items  
+2020-08-19 14:47:08.309 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:47:08.309 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:47:08.309 +05:30 [INF] Authorization was successful.
+2020-08-19 14:47:08.310 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.OrderItemController.GetItems (OnlineShopping)'
+2020-08-19 14:47:08.310 +05:30 [INF] Route matched with {action = "GetItems", controller = "OrderItem"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShoppind.Business.DTOs.ItemDTO] GetItems() on controller OnlineShopping.Controllers.OrderItemController (OnlineShopping).
+2020-08-19 14:47:08.310 +05:30 [INF] Start: Getting OrderItems
+2020-08-19 14:47:08.311 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:47:08.313 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [o].[ItemId], [o].[OrderId], [o].[ProductId], [o].[PurchasePrice], [o].[Quantity]
+FROM [OrderItems] AS [o]
+2020-08-19 14:47:08.317 +05:30 [INF] Complete: Getting OrderItems
+2020-08-19 14:47:08.317 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnlineShoppind.Business.DTOs.ItemDTO, OnlineShopping.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-19 14:47:08.319 +05:30 [INF] Executed action OnlineShopping.Controllers.OrderItemController.GetItems (OnlineShopping) in 8.6472ms
+2020-08-19 14:47:08.319 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.OrderItemController.GetItems (OnlineShopping)'
+2020-08-19 14:47:08.319 +05:30 [INF] Request finished in 11.3336ms 200 application/json; charset=utf-8
+2020-08-19 14:47:08.340 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/product/13  
+2020-08-19 14:47:08.343 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:47:08.343 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:47:08.343 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:47:08.343 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/product/14  
+2020-08-19 14:47:08.343 +05:30 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct(Int32) on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-08-19 14:47:08.345 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:47:08.345 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/product/6  
+2020-08-19 14:47:08.345 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:47:08.345 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:47:08.345 +05:30 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct(Int32) on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-08-19 14:47:08.346 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:47:08.346 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:47:08.346 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:47:08.346 +05:30 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct(Int32) on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-08-19 14:47:08.346 +05:30 [INF] Start: Getting product details according to ProductId
+2020-08-19 14:47:08.347 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:47:08.347 +05:30 [INF] Start: Getting product details according to ProductId
+2020-08-19 14:47:08.348 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:47:08.351 +05:30 [INF] Start: Getting product details according to ProductId
+2020-08-19 14:47:08.352 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:47:08.353 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/product/5  
+2020-08-19 14:47:08.356 +05:30 [INF] Successfully validated the token.
+2020-08-19 14:47:08.356 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+WHERE [p].[ProductId] = @__p_0
+2020-08-19 14:47:08.356 +05:30 [INF] CORS policy execution successful.
+2020-08-19 14:47:08.356 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+WHERE [p].[ProductId] = @__p_0
+2020-08-19 14:47:08.356 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:47:08.357 +05:30 [INF] Route matched with {action = "GetProduct", controller = "Product"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct(Int32) on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-08-19 14:47:08.357 +05:30 [INF] Complete: Product
+2020-08-19 14:47:08.357 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShoppind.Business.DTOs.ProductDTO'.
+2020-08-19 14:47:08.358 +05:30 [INF] Complete: Product
+2020-08-19 14:47:08.358 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShoppind.Business.DTOs.ProductDTO'.
+2020-08-19 14:47:08.358 +05:30 [INF] Start: Getting product details according to ProductId
+2020-08-19 14:47:08.358 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping) in 11.9522ms
+2020-08-19 14:47:08.359 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:47:08.359 +05:30 [INF] Request finished in 14.1855ms 200 application/json; charset=utf-8
+2020-08-19 14:47:08.360 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping) in 14.5612ms
+2020-08-19 14:47:08.360 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:47:08.360 +05:30 [INF] Request finished in 17.042ms 200 application/json; charset=utf-8
+2020-08-19 14:47:08.360 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-19 14:47:08.361 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+WHERE [p].[ProductId] = @__p_0
+2020-08-19 14:47:08.361 +05:30 [INF] Complete: Product
+2020-08-19 14:47:08.362 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShoppind.Business.DTOs.ProductDTO'.
+2020-08-19 14:47:08.363 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping) in 19.689ms
+2020-08-19 14:47:08.363 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:47:08.363 +05:30 [INF] Request finished in 23.0704ms 200 application/json; charset=utf-8
+2020-08-19 14:47:08.367 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+WHERE [p].[ProductId] = @__p_0
+2020-08-19 14:47:08.368 +05:30 [INF] Complete: Product
+2020-08-19 14:47:08.368 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShoppind.Business.DTOs.ProductDTO'.
+2020-08-19 14:47:08.369 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping) in 11.8806ms
+2020-08-19 14:47:08.369 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
+2020-08-19 14:47:08.369 +05:30 [INF] Request finished in 15.6698ms 200 application/json; charset=utf-8
+2020-08-19 16:11:23.736 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-19 16:11:24.522 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-19 16:11:24.522 +05:30 [INF] Hosting environment: Development
+2020-08-19 16:11:24.522 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-19 16:11:24.624 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-19 16:11:24.940 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-19 16:11:25.010 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-19 16:11:25.030 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-19 16:11:25.102 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 81.5462ms
+2020-08-19 16:11:25.105 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-19 16:11:25.107 +05:30 [INF] Request finished in 489.2582ms 200 application/json; charset=utf-8

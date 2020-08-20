@@ -17,7 +17,7 @@ namespace OnlineShoppind.business
     {
         private readonly IUnitOfWork unitOfWork;
         private readonly IMapper _mapper;
-        private IConfiguration _config;
+        private readonly IConfiguration _config;
         public CustomerService(IUnitOfWork unitOfWork, IMapper mapper, IConfiguration config)
         {
             this.unitOfWork = unitOfWork;
@@ -25,6 +25,7 @@ namespace OnlineShoppind.business
             this._config = config;
         }
 
+        // Get customer details by email
         public CustomerDto GetCustmerByEmail(string Email)
         {
             var customerDetails = unitOfWork.Customer.GetCustmerByEmail(Email);
@@ -33,17 +34,17 @@ namespace OnlineShoppind.business
             {
                 CustomerDto customer = new CustomerDto
                 {
-                    Email = customerDetails.Email,
-                    BirthDate = customerDetails.BirthDate,
-                    fName = customerDetails.fName,
-                    lName = customerDetails.lName,
-                    Gender = customerDetails.Gender,
-                    Password = customerDetails.Password,
-                    Telephone = customerDetails.Telephone,
                     Address = customerDetails.Address,
-                    StreetName = customerDetails.StreetName,
+                    BirthDate = customerDetails.BirthDate,
                     City = customerDetails.City,
+                    Email = customerDetails.Email,
+                    fName = customerDetails.fName,
+                    Gender = customerDetails.Gender,
+                    lName = customerDetails.lName,
+                    Password = customerDetails.Password,
                     State = customerDetails.State,
+                    StreetName = customerDetails.StreetName,
+                    Telephone = customerDetails.Telephone,
                     ZipCode = customerDetails.ZipCode
                 };
                 return customer;
@@ -52,11 +53,10 @@ namespace OnlineShoppind.business
             {
                 return null;
             }
-           
-            
             
         }
 
+        // Get all customers
         public IEnumerable<CustomerDto> GetCustomers()
         {
             List<CustomerDto> customersList = new List<CustomerDto>();
@@ -84,15 +84,16 @@ namespace OnlineShoppind.business
             return customersList;
         }
 
+        // Insert customer to database
         public CustomerDto InsertCustomer(CustomerDto customers)
         {
 
             if (customers != null)
             {
                 var password = customers.Password;
-                byte[] data = System.Text.Encoding.ASCII.GetBytes(password);
+                byte[] data = Encoding.ASCII.GetBytes(password);
                 data = new System.Security.Cryptography.SHA256Managed().ComputeHash(data);
-                String hash = System.Text.Encoding.ASCII.GetString(data);
+                String hash = Encoding.ASCII.GetString(data);
 
                 System.Diagnostics.Debug.WriteLine(hash);
 
@@ -107,21 +108,26 @@ namespace OnlineShoppind.business
             return customers;
         }
 
+        // Delete customer from database
         public void RemoveCustomer(string Email)
         {
-            var customerDetails = unitOfWork.Customer.GetCustmerByEmail(Email);
-
-          //  var customer = _mapper.Map<CustomerDto>(customerDetails);
+            unitOfWork.Customer.GetCustmerByEmail(Email);
 
             unitOfWork.Customer.RemoveCustomer(Email);
             unitOfWork.SaveChanges();
         }
 
+        // Edit customer using email
         public CustomerDto UpdateCustomer(string Email, CustomerDto newCustomer)
         {
+            if (Email == null || newCustomer == null)
+            {
+                throw new ArgumentNullException($"{Email} null", $"{newCustomer} null");
+            }
+
             var customerDetails = unitOfWork.Customer.GetCustmerByEmail(Email);
 
-            
+             
                 var password = newCustomer.Password;
 
                 byte[] data = System.Text.Encoding.ASCII.GetBytes(password);
@@ -150,18 +156,29 @@ namespace OnlineShoppind.business
             return newCustomer;
 
         }
+
+        // Login customer logic
         public CustomerDto Login(string Email, string password)
         {
-            CustomerDto login = new CustomerDto();
-            login.Email = Email;
-            login.Password = password;
+            CustomerDto login = new CustomerDto
+            {
+                Email = Email,
+                Password = password
+            };
             var user = AuthenticateUser(login);
 
             return user;
 
         }
+
+        // User authentication
         public CustomerDto AuthenticateUser(CustomerDto login)
         {
+            if (login == null)
+            {
+                throw new ArgumentNullException($"{login} is null");
+            }
+
             CustomerDto customer = new CustomerDto();
 
             if (login.Email != null && login.Password != null)
@@ -195,8 +212,14 @@ namespace OnlineShoppind.business
             return customer;
         }
 
+        // Genarate JSON Web Token 
         public string GenerateJSONWebToken(CustomerDto customerInfo)
         {
+            if (customerInfo == null)
+            {
+                throw new ArgumentException($"{customerInfo} is null");
+            }
+
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:Key"]));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 

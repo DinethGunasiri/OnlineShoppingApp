@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.Extensions.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using OnlineShoppind.Business.DTOs;
@@ -8,7 +9,6 @@ using OnlineShopping.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace OnlineShopping.Test.OrderTest
 {
@@ -16,16 +16,16 @@ namespace OnlineShopping.Test.OrderTest
     public class OrderUnitTest
     {
 
-        private OrderServices _orderServises;
-        private Mock<IUnitOfWork> _unitOfWork;
-        private Mock<IMapper> _mapper;
+        private readonly OrderServicesLogic _orderServises;
+        private readonly Mock<IUnitOfWork> _unitOfWork;
+        private readonly Mock<IMapper> _mapper;
 
         public OrderUnitTest()
         {
             _mapper = new Mock<IMapper>();
             _unitOfWork = new Mock<IUnitOfWork>();
 
-            _orderServises = new OrderServices(_unitOfWork.Object, _mapper.Object);
+            _orderServises = new OrderServicesLogic(_unitOfWork.Object, _mapper.Object);
         }
 
 

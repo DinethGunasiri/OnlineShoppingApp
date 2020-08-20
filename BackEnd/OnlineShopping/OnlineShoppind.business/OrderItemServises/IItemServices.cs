@@ -1,7 +1,6 @@
 ﻿using OnlineShoppind.Business.DTOs;
-using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Threading.Tasks;
 
 namespace OnlineShoppind.Business.OrderItemServises
 {
@@ -12,5 +11,7 @@ namespace OnlineShoppind.Business.OrderItemServises
         ItemDTO InsertItem(ItemDTO item);
         ItemDTO UpdateItem(int id, ItemDTO item);
         void RemoveItem(int id);
+        Task SendEmailAsync(int product);
+
     }
 }

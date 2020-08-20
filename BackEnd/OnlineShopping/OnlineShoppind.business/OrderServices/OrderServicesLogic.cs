@@ -2,43 +2,50 @@
 using OnlineShoppind.Business.DTOs;
 using OnlineShopping.data.UnitOfWork;
 using OnlineShopping.Data.Models;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace OnlineShoppind.Business.OrderServices
 {
-    public class OrderServices : IOrderServices
+    public class OrderServicesLogic : IOrderServices
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
 
-        public OrderServices(IUnitOfWork unitOfWork, IMapper mapper)
+        public OrderServicesLogic(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
 
+        // Get order by id
         public OrderDTO GetOrderById(int id)
         {
             var orderDetails = _unitOfWork.Order.GetOrderById(id);
 
-            // var order = _mapper.Map<OrderDTO>(orderDetails);
 
-            OrderDTO order = new OrderDTO
+             if (orderDetails != null)
             {
-                OrderId = orderDetails.OrderId,
-                CustomerId = orderDetails.CustomerId,
-                ShippingAddress = orderDetails.ShippingAddress,
-                OrderDate = orderDetails.OrderDate,
-                TotalPrice = orderDetails.TotalPrice,
-                PaymentType =  orderDetails.PaymentType
-            };
+                OrderDTO order = new OrderDTO
+                {
+                    OrderId = orderDetails.OrderId,
+                    CustomerId = orderDetails.CustomerId,
+                    ShippingAddress = orderDetails.ShippingAddress,
+                    OrderDate = orderDetails.OrderDate,
+                    TotalPrice = orderDetails.TotalPrice,
+                    PaymentType = orderDetails.PaymentType
+                };
 
-            return order;
+                return order;
+            }
+            else
+            {
+                return null;
+            }
+          
         }
 
+        // Get all orders
         public IEnumerable<OrderDTO> GetOrders()
         {
             var orderDetails = _unitOfWork.Order.GetOrders().ToList();
@@ -60,6 +67,7 @@ namespace OnlineShoppind.Business.OrderServices
             return orderList;
         }
 
+        // Insert order to database
         public OrderDTO InsertOrder(OrderDTO order)
         {
             var orders = _mapper.Map<Orders>(order);
@@ -75,6 +83,7 @@ namespace OnlineShoppind.Business.OrderServices
             // return order;
         }
 
+        // Delete order from database
         public void RemoveOrder(int id)
         {
             _unitOfWork.Order.RemoveOrder(id);

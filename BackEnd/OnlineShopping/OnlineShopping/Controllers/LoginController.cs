@@ -19,21 +19,28 @@ namespace OnlineShopping.Controllers
             _logger = logger;
         }
 
+        // Create token for customer
         [HttpPost]
         public IActionResult Login([FromBody] CustomerDto UserLogin)
         {
-            _logger.LogInformation("Start: Customer login");
+            if (UserLogin == null)
+            {
+                throw new ArgumentNullException($"{UserLogin}");
+            }
 
-            CustomerDto login = new CustomerDto();
+            _logger.LogInformation($"Start: Customer login {UserLogin}");
+
+
             byte[] data = System.Text.Encoding.ASCII.GetBytes(UserLogin.Password);
+
             data = new System.Security.Cryptography.SHA256Managed().ComputeHash(data);
+
             String hash = System.Text.Encoding.ASCII.GetString(data);
 
-            login = _customerService.Login(UserLogin.Email, hash);
+            var login = _customerService.Login(UserLogin.Email, hash);
 
             IActionResult responce = Unauthorized();
 
-            System.Diagnostics.Debug.WriteLine(login);
 
             if (login != null)
             {
@@ -41,7 +48,7 @@ namespace OnlineShopping.Controllers
                 responce = Ok(new { token = tokenStr });
             }
 
-            _logger.LogInformation("Complete: Login complete", login, responce);
+            _logger.LogInformation($"Complete: Login complete {login}, {responce}");
             return responce;
         }
     }

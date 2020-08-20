@@ -10,3 +10,15 @@ F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShoppind.business\obj\Debug\netcoreap
 F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShoppind.business\obj\Debug\netcoreapp3.1\OnlineShopping.Business.dll
 F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShoppind.business\obj\Debug\netcoreapp3.1\OnlineShopping.Business.pdb
 F:\ASP.NET\UnitOfWork\OnlineShopping\OnlineShoppind.business\obj\Debug\netcoreapp3.1\OnlineShopping.Business.csproj.CoreCompileInputs.cache
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShoppind.business\bin\Debug\netcoreapp3.1\OnlineShopping.Business.deps.json
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShoppind.business\bin\Debug\netcoreapp3.1\OnlineShopping.Business.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShoppind.business\bin\Debug\netcoreapp3.1\OnlineShopping.Business.pdb
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShoppind.business\bin\Debug\netcoreapp3.1\OnlineShopping.Data.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShoppind.business\bin\Debug\netcoreapp3.1\OnlineShopping.Data.pdb
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShoppind.business\obj\Debug\netcoreapp3.1\OnlineShopping.Business.csprojAssemblyReference.cache
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShoppind.business\obj\Debug\netcoreapp3.1\OnlineShopping.Business.AssemblyInfoInputs.cache
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShoppind.business\obj\Debug\netcoreapp3.1\OnlineShopping.Business.AssemblyInfo.cs
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShoppind.business\obj\Debug\netcoreapp3.1\OnlineShopping.Business.csproj.CopyComplete
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShoppind.business\obj\Debug\netcoreapp3.1\OnlineShopping.Business.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShoppind.business\obj\Debug\netcoreapp3.1\OnlineShopping.Business.pdb
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShoppind.business\obj\Debug\netcoreapp3.1\OnlineShopping.Business.csproj.CoreCompileInputs.cache

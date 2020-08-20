@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
+using System;
 
 namespace OnlineShopping.Data.Migrations
 {
@@ -6,6 +7,11 @@ namespace OnlineShopping.Data.Migrations
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            if (migrationBuilder == null)
+            {
+                throw new ArgumentException($"{migrationBuilder}");
+            }
+
             migrationBuilder.AddColumn<double>(
                 name: "TotalPrice",
                 table: "Orders",
@@ -15,6 +21,11 @@ namespace OnlineShopping.Data.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            if (migrationBuilder == null)
+            {
+                throw new ArgumentException($"{migrationBuilder}");
+            }
+
             migrationBuilder.DropColumn(
                 name: "TotalPrice",
                 table: "Orders");

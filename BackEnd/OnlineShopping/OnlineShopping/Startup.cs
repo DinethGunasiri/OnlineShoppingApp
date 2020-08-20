@@ -2,11 +2,14 @@ using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using NETCore.MailKit.Core;
 using OnlineShoppind.business;
 using OnlineShoppind.business.Customer;
 using OnlineShoppind.Business.OrderItemServises;
@@ -14,8 +17,12 @@ using OnlineShoppind.Business.OrderServices;
 using OnlineShoppind.Business.ProductServices;
 using OnlineShopping.data;
 using OnlineShopping.data.UnitOfWork;
+using OnlineShopping.Data.IRepositories;
+using OnlineShopping.Data.Repository;
+using OnlineShopping.ExceptionFilter;
 using System;
 using System.ComponentModel;
+using System.Net.Mime;
 using System.Text;
 
 namespace OnlineShopping
@@ -44,12 +51,13 @@ namespace OnlineShopping
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<ICustomerService, CustomerService>();
             services.AddScoped<IProductService, ProductServises>();
-            services.AddScoped<IOrderServices, OrderServices>();
+            services.AddScoped<IOrderServices, OrderServicesLogic>();
             services.AddScoped<IItemServices, ItemServices>();
-
+            
             services.AddAutoMapper(typeof(Startup));
 
-            
+            services.AddScoped<IMailer, Mailer>();
+
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                .AddJwtBearer(options =>
@@ -65,16 +73,41 @@ namespace OnlineShopping
                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
                    };
                });
+
+            services.AddControllers()
+                .ConfigureApiBehaviorOptions(options =>
+                {
+                    options.InvalidModelStateResponseFactory = context =>
+                    {
+                        var result = new BadRequestObjectResult(context.ModelState);
+
+                        result.ContentTypes.Add(MediaTypeNames.Application.Json);
+                        result.ContentTypes.Add(MediaTypeNames.Application.Xml);
+
+                        return result;
+                    };
+                });
+
+
+            services.AddControllers(options =>
+                options.Filters.Add(new HttpResponseExceptionFilter()));
+
             services.AddCors();
             services.AddMvc();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public static void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                // app.UseDeveloperExceptionPage();
+                // app.UseExceptionHandler("/error-local-development");
+                app.UseExceptionHandler("/error");
+            }
+            else
+            {
+                app.UseExceptionHandler("/error");
             }
 
             app.UseHttpsRedirection();

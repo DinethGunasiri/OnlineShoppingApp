@@ -10,7 +10,7 @@ namespace OnlineShopping.data
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        private DbSet<TEntity> _dbSet;
+        private readonly DbSet<TEntity> _dbSet;
         protected readonly ShoppingContext context;
 
         public Repository(ShoppingContext shoppingContext)
@@ -44,6 +44,11 @@ namespace OnlineShopping.data
 
         public void AddRange(IEnumerable<TEntity> entities)
         {
+            if (entities == null)
+            {
+                throw new ArgumentException($"{entities}");
+            }
+
             foreach (var entity in entities)
                  context.Entry<TEntity>(entity).State = EntityState.Added;
 
@@ -58,6 +63,11 @@ namespace OnlineShopping.data
 
         public void RemoveRange(IEnumerable<TEntity> entities)
         {
+            if (entities == null)
+            {
+                throw new ArgumentException($"{entities}");
+            }
+
             foreach (var entity in entities)
                 context.Entry<TEntity>(entity).State = EntityState.Deleted;
         }

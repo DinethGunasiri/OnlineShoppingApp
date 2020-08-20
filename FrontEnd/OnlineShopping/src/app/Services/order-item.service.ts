@@ -42,4 +42,9 @@ export class OrderItemServiceService {
   deleteOrderItem(itemId) {
     return this.http.delete(`${this.productItemuri}/${itemId}`);
   }
+
+  sendEmail(productId) {
+    return this.http.get(`${this.productItemuri}/email/${productId}`);
+    console.log(productId);
+  }
 }

@@ -5,7 +5,6 @@ using OnlineShopping.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace OnlineShoppind.Business.ProductServices
 {
@@ -19,23 +18,36 @@ namespace OnlineShoppind.Business.ProductServices
             _unitOfWork = unitOfWork;
             _mapper = mapper;
         }
+
+        // Get product by id
         public ProductDTO GetProductById(int id)
         {
             var productDetails = _unitOfWork.Product.GetProductById(id);
 
-            ProductDTO product = new ProductDTO
-            {
-                CategoryId = productDetails.CategoryId,
-                CurrentPrice = productDetails.CurrentPrice,
-                ProductDescription = productDetails.ProductDescription,
-                ProductId = productDetails.ProductId,
-                Discount = productDetails.Discount,
-                ProductName = productDetails.ProductName
-            };
 
-            return product ;
+            if (productDetails != null)
+            {
+                ProductDTO product = new ProductDTO
+                {
+                    CategoryId = productDetails.CategoryId,
+                    CurrentPrice = productDetails.CurrentPrice,
+                    Discount = productDetails.Discount,
+                    ProductDescription = productDetails.ProductDescription,
+                    ProductId = productDetails.ProductId,
+                    ProductName = productDetails.ProductName
+                };
+
+                return product;
+            }
+            else
+            {
+                return null;
+            }
+
+           
         }
 
+        // Get all products
         public IEnumerable<ProductDTO> GetProducts()
         {
             List<ProductDTO> productList = new List<ProductDTO>();
@@ -57,6 +69,7 @@ namespace OnlineShoppind.Business.ProductServices
             return productList;
         }
 
+        // Create new product
         public ProductDTO InsertProduct(ProductDTO products)
         {
             var product = _mapper.Map<Product>(products);
@@ -66,14 +79,21 @@ namespace OnlineShoppind.Business.ProductServices
             return products;
         }
 
+        // Delete product by id
         public void RemoveProduct(int id)
         {
             _unitOfWork.Product.RemoveProduct(id);
             _unitOfWork.SaveChanges();
         }
 
+        // Edit product details
         public ProductDTO UpdateProduct(int id, ProductDTO newproduct)
         {
+            if (newproduct == null)
+            {
+                throw new ArgumentNullException($"{newproduct} is null");
+            }
+
             var product = _unitOfWork.Product.GetProductById(id);
 
             product.CategoryId = newproduct.CategoryId;

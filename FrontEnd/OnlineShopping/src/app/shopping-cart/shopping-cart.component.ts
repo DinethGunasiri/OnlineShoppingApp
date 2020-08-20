@@ -223,6 +223,7 @@ export class ShoppingCartComponent implements OnInit {
             this.dataService.callNavBar();
         });
     }
+      this.itemService.sendEmail(orderId).subscribe((data2) => {});
   }
 
   clickRemoveButton(e, price, i, discount) {

@@ -1,8 +1,10 @@
 ﻿using AutoMapper;
+using Microsoft.Extensions.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
 using OnlineShoppind.Business.DTOs;
 using OnlineShoppind.Business.OrderItemServises;
+using OnlineShoppind.Business.OrderServices;
 using OnlineShopping.data.UnitOfWork;
 using OnlineShopping.Data.Models;
 using System;
@@ -19,14 +21,18 @@ namespace OnlineShopping.Test.ItemTest
         private ItemServices itemServices;
         private Mock<IUnitOfWork> _unitOfWork;
         private Mock<IMapper> _mapper;
+        private Mock<IConfiguration> _configuration;
+        private Mock<IOrderServices> _orderService;
 
         [TestInitialize]
         public void Setup()
         {
             _mapper = new Mock<IMapper>();
             _unitOfWork = new Mock<IUnitOfWork>();
+            _configuration = new Mock<IConfiguration>();
+            _orderService = new Mock<IOrderServices>();
 
-            itemServices = new ItemServices(_unitOfWork.Object, _mapper.Object);
+            itemServices = new ItemServices(_unitOfWork.Object, _mapper.Object, _configuration.Object, _orderService.Object);
         }
 
         [TestMethod]
