@@ -25,7 +25,6 @@ export class NavBarComponent implements OnInit {
                 });
 
                 this.dataService.cartCountChange.subscribe(value => {
-                 // console.log(value);
                   this.count = Number(value);
 
                   if (this.count != null) {
@@ -35,23 +34,23 @@ export class NavBarComponent implements OnInit {
               }
 
   ngOnInit(): void {
-   // console.log(this.isLogged);
-   // console.log(this.count);
     this.onChekingLoggin();
   }
 
+  // check user log in or not
   onChekingLoggin() {
     if (this.cookieService.get('Loged') == 'true') {
       this.isLogged = true;
+      // show user name in welcome message in navigation bar
       this.fullName = this.cookieService.get('fullName');
       if (this.cookieService.get('count') == null) {
         this.count = this.count;
       }
-      else {
+      else { // shopping cart count
         this.count = Number(this.cookieService.get('count'));
       }
     }
-    else {
+    else { // if user is not logged in
       this.isLogged = false;
       if (this.cookieService.get('count') == null) {
         this.count = this.count;
@@ -62,6 +61,7 @@ export class NavBarComponent implements OnInit {
     }
   }
 
+  // delete cookies when user log out
   onLogout() {
      this.cookieService.delete('Token');
      this.cookieService.delete('fullName');
@@ -71,6 +71,7 @@ export class NavBarComponent implements OnInit {
      this.notifyService.showSuccess('Logged out successfully', 'Log out');
   }
 
+  // pop error when lick on empty shopping cart
   clickShoppingCart() {
     console.log(this.count);
     if (this.count == 0) { 

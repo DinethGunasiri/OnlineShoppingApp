@@ -10,14 +10,17 @@ export class OrderService {
 
   constructor(private http: HttpClient) { }
 
+  // Get all orders
   getOrders() {
     return this.http.get(`${this.ordersuri}`);
   }
 
+  // Get order by id
   getOrdeById(id) {
     return this.http.get(`${this.ordersuri}/${id}`);
   }
 
+  // Save order in database
   postOrder(Date, address, email, total, paymentType) {
     const order = {
       orderDate: Date,

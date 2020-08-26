@@ -153,7 +153,7 @@ export class ShoppingCartComponent implements OnInit {
         console.log(this.price);
       }
     }
-    else { // quantity add price calculation
+    else { // quantity add price calculation and discounts
       this.priceArray[i] = ((price - ((price * discount) / 100)) * e.target.value);
       this.total = (this.total - (price - (price * discount) / 100)) + ((price - (price * discount) / 100) * e.target.value);
       console.log((price - ((price * discount) / 100)) * e.target.value);
@@ -162,12 +162,12 @@ export class ShoppingCartComponent implements OnInit {
     this.checkOutQuantity[i] = Number(this.quantity);
   }
 
-  getCustomer() {
+  getCustomer() { // if user not logged in send back to login page
     this.userEmail = this.cookieService.get('Email');
     if (!this.userEmail) {
       this.router.navigate(['login']);
     }
-    else {
+    else { // if user logged in get user details
       this.customerService.getCustomer(this.userEmail).subscribe((data) => {
         console.log(data);
         this.shippingForm.get('fName').setValue(data['fName']);
@@ -185,6 +185,7 @@ export class ShoppingCartComponent implements OnInit {
     this.getCustomer();
   }
 
+  // save order in database
   clickComplete() {
 
       this.fName = this.shippingForm.get('fName').value;
@@ -195,37 +196,47 @@ export class ShoppingCartComponent implements OnInit {
       this.state = this.shippingForm.get('state').value;
       this.postalCode = this.shippingForm.get('postalCode').value;
   
+      // get today's date
       this.currentDate = new Date();
       this.date = String(this.currentDate.getDate()).padStart(2, '0');
       this.month = String(this.currentDate.getMonth() + 1).padStart(2, '0'); //January is 0!
       this.year = this.currentDate.getFullYear();
   
       this.currentDate = (this.year + '-' + this.month + '-' + this.date).toString();
+
+      // user's full address
       this.fullAddress = this.address + ', ' + this.street + ', ' + this.city + ', ' + this.state;
       
+      // save order in database
       this.orderService.postOrder(this.currentDate, this.fullAddress, this.userEmail, this.total, this.paymentMethod).subscribe((data) => {
-        console.log(data);
+        // send order id to get order items
         this.postOrderItems(data['orderId']);
       });
     
   }
 
+  // get order items in order
   postOrderItems(orderId: any) {
       console.log(orderId);
       for (this.x = 0; this.x < this.products.length; this.x++) {
-         // console.log(this.checkOutQuantity[0]);
+        // save order items in database
        this.itemService.postOrderItem(this.products[this.x].productId, this.checkOutQuantity[this.x],
           this.products[this.x].currentPrice - ((this.products[this.x].currentPrice * this.products[this.x].discount) / 100 ),
            orderId).subscribe((data) => {
             this.orderComplete = 'true';
+            // remove items in cart
             this.cookieService.delete('cart');
+            // make cart count to 0
             this.cookieService.delete('count');
+
+            // call navigation bar component
             this.dataService.callNavBar();
         });
-    }
+    } // send order confirmation email to user
       this.itemService.sendEmail(orderId).subscribe((data2) => {});
   }
 
+  // remove item from cart
   clickRemoveButton(e, price, i, discount) {
     
      this.total = this.total - (price - (price * discount) / 100 );
@@ -244,9 +255,12 @@ export class ShoppingCartComponent implements OnInit {
      this.count = Number(this.cookieService.get('count'));
      this.count = this.count - 1;
      this.cookieService.set('count', this.count.toString());
+
+     // call navigation bar component
      this.dataService.callNavBar();
   }
 
+  // get payment method
   setPaymentMathod(method) {
     this.paymentMethod = method;
     this.methodType = 'true';

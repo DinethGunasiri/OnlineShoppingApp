@@ -26,7 +26,7 @@ export class ProductsComponent implements OnInit {
   count = 0;
   cart: any = [];
 
-
+ // Image urls
   images: any = [
     {url: '../../assets/banana.jpg'},
     {url: '../../assets/orange.jpg'},
@@ -46,16 +46,16 @@ export class ProductsComponent implements OnInit {
   ngOnInit(): void {
     this.getProducts();
     
-    // this.cookieService.delete('count');
-    // this.cookieService.delete('cart');
   }
 
+  // Get products
   getProducts() {
     this.productService.getProducts().subscribe((data: string []) => {
       this.products = data;
     });
   }
 
+  // Add item to cart
   addToCart(id) {
 
     if (!this.cookieService.get('cart')) {
@@ -78,7 +78,10 @@ export class ProductsComponent implements OnInit {
       this.count = this.count + 1;
     }
 
+    // add count to cookie
     this.cookieService.set('count', this.count.toString());
+
+    // call nav bar component
     this.dataSevice.callNavBar();
   }
 }

@@ -60,27 +60,30 @@ export class LoginComponent implements OnInit {
   }
 
 
+  // Set token in cookies
   onSetToken(email: any, password: any) {
     this.loginService.loginCustomer(email, password).subscribe((data: []) => {
         this.token = data;
-       // this.cookieService.set('Token', this.token.token.result);
         this.cookieService.set('Token', this.token.token);
 
         if (this.token.token != null) {
-
+          // getting user details when token is valid
           this.customerSrvice.getCustomer(email).subscribe((data2: []) => {
             this.customerDetails = data2;
-            console.log(this.customerDetails);
+
+            // set user details in cookies
             this.isLoged = 'true';
             this.cookieService.set('Loged', this.isLoged);
             this.cookieService.set('fullName', this.customerDetails.fName + ' ' + this.customerDetails.lName);
             this.cookieService.set('Email', email);
             this.router.navigate(['products']);
             this.notifyService.showSuccess(`Welcome ${this.customerDetails.fName}`, 'Login Successfull');
+            
+            // call navigation bar component
             this.dataService.callNavBar();
           });
         }
-      }, error => {
+      }, error => { // if user name or password invalid
         console.log(error);
         this.notifyService.showError(`Invalid user name or password`, 'Login Error');
       });

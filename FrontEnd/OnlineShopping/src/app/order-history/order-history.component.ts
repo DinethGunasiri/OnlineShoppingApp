@@ -40,9 +40,9 @@ export class OrderHistoryComponent implements OnInit {
     this.getOrders();
   }
 
+  // Get orders from database
   getOrders() {
     this.orderService.getOrders().subscribe((data: any[]) => {
-     // console.log(data);
       for (this.x = 0; this.x < data.length; this.x++) {
         if (data[this.x]['customerId'] == this.customerEmail) {
           this.ordres.push(data[this.x]);
@@ -51,8 +51,9 @@ export class OrderHistoryComponent implements OnInit {
     });
   }
 
+  // Get Order items in order using order id
   getOrderItems(id) {
-    this.itemService.getOrderItems().subscribe((data: []) => {  
+    this.itemService.getOrderItems().subscribe((data: []) => {
       for (this.x = 0; this.x < data.length; this.x++) {
         if (data[this.x]['orderId'] == id) {
           this.index = this.index + 1;
@@ -62,19 +63,22 @@ export class OrderHistoryComponent implements OnInit {
       }
     });
   }
-
+ 
+  // Get product name
   getProducts(productId, orderItems, index) {
     this.products = [];
     this.dataSource = [];
     this.orderItems = [];
+    // Get product by id
     this.productService.getProductById(productId).subscribe((data: []) => {
-   // console.log(data['productName']);
+   
+    // Add product name to products array
     this.products.push(data['productName']);
     this.orderItems.push(orderItems);
 
+    // add orderitems to mat table
     this.dataSource = new MatTableDataSource(this.orderItems);
     });
-    
   }
 
 }
