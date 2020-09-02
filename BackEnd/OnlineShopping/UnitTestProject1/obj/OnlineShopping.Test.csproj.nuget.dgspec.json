@@ -268,6 +268,10 @@
               "target": "Package",
               "version": "[3.1.5, )"
             },
+            "Microsoft.OpenApi": {
+              "target": "Package",
+              "version": "[1.2.3, )"
+            },
             "NETCore.MailKit": {
               "target": "Package",
               "version": "[2.0.3, )"
@@ -275,6 +279,18 @@
             "Serilog.AspNetCore": {
               "target": "Package",
               "version": "[3.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[5.5.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[5.5.1, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUi": {
+              "target": "Package",
+              "version": "[5.5.1, )"
             }
           },
           "imports": [

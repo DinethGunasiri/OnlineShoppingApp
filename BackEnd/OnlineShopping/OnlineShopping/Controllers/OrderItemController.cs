@@ -83,7 +83,7 @@ namespace OnlineShopping.Controllers
         // Edit product items
         [HttpPut]
         [Route("{id}")]
-        public ItemDTO UpdateItem(int id, ItemDTO item)
+        protected ItemDTO UpdateItem(int id, ItemDTO item)
         {
             _logger.LogInformation($"Start: Updating OrderItem {id}, {item}");
 

@@ -174,8 +174,6 @@ F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\Onlin
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\MimeKit.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\NETCore.MailKit.dll
-F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.csproj.CoreCompileInputs.cache
-F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.MvcApplicationPartsAssemblyInfo.cache
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\SendGrid.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\StarkbankEcdsa.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\FSharp.Core.dll
@@ -194,3 +192,10 @@ F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\Onlin
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\tr\FSharp.Core.resources.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\zh-Hans\FSharp.Core.resources.dll
 F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\zh-Hant\FSharp.Core.resources.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.csproj.CoreCompileInputs.cache
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.MvcApplicationPartsAssemblyInfo.cs
+F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping\obj\Debug\netcoreapp3.1\OnlineShopping.MvcApplicationPartsAssemblyInfo.cache

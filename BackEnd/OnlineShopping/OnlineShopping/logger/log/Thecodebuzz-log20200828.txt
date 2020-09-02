@@ -1,0 +1,45 @@
+2020-08-28 00:07:16.091 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-28 00:07:17.512 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-28 00:07:17.513 +05:30 [INF] Hosting environment: Development
+2020-08-28 00:07:17.513 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-28 00:07:17.642 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-28 00:07:17.827 +05:30 [INF] Request finished in 193.2627ms 200 text/html;charset=utf-8
+2020-08-28 00:07:18.924 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-28 00:07:19.104 +05:30 [ERR] Connection ID "18374686489872171026", Request ID "80000013-0002-ff00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.NotSupportedException: Ambiguous HTTP method for action - OnlineShopping.Controllers.ErrorController.ErrorLocalDevelopment (OnlineShopping). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2020-08-28 00:07:19.169 +05:30 [INF] Request finished in 240.446ms 500 
+2020-08-28 00:07:47.840 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-28 00:07:48.505 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-28 00:07:48.505 +05:30 [INF] Hosting environment: Development
+2020-08-28 00:07:48.505 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-28 00:07:48.640 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-28 00:07:48.928 +05:30 [INF] Request finished in 293.0809ms 200 text/html;charset=utf-8
+2020-08-28 00:07:50.150 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-28 00:07:50.359 +05:30 [ERR] Connection ID "18374686485577203731", Request ID "80000014-0001-ff00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.NotSupportedException: Ambiguous HTTP method for action - OnlineShopping.Controllers.ErrorController.ErrorLocalDevelopment (OnlineShopping). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2020-08-28 00:07:50.468 +05:30 [INF] Request finished in 319.8078ms 500 
+2020-08-28 00:10:17.527 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-28 00:10:18.168 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-28 00:10:18.169 +05:30 [INF] Hosting environment: Development
+2020-08-28 00:10:18.169 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-28 00:10:18.262 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-28 00:10:18.380 +05:30 [INF] Request finished in 122.571ms 200 text/html;charset=utf-8
+2020-08-28 00:10:19.934 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-28 00:10:20.166 +05:30 [ERR] Connection ID "18230571301796315141", Request ID "80000006-0002-fd00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.NotSupportedException: Ambiguous HTTP method for action - OnlineShopping.Controllers.ErrorController.ErrorLocalDevelopment (OnlineShopping). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2020-08-28 00:10:20.242 +05:30 [INF] Request finished in 309.0658ms 500 

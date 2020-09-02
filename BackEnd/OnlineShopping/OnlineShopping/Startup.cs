@@ -7,9 +7,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
-using NETCore.MailKit.Core;
+using Microsoft.OpenApi.Models;
 using OnlineShoppind.business;
 using OnlineShoppind.business.Customer;
 using OnlineShoppind.Business.OrderItemServises;
@@ -20,8 +19,7 @@ using OnlineShopping.data.UnitOfWork;
 using OnlineShopping.Data.IRepositories;
 using OnlineShopping.Data.Repository;
 using OnlineShopping.ExceptionFilter;
-using System;
-using System.ComponentModel;
+using System.Linq;
 using System.Net.Mime;
 using System.Text;
 
@@ -88,12 +86,19 @@ namespace OnlineShopping
                     };
                 });
 
-
+            
             services.AddControllers(options =>
                 options.Filters.Add(new HttpResponseExceptionFilter()));
 
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Online Shopping", Version = "v1" });
+                c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
+            });
+
             services.AddCors();
-            services.AddMvc();
+            services.AddMvc();           
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -101,9 +106,17 @@ namespace OnlineShopping
         {
             if (env.IsDevelopment())
             {
-                // app.UseDeveloperExceptionPage();
-                // app.UseExceptionHandler("/error-local-development");
                 app.UseExceptionHandler("/error");
+                // app.UseDeveloperExceptionPage();
+
+                app.UseSwagger();
+
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("../swagger/v1/swagger.json", "Online Shopping");
+                    
+                });
+
             }
             else
             {
@@ -120,6 +133,7 @@ namespace OnlineShopping
 
             app.UseAuthorization();
 
+           
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

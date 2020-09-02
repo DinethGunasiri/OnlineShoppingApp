@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "VcrEiObPWTjTdAg3PgmstGpsL0nxEjrNrLlcRyRRu4WTPsmdLA98HXLCpExJvib8lg1ktliQNz9L0dc0o6v26g==",
+  "dgSpecHash": "LOcstmEXTeicqXuMczP2pW4/LOwyQ1+RuJW7vrM72pvf3g3ZiYvR7kI/xE0PkKff+Aa0IjbIX275PUZkuY3Q9w==",
   "success": true,
   "projectFilePath": "F:\\ASP.NET\\Virtusa Git Assignment\\OnlineShoppingApp\\BackEnd\\OnlineShopping\\OnlineShopping\\OnlineShopping.csproj",
   "expectedPackageFiles": [
@@ -60,6 +60,7 @@
     "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\microsoft.netframework.analyzers\\3.0.0\\microsoft.netframework.analyzers.3.0.0.nupkg.sha512",
+    "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\mimekit\\2.9.1\\mimekit.2.9.1.nupkg.sha512",
@@ -100,6 +101,9 @@
     "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\serilog.sinks.debug\\1.0.1\\serilog.sinks.debug.1.0.1.nupkg.sha512",
     "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\serilog.sinks.file\\4.1.0\\serilog.sinks.file.4.1.0.nupkg.sha512",
     "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\starkbank-ecdsa\\1.2.0\\starkbank-ecdsa.1.2.0.nupkg.sha512",
+    "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.5.1\\swashbuckle.aspnetcore.swagger.5.5.1.nupkg.sha512",
+    "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.5.1\\swashbuckle.aspnetcore.swaggergen.5.5.1.nupkg.sha512",
+    "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.5.1\\swashbuckle.aspnetcore.swaggerui.5.5.1.nupkg.sha512",
     "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\Dineth Lahiru\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

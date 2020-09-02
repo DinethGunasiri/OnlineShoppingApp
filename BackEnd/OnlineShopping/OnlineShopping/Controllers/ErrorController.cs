@@ -9,7 +9,7 @@ namespace OnlineShopping.Controllers
     [ApiController]
     public class ErrorController : ControllerBase
     {
-               
+            [HttpGet]          
             [Route("/error-local-development")]
             public IActionResult ErrorLocalDevelopment(
                 [FromServices] IWebHostEnvironment webHostEnvironment)
@@ -33,6 +33,7 @@ namespace OnlineShopping.Controllers
                     title: context.Error.Message);
             }
 
+            [HttpGet]
             [Route("/error")]
             public IActionResult Error() => Problem();
         

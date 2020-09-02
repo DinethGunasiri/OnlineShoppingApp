@@ -1,0 +1,577 @@
+2020-08-31 11:24:39.014 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 11:24:40.626 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 11:24:40.627 +05:30 [INF] Hosting environment: Development
+2020-08-31 11:24:40.627 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 11:24:40.755 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 11:24:41.108 +05:30 [INF] Request finished in 360.3677ms 200 text/html;charset=utf-8
+2020-08-31 11:24:43.810 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 11:24:44.091 +05:30 [ERR] Connection ID "18158513699168452624", Request ID "80000011-0000-fc00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.NotSupportedException: Ambiguous HTTP method for action - OnlineShopping.Controllers.ErrorController.ErrorLocalDevelopment (OnlineShopping). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2020-08-31 11:24:44.294 +05:30 [INF] Request finished in 513.1343ms 500 
+2020-08-31 11:25:33.069 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 11:25:33.076 +05:30 [INF] Request finished in 6.8962ms 200 text/html;charset=utf-8
+2020-08-31 11:25:33.703 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 11:25:33.719 +05:30 [ERR] Connection ID "18158513699168452626", Request ID "80000013-0000-fc00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.NotSupportedException: Ambiguous HTTP method for action - OnlineShopping.Controllers.ErrorController.ErrorLocalDevelopment (OnlineShopping). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2020-08-31 11:25:33.721 +05:30 [INF] Request finished in 17.5542ms 500 
+2020-08-31 11:27:53.722 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 11:27:54.369 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 11:27:54.369 +05:30 [INF] Hosting environment: Development
+2020-08-31 11:27:54.369 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 11:27:54.431 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 11:27:54.536 +05:30 [INF] Request finished in 109.5709ms 200 text/html;charset=utf-8
+2020-08-31 11:27:55.648 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 11:27:55.885 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Ambiguous HTTP method for action - OnlineShopping.Controllers.ErrorController.ErrorLocalDevelopment (OnlineShopping). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2020-08-31 11:27:56.693 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ErrorController.Error (OnlineShopping)'
+2020-08-31 11:27:56.751 +05:30 [INF] Route matched with {action = "Error", controller = "Error"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller OnlineShopping.Controllers.ErrorController (OnlineShopping).
+2020-08-31 11:27:56.758 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-08-31 11:27:56.777 +05:30 [INF] Executed action OnlineShopping.Controllers.ErrorController.Error (OnlineShopping) in 18.6321ms
+2020-08-31 11:27:56.779 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ErrorController.Error (OnlineShopping)'
+2020-08-31 11:27:56.779 +05:30 [INF] Request finished in 1133.5105ms 500 application/problem+json; charset=utf-8
+2020-08-31 11:29:31.341 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 11:29:31.842 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 11:29:31.843 +05:30 [INF] Hosting environment: Development
+2020-08-31 11:29:31.852 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 11:29:31.922 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 11:29:32.065 +05:30 [INF] Request finished in 146.3726ms 200 text/html;charset=utf-8
+2020-08-31 11:29:33.336 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/swagger/v1/swagger.json  
+2020-08-31 11:29:33.723 +05:30 [INF] Request finished in 379.1495ms 404 
+2020-08-31 11:30:07.490 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 11:30:07.992 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 11:30:07.992 +05:30 [INF] Hosting environment: Development
+2020-08-31 11:30:07.992 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 11:30:08.064 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 11:30:08.187 +05:30 [INF] Request finished in 129.9703ms 200 text/html;charset=utf-8
+2020-08-31 11:30:09.167 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 11:30:09.395 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Ambiguous HTTP method for action - OnlineShopping.Controllers.ErrorController.ErrorLocalDevelopment (OnlineShopping). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2020-08-31 11:30:09.630 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ErrorController.Error (OnlineShopping)'
+2020-08-31 11:30:09.706 +05:30 [INF] Route matched with {action = "Error", controller = "Error"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller OnlineShopping.Controllers.ErrorController (OnlineShopping).
+2020-08-31 11:30:09.715 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-08-31 11:30:09.738 +05:30 [INF] Executed action OnlineShopping.Controllers.ErrorController.Error (OnlineShopping) in 18.7318ms
+2020-08-31 11:30:09.741 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ErrorController.Error (OnlineShopping)'
+2020-08-31 11:30:09.741 +05:30 [INF] Request finished in 577.1232ms 500 application/problem+json; charset=utf-8
+2020-08-31 11:31:40.967 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 11:31:41.511 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 11:31:41.511 +05:30 [INF] Hosting environment: Development
+2020-08-31 11:31:41.511 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 11:31:41.579 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 11:31:41.713 +05:30 [INF] Request finished in 137.1959ms 200 text/html;charset=utf-8
+2020-08-31 11:31:42.958 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 11:31:43.226 +05:30 [ERR] Connection ID "18374686489872171035", Request ID "8000001c-0002-ff00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.NotSupportedException: Ambiguous HTTP method for action - OnlineShopping.Controllers.ErrorController.ErrorLocalDevelopment (OnlineShopping). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2020-08-31 11:31:43.283 +05:30 [INF] Request finished in 326.4432ms 500 
+2020-08-31 11:35:11.039 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 11:35:11.381 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 11:35:11.381 +05:30 [INF] Hosting environment: Development
+2020-08-31 11:35:11.381 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 11:35:11.430 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-31 11:35:11.596 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 11:35:11.630 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-31 11:35:11.643 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-31 11:35:11.694 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 54.8373ms
+2020-08-31 11:35:11.697 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 11:35:11.701 +05:30 [INF] Request finished in 272.7457ms 200 application/json; charset=utf-8
+2020-08-31 11:35:12.462 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/favicon.ico  
+2020-08-31 11:35:12.472 +05:30 [INF] Request finished in 10.6311ms 404 
+2020-08-31 11:35:18.704 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 11:35:18.735 +05:30 [INF] Request finished in 31.756ms 200 text/html;charset=utf-8
+2020-08-31 11:35:19.162 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 11:35:19.261 +05:30 [ERR] Connection ID "18302628900129210387", Request ID "80000014-0003-fe00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+System.NotSupportedException: Ambiguous HTTP method for action - OnlineShopping.Controllers.ErrorController.ErrorLocalDevelopment (OnlineShopping). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+2020-08-31 11:35:19.311 +05:30 [INF] Request finished in 148.9744ms 500 
+2020-08-31 12:13:27.852 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 12:13:28.849 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 12:13:28.862 +05:30 [INF] Hosting environment: Development
+2020-08-31 12:13:28.862 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 12:13:28.953 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-31 12:13:29.297 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:13:29.358 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-31 12:13:29.374 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-31 12:13:29.457 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 88.3362ms
+2020-08-31 12:13:29.463 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:13:29.466 +05:30 [INF] Request finished in 519.838ms 200 application/json; charset=utf-8
+2020-08-31 12:13:36.695 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 12:13:36.770 +05:30 [INF] Request finished in 75.5476ms 200 text/html;charset=utf-8
+2020-08-31 12:13:37.453 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 12:13:37.614 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Ambiguous HTTP method for action - OnlineShopping.Controllers.ErrorController.ErrorLocalDevelopment (OnlineShopping). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2020-08-31 12:13:37.692 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ErrorController.Error (OnlineShopping)'
+2020-08-31 12:13:37.695 +05:30 [INF] Route matched with {action = "Error", controller = "Error"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller OnlineShopping.Controllers.ErrorController (OnlineShopping).
+2020-08-31 12:13:37.696 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-08-31 12:13:37.699 +05:30 [INF] Executed action OnlineShopping.Controllers.ErrorController.Error (OnlineShopping) in 4.5959ms
+2020-08-31 12:13:37.700 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ErrorController.Error (OnlineShopping)'
+2020-08-31 12:13:37.702 +05:30 [INF] Request finished in 249.8857ms 500 application/problem+json; charset=utf-8
+2020-08-31 12:15:34.166 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 12:15:34.964 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 12:15:34.964 +05:30 [INF] Hosting environment: Development
+2020-08-31 12:15:34.965 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 12:15:35.087 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-31 12:15:35.348 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:15:35.422 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-31 12:15:35.437 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-31 12:15:35.515 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 78.8727ms
+2020-08-31 12:15:35.520 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:15:35.521 +05:30 [INF] Request finished in 443.7204ms 200 application/json; charset=utf-8
+2020-08-31 12:15:38.913 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 12:15:38.986 +05:30 [INF] Request finished in 72.9395ms 200 text/html;charset=utf-8
+2020-08-31 12:15:40.375 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 12:15:40.567 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Ambiguous HTTP method for action - OnlineShopping.Controllers.ErrorController.ErrorLocalDevelopment (OnlineShopping). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2020-08-31 12:15:40.634 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ErrorController.Error (OnlineShopping)'
+2020-08-31 12:15:40.636 +05:30 [INF] Route matched with {action = "Error", controller = "Error"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller OnlineShopping.Controllers.ErrorController (OnlineShopping).
+2020-08-31 12:15:40.638 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-08-31 12:15:40.642 +05:30 [INF] Executed action OnlineShopping.Controllers.ErrorController.Error (OnlineShopping) in 5.3268ms
+2020-08-31 12:15:40.642 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ErrorController.Error (OnlineShopping)'
+2020-08-31 12:15:40.644 +05:30 [INF] Request finished in 268.9321ms 500 application/problem+json; charset=utf-8
+2020-08-31 12:16:49.487 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 12:17:06.788 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 12:17:07.568 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 12:17:07.569 +05:30 [INF] Hosting environment: Development
+2020-08-31 12:17:07.569 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 12:17:07.645 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-31 12:17:07.645 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 12:17:07.903 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:17:07.947 +05:30 [INF] Request finished in 307.1228ms 404 
+2020-08-31 12:17:08.022 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-31 12:17:08.056 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-31 12:17:08.125 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 92.3946ms
+2020-08-31 12:17:08.129 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:17:08.130 +05:30 [INF] Request finished in 492.0894ms 200 application/json; charset=utf-8
+2020-08-31 12:18:07.330 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 12:18:08.058 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 12:18:08.058 +05:30 [INF] Hosting environment: Development
+2020-08-31 12:18:08.058 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 12:18:08.197 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-31 12:18:08.461 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:18:08.508 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-31 12:18:08.524 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-31 12:18:08.595 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 73.4134ms
+2020-08-31 12:18:08.598 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:18:08.601 +05:30 [INF] Request finished in 409.6139ms 200 application/json; charset=utf-8
+2020-08-31 12:18:35.791 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 12:18:35.826 +05:30 [INF] Request finished in 35.5785ms 200 text/html;charset=utf-8
+2020-08-31 12:18:36.350 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/swagger/v1/swagger.json  
+2020-08-31 12:18:36.371 +05:30 [INF] Request finished in 21.4506ms 404 
+2020-08-31 12:19:02.597 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 12:19:03.408 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 12:19:03.408 +05:30 [INF] Hosting environment: Development
+2020-08-31 12:19:03.408 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 12:19:03.505 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-31 12:19:03.813 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:19:03.874 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-31 12:19:03.897 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-31 12:19:03.972 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 86.1895ms
+2020-08-31 12:19:03.979 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:19:03.982 +05:30 [INF] Request finished in 485.116ms 200 application/json; charset=utf-8
+2020-08-31 12:19:42.502 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 12:19:42.527 +05:30 [INF] Request finished in 25.2556ms 404 
+2020-08-31 12:20:50.173 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 12:20:50.970 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 12:20:50.970 +05:30 [INF] Hosting environment: Development
+2020-08-31 12:20:50.970 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 12:20:51.061 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-31 12:20:51.346 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:20:51.406 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-31 12:20:51.416 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-31 12:20:51.506 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 87.0516ms
+2020-08-31 12:20:51.510 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:20:51.512 +05:30 [INF] Request finished in 456.9854ms 200 application/json; charset=utf-8
+2020-08-31 12:20:52.022 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 12:20:52.103 +05:30 [INF] Request finished in 81.6352ms 200 text/html;charset=utf-8
+2020-08-31 12:20:53.558 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 12:20:53.859 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Ambiguous HTTP method for action - OnlineShopping.Controllers.ErrorController.ErrorLocalDevelopment (OnlineShopping). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2020-08-31 12:20:53.964 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ErrorController.Error (OnlineShopping)'
+2020-08-31 12:20:53.973 +05:30 [INF] Route matched with {action = "Error", controller = "Error"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller OnlineShopping.Controllers.ErrorController (OnlineShopping).
+2020-08-31 12:20:53.976 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-08-31 12:20:53.981 +05:30 [INF] Executed action OnlineShopping.Controllers.ErrorController.Error (OnlineShopping) in 7.5942ms
+2020-08-31 12:20:53.981 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ErrorController.Error (OnlineShopping)'
+2020-08-31 12:20:53.982 +05:30 [INF] Request finished in 424.6192ms 500 application/problem+json; charset=utf-8
+2020-08-31 12:21:32.187 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 12:21:33.059 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 12:21:33.061 +05:30 [INF] Hosting environment: Development
+2020-08-31 12:21:33.061 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 12:21:33.156 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-31 12:21:33.463 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:21:33.532 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-31 12:21:33.548 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-31 12:21:33.636 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 89.5969ms
+2020-08-31 12:21:33.647 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:21:33.649 +05:30 [INF] Request finished in 501.3155ms 200 application/json; charset=utf-8
+2020-08-31 12:21:49.132 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 12:21:49.183 +05:30 [INF] Request finished in 51.6224ms 200 text/html;charset=utf-8
+2020-08-31 12:21:51.446 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/v1/swagger.json  
+2020-08-31 12:21:51.481 +05:30 [INF] Request finished in 34.9685ms 404 
+2020-08-31 12:24:43.935 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 12:24:44.769 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 12:24:44.769 +05:30 [INF] Hosting environment: Development
+2020-08-31 12:24:44.769 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 12:24:44.952 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-31 12:24:45.342 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:24:45.420 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-31 12:24:45.437 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-31 12:24:45.507 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 73.8995ms
+2020-08-31 12:24:45.511 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:24:45.514 +05:30 [INF] Request finished in 571.7691ms 200 application/json; charset=utf-8
+2020-08-31 12:24:48.890 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 12:24:48.950 +05:30 [INF] Request finished in 60.9421ms 200 text/html;charset=utf-8
+2020-08-31 12:24:52.410 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 12:24:52.678 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Ambiguous HTTP method for action - OnlineShopping.Controllers.ErrorController.ErrorLocalDevelopment (OnlineShopping). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2020-08-31 12:24:52.811 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ErrorController.Error (OnlineShopping)'
+2020-08-31 12:24:52.814 +05:30 [INF] Route matched with {action = "Error", controller = "Error"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller OnlineShopping.Controllers.ErrorController (OnlineShopping).
+2020-08-31 12:24:52.817 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-08-31 12:24:52.822 +05:30 [INF] Executed action OnlineShopping.Controllers.ErrorController.Error (OnlineShopping) in 6.9003ms
+2020-08-31 12:24:52.822 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ErrorController.Error (OnlineShopping)'
+2020-08-31 12:24:52.822 +05:30 [INF] Request finished in 413.1467ms 500 application/problem+json; charset=utf-8
+2020-08-31 12:25:18.122 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 12:25:19.048 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 12:25:19.049 +05:30 [INF] Hosting environment: Development
+2020-08-31 12:25:19.049 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 12:25:19.173 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-31 12:25:19.173 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 12:25:19.454 +05:30 [INF] Request finished in 287.4845ms 200 text/html;charset=utf-8
+2020-08-31 12:25:19.807 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:25:19.932 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-31 12:25:19.977 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-31 12:25:20.024 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 75.0431ms
+2020-08-31 12:25:20.026 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:25:20.026 +05:30 [INF] Request finished in 863.1383ms 200 application/json; charset=utf-8
+2020-08-31 12:25:21.224 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 12:25:21.499 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Ambiguous HTTP method for action - OnlineShopping.Controllers.ErrorController.ErrorLocalDevelopment (OnlineShopping). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2020-08-31 12:25:21.594 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ErrorController.Error (OnlineShopping)'
+2020-08-31 12:25:21.598 +05:30 [INF] Route matched with {action = "Error", controller = "Error"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller OnlineShopping.Controllers.ErrorController (OnlineShopping).
+2020-08-31 12:25:21.599 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-08-31 12:25:21.607 +05:30 [INF] Executed action OnlineShopping.Controllers.ErrorController.Error (OnlineShopping) in 9.1078ms
+2020-08-31 12:25:21.607 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ErrorController.Error (OnlineShopping)'
+2020-08-31 12:25:21.608 +05:30 [INF] Request finished in 384.7082ms 500 application/problem+json; charset=utf-8
+2020-08-31 12:29:00.818 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 12:29:01.194 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 12:29:01.195 +05:30 [INF] Hosting environment: Development
+2020-08-31 12:29:01.195 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 12:29:01.279 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-31 12:29:01.485 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:29:01.517 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-31 12:29:01.526 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-31 12:29:01.569 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 42.8173ms
+2020-08-31 12:29:01.571 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:29:01.575 +05:30 [INF] Request finished in 303.1828ms 200 application/json; charset=utf-8
+2020-08-31 12:29:04.152 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 12:29:04.190 +05:30 [INF] Request finished in 39.0186ms 200 text/html;charset=utf-8
+2020-08-31 12:29:05.744 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 12:29:05.862 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Ambiguous HTTP method for action - OnlineShopping.Controllers.ErrorController.ErrorLocalDevelopment (OnlineShopping). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware.<Invoke>g__Awaited|6_0(ExceptionHandlerMiddleware middleware, HttpContext context, Task task)
+2020-08-31 12:29:05.912 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ErrorController.Error (OnlineShopping)'
+2020-08-31 12:29:05.915 +05:30 [INF] Route matched with {action = "Error", controller = "Error"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Error() on controller OnlineShopping.Controllers.ErrorController (OnlineShopping).
+2020-08-31 12:29:05.916 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2020-08-31 12:29:05.919 +05:30 [INF] Executed action OnlineShopping.Controllers.ErrorController.Error (OnlineShopping) in 3.2003ms
+2020-08-31 12:29:05.919 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ErrorController.Error (OnlineShopping)'
+2020-08-31 12:29:05.919 +05:30 [INF] Request finished in 176.5054ms 500 application/problem+json; charset=utf-8
+2020-08-31 12:46:22.064 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 12:46:22.863 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 12:46:22.863 +05:30 [INF] Hosting environment: Development
+2020-08-31 12:46:22.863 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 12:46:22.964 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-31 12:46:23.234 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:46:23.293 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-31 12:46:23.311 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-31 12:46:23.389 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 84.5642ms
+2020-08-31 12:46:23.393 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:46:23.396 +05:30 [INF] Request finished in 437.7925ms 200 application/json; charset=utf-8
+2020-08-31 12:46:25.699 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 12:46:25.782 +05:30 [INF] Request finished in 83.5027ms 200 text/html;charset=utf-8
+2020-08-31 12:46:27.958 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 12:46:28.196 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Ambiguous HTTP method for action - OnlineShopping.Controllers.ErrorController.ErrorLocalDevelopment (OnlineShopping). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-31 12:46:28.362 +05:30 [INF] Request finished in 404.1633ms 500 text/plain
+2020-08-31 12:48:29.867 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 12:48:30.663 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 12:48:30.664 +05:30 [INF] Hosting environment: Development
+2020-08-31 12:48:30.664 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 12:48:30.782 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-31 12:48:31.117 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:48:31.215 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-31 12:48:31.231 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-31 12:48:31.316 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 90.0933ms
+2020-08-31 12:48:31.320 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:48:31.333 +05:30 [INF] Request finished in 559.2304ms 200 application/json; charset=utf-8
+2020-08-31 12:48:36.115 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 12:48:36.182 +05:30 [INF] Request finished in 68.0728ms 200 text/html;charset=utf-8
+2020-08-31 12:48:38.237 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 12:48:38.488 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Ambiguous HTTP method for action - OnlineShopping.Controllers.ErrorController.ErrorLocalDevelopment (OnlineShopping). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-31 12:48:38.637 +05:30 [INF] Request finished in 400.6655ms 500 text/plain
+2020-08-31 12:48:41.679 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/swagger-ui-bundle.js.map  
+2020-08-31 12:48:41.732 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/swagger-ui.css.map  
+2020-08-31 12:48:41.768 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/swagger-ui-standalone-preset.js.map  
+2020-08-31 12:48:41.793 +05:30 [INF] Request finished in 68.264ms 404 
+2020-08-31 12:48:41.793 +05:30 [INF] Request finished in 114.7425ms 404 
+2020-08-31 12:48:41.810 +05:30 [INF] Request finished in 25.0742ms 404 
+2020-08-31 12:48:51.500 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 12:48:51.513 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Ambiguous HTTP method for action - OnlineShopping.Controllers.ErrorController.ErrorLocalDevelopment (OnlineShopping). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-31 12:48:51.607 +05:30 [INF] Request finished in 107.4488ms 500 text/html; charset=utf-8
+2020-08-31 12:54:16.944 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 12:54:17.949 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 12:54:17.950 +05:30 [INF] Hosting environment: Development
+2020-08-31 12:54:17.950 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 12:54:18.046 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-31 12:54:18.439 +05:30 [INF] Request finished in 395.5464ms 404 
+2020-08-31 12:54:24.164 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 12:54:24.269 +05:30 [INF] Request finished in 105.1308ms 200 text/html;charset=utf-8
+2020-08-31 12:54:29.423 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 12:54:29.539 +05:30 [INF] Request finished in 116.2091ms 200 application/json;charset=utf-8
+2020-08-31 12:55:23.793 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 12:55:26.353 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 12:55:26.355 +05:30 [INF] Hosting environment: Development
+2020-08-31 12:55:26.355 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 12:55:26.691 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-31 12:55:27.595 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:55:27.783 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-31 12:55:27.822 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-31 12:55:28.147 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 347.7455ms
+2020-08-31 12:55:28.153 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:55:28.171 +05:30 [INF] Request finished in 1476.7702ms 200 application/json; charset=utf-8
+2020-08-31 12:55:34.396 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 12:55:34.491 +05:30 [INF] Request finished in 95.8419ms 200 text/html;charset=utf-8
+2020-08-31 12:55:37.606 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 12:55:37.977 +05:30 [INF] Request finished in 373.7204ms 200 application/json;charset=utf-8
+2020-08-31 12:56:40.693 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:44355/api/product application/json 126
+2020-08-31 12:56:40.739 +05:30 [INF] Request finished in 54.8717ms 404 
+2020-08-31 12:56:49.499 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 12:56:49.510 +05:30 [INF] Request finished in 11.3637ms 200 text/html;charset=utf-8
+2020-08-31 12:56:51.105 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 12:56:51.164 +05:30 [INF] Request finished in 59.0554ms 200 application/json;charset=utf-8
+2020-08-31 12:56:51.296 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/favicon-32x32.png  
+2020-08-31 12:56:51.420 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-08-31 12:56:51.421 +05:30 [INF] Request finished in 125.4877ms 200 image/png
+2020-08-31 12:57:41.811 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 12:57:43.682 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 12:57:43.683 +05:30 [INF] Hosting environment: Development
+2020-08-31 12:57:43.683 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 12:57:43.846 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 12:57:43.846 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-31 12:57:44.678 +05:30 [INF] Request finished in 388.4372ms 200 text/html;charset=utf-8
+2020-08-31 12:57:44.904 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:57:45.014 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-31 12:57:45.046 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-31 12:57:45.117 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 71.4893ms
+2020-08-31 12:57:45.125 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:57:45.125 +05:30 [INF] Request finished in 1291.2396ms 200 application/json; charset=utf-8
+2020-08-31 12:57:51.688 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 12:57:52.193 +05:30 [INF] Request finished in 506.8674ms 200 application/json;charset=utf-8
+2020-08-31 12:58:02.954 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:44355/api/product application/json 126
+2020-08-31 12:58:02.967 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping)'
+2020-08-31 12:58:02.974 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShoppind.Business.DTOs.ProductDTO] GetProducts() on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-08-31 12:58:04.659 +05:30 [INF] Start : Getting product details System.Collections.Generic.List`1[OnlineShoppind.Business.DTOs.ProductDTO]
+2020-08-31 12:58:06.661 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-08-31 12:58:11.085 +05:30 [INF] Executed DbCommand (1,439ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+2020-08-31 12:58:11.415 +05:30 [INF] Completed : Products System.Collections.Generic.List`1[OnlineShoppind.Business.DTOs.ProductDTO]
+2020-08-31 12:58:11.417 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnlineShoppind.Business.DTOs.ProductDTO, OnlineShopping.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-08-31 12:58:11.433 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping) in 8458.3323ms
+2020-08-31 12:58:11.433 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping)'
+2020-08-31 12:58:11.441 +05:30 [INF] Request finished in 8487.9203ms 200 application/json; charset=utf-8
+2020-08-31 12:58:18.695 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 12:58:18.708 +05:30 [INF] Request finished in 14.2744ms 200 text/html;charset=utf-8
+2020-08-31 12:58:20.101 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 12:58:20.136 +05:30 [INF] Request finished in 35.3192ms 200 application/json;charset=utf-8
+2020-08-31 12:58:20.151 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/favicon-32x32.png  
+2020-08-31 12:58:20.299 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-08-31 12:58:20.299 +05:30 [INF] Request finished in 148.0645ms 200 image/png
+2020-08-31 12:59:16.678 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 12:59:18.169 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 12:59:18.170 +05:30 [INF] Hosting environment: Development
+2020-08-31 12:59:18.170 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 12:59:18.468 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-31 12:59:18.468 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 12:59:18.929 +05:30 [INF] Request finished in 455.84ms 200 text/html;charset=utf-8
+2020-08-31 12:59:19.505 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:59:19.645 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-31 12:59:19.679 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-31 12:59:19.753 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 62.8119ms
+2020-08-31 12:59:19.764 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 12:59:19.764 +05:30 [INF] Request finished in 1305.8715ms 200 application/json; charset=utf-8
+2020-08-31 12:59:31.065 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 12:59:31.646 +05:30 [INF] Request finished in 582.1197ms 200 application/json;charset=utf-8
+2020-08-31 13:00:23.347 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 13:00:24.894 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 13:00:24.895 +05:30 [INF] Hosting environment: Development
+2020-08-31 13:00:24.895 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 13:00:25.169 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-31 13:00:25.867 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 13:00:25.982 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-31 13:00:26.009 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-31 13:00:26.177 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 176.766ms
+2020-08-31 13:00:26.186 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 13:00:26.192 +05:30 [INF] Request finished in 1033.003ms 200 application/json; charset=utf-8
+2020-08-31 13:00:29.322 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 13:00:29.441 +05:30 [INF] Request finished in 120.3663ms 200 text/html;charset=utf-8
+2020-08-31 13:00:32.170 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 13:00:32.710 +05:30 [INF] Request finished in 540.5669ms 200 application/json;charset=utf-8
+2020-08-31 13:01:30.568 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 13:01:32.479 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 13:01:32.480 +05:30 [INF] Hosting environment: Development
+2020-08-31 13:01:32.480 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 13:01:32.728 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 13:01:32.728 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-31 13:01:33.230 +05:30 [INF] Request finished in 503.1341ms 200 text/html;charset=utf-8
+2020-08-31 13:01:34.016 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 13:01:34.148 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-31 13:01:34.180 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-31 13:01:34.269 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 71.658ms
+2020-08-31 13:01:34.278 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 13:01:34.278 +05:30 [INF] Request finished in 1567.2307ms 200 application/json; charset=utf-8
+2020-08-31 13:01:46.291 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 13:01:46.664 +05:30 [INF] Request finished in 373.905ms 200 application/json;charset=utf-8
+2020-08-31 13:02:37.279 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 13:02:39.153 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 13:02:39.154 +05:30 [INF] Hosting environment: Development
+2020-08-31 13:02:39.155 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 13:02:39.308 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 13:02:39.308 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-31 13:02:39.579 +05:30 [INF] Request finished in 278.5683ms 200 text/html;charset=utf-8
+2020-08-31 13:02:40.247 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 13:02:40.343 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-31 13:02:40.366 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-31 13:02:40.408 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 47.5377ms
+2020-08-31 13:02:40.411 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 13:02:40.412 +05:30 [INF] Request finished in 1112.9431ms 200 application/json; charset=utf-8
+2020-08-31 13:02:44.108 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 13:02:44.251 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.NotSupportedException: Ambiguous HTTP method for action - OnlineShopping.Controllers.ErrorController.ErrorLocalDevelopment (OnlineShopping). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2020-08-31 13:02:44.506 +05:30 [INF] Request finished in 398.8569ms 500 text/plain
+2020-08-31 13:03:36.059 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 13:03:37.209 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 13:03:37.209 +05:30 [INF] Hosting environment: Development
+2020-08-31 13:03:37.209 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 13:03:37.362 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 13:03:37.362 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-31 13:03:37.650 +05:30 [INF] Request finished in 282.3261ms 200 text/html;charset=utf-8
+2020-08-31 13:03:37.919 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 13:03:38.020 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-31 13:03:38.047 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-31 13:03:38.091 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 48.2391ms
+2020-08-31 13:03:38.102 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 13:03:38.102 +05:30 [INF] Request finished in 748.9798ms 200 application/json; charset=utf-8
+2020-08-31 13:03:41.820 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 13:03:42.281 +05:30 [INF] Request finished in 463.9227ms 200 application/json;charset=utf-8
+2020-08-31 13:04:30.992 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 13:04:32.044 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 13:04:32.044 +05:30 [INF] Hosting environment: Development
+2020-08-31 13:04:32.045 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 13:04:32.169 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/weatherforecast  
+2020-08-31 13:04:32.588 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 13:04:32.672 +05:30 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShopping.WeatherForecast] Get() on controller OnlineShopping.Controllers.WeatherForecastController (OnlineShopping).
+2020-08-31 13:04:32.689 +05:30 [INF] Executing ObjectResult, writing value of type 'OnlineShopping.WeatherForecast[]'.
+2020-08-31 13:04:32.775 +05:30 [INF] Executed action OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping) in 85.2424ms
+2020-08-31 13:04:32.781 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.WeatherForecastController.Get (OnlineShopping)'
+2020-08-31 13:04:32.788 +05:30 [INF] Request finished in 630.3932ms 200 application/json; charset=utf-8
+2020-08-31 13:04:38.863 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 13:04:38.928 +05:30 [INF] Request finished in 65.6856ms 200 text/html;charset=utf-8
+2020-08-31 13:04:41.015 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 13:04:41.468 +05:30 [INF] Request finished in 453.7268ms 200 application/json;charset=utf-8
+2020-08-31 13:06:30.933 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 13:06:32.069 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 13:06:32.069 +05:30 [INF] Hosting environment: Development
+2020-08-31 13:06:32.069 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 13:06:32.224 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 13:06:32.468 +05:30 [INF] Request finished in 254.0006ms 200 text/html;charset=utf-8
+2020-08-31 13:06:34.581 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 13:06:35.161 +05:30 [INF] Request finished in 582.8458ms 200 application/json;charset=utf-8
+2020-08-31 13:07:17.158 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 13:07:17.189 +05:30 [INF] Request finished in 32.0091ms 200 application/json;charset=utf-8
+2020-08-31 15:40:16.833 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-08-31 15:40:17.904 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-08-31 15:40:17.904 +05:30 [INF] Hosting environment: Development
+2020-08-31 15:40:17.905 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-08-31 15:40:18.015 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-08-31 15:40:18.204 +05:30 [INF] Request finished in 196.8015ms 200 text/html;charset=utf-8
+2020-08-31 15:40:20.021 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-08-31 15:40:20.415 +05:30 [INF] Request finished in 394.4675ms 200 application/json;charset=utf-8
