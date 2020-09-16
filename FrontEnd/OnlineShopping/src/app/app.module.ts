@@ -35,6 +35,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDividerModule} from '@angular/material/divider';
 import {OrderHistoryComponent} from '../app/order-history/order-history.component';
 import {MatRadioModule} from '@angular/material/radio';
+import { ChartComponent } from './chart/chart.component';
+import {ChartsModule} from 'ng2-charts';
 
 
 @NgModule({
@@ -45,7 +47,8 @@ import {MatRadioModule} from '@angular/material/radio';
     ProductsComponent,
     NavBarComponent,
     ShoppingCartComponent,
-    OrderHistoryComponent
+    OrderHistoryComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
@@ -75,7 +78,8 @@ import {MatRadioModule} from '@angular/material/radio';
     MatTableModule,
     MatExpansionModule,
     MatDividerModule,
-    MatRadioModule
+    MatRadioModule,
+    ChartsModule
   ],
   providers: [
     {

@@ -6,6 +6,7 @@ import { ProductsComponent } from './products/products.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { OrderHistoryComponent } from './order-history/order-history.component';
+import { ChartComponent } from './chart/chart.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'myorders',
     component: OrderHistoryComponent
+  },
+  {
+    path: 'chart',
+    component: ChartComponent
   },
   {
     path: '',
