@@ -96,6 +96,7 @@ namespace OnlineShopping
                 c.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
             });
 
+            
             services.AddCors();
             services.AddMvc();           
            
@@ -133,6 +134,7 @@ namespace OnlineShopping
 
             app.UseAuthorization();
 
+            app.UseStaticFiles();
            
             app.UseEndpoints(endpoints =>
             {

@@ -1,0 +1,106 @@
+2020-09-23 13:31:37.503 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-23 13:31:40.318 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-23 13:31:40.319 +05:30 [INF] Hosting environment: Development
+2020-09-23 13:31:40.320 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-09-23 13:31:40.702 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-09-23 13:31:41.309 +05:30 [INF] Request finished in 614.793ms 200 text/html;charset=utf-8
+2020-09-23 13:31:43.042 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-09-23 13:31:43.644 +05:30 [INF] Request finished in 603.5806ms 200 application/json;charset=utf-8
+2020-09-23 13:38:59.780 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-23 13:39:00.599 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-23 13:39:00.599 +05:30 [INF] Hosting environment: Development
+2020-09-23 13:39:00.599 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-09-23 13:39:00.681 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-09-23 13:39:00.800 +05:30 [INF] Request finished in 119.4149ms 200 text/html;charset=utf-8
+2020-09-23 13:39:01.632 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-09-23 13:39:02.038 +05:30 [INF] Request finished in 406.5102ms 200 application/json;charset=utf-8
+2020-09-23 13:50:55.071 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-23 13:50:56.770 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-23 13:50:56.771 +05:30 [INF] Hosting environment: Development
+2020-09-23 13:50:56.771 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-09-23 13:50:56.972 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-09-23 13:50:57.240 +05:30 [INF] Request finished in 279.9715ms 200 text/html;charset=utf-8
+2020-09-23 13:50:58.767 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-09-23 13:50:59.423 +05:30 [INF] Request finished in 666.2137ms 200 application/json;charset=utf-8
+2020-09-23 14:02:47.434 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-23 14:02:50.227 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-23 14:02:50.228 +05:30 [INF] Hosting environment: Development
+2020-09-23 14:02:50.228 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-09-23 14:02:50.417 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-09-23 14:02:50.737 +05:30 [INF] Request finished in 334.8455ms 200 text/html;charset=utf-8
+2020-09-23 14:02:52.217 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-09-23 14:02:52.831 +05:30 [INF] Request finished in 614.7312ms 200 application/json;charset=utf-8
+2020-09-23 14:11:54.879 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-23 14:11:56.344 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-23 14:11:56.344 +05:30 [INF] Hosting environment: Development
+2020-09-23 14:11:56.344 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-09-23 14:11:56.529 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-09-23 14:11:56.772 +05:30 [INF] Request finished in 251.4434ms 200 text/html;charset=utf-8
+2020-09-23 14:11:58.211 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-09-23 14:11:58.715 +05:30 [INF] Request finished in 505.0525ms 200 application/json;charset=utf-8
+2020-09-23 14:15:46.320 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-23 14:15:47.334 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-23 14:15:47.335 +05:30 [INF] Hosting environment: Development
+2020-09-23 14:15:47.336 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-09-23 14:15:47.466 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-09-23 14:15:47.697 +05:30 [INF] Request finished in 235.9997ms 200 text/html;charset=utf-8
+2020-09-23 14:15:48.725 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-09-23 14:15:49.243 +05:30 [INF] Request finished in 518.2392ms 200 application/json;charset=utf-8
+2020-09-23 14:20:45.527 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-23 14:20:46.660 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-23 14:20:46.660 +05:30 [INF] Hosting environment: Development
+2020-09-23 14:20:46.660 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-09-23 14:20:46.798 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-09-23 14:20:47.014 +05:30 [INF] Request finished in 222.8694ms 200 text/html;charset=utf-8
+2020-09-23 14:20:48.343 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-09-23 14:20:48.835 +05:30 [INF] Request finished in 492.1226ms 200 application/json;charset=utf-8
+2020-09-23 17:36:25.679 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-23 17:36:26.681 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-23 17:36:26.682 +05:30 [INF] Hosting environment: Production
+2020-09-23 17:36:26.682 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-09-23 17:36:26.782 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-09-23 17:36:27.576 +05:30 [INF] Request finished in 804.7091ms 404 
+2020-09-23 17:37:05.927 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-23 17:37:06.709 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-23 17:37:06.709 +05:30 [INF] Hosting environment: Production
+2020-09-23 17:37:06.710 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-09-23 17:37:06.851 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-09-23 17:37:07.173 +05:30 [INF] Request finished in 328.2024ms 404 
+2020-09-23 17:38:03.249 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-23 17:38:04.032 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-23 17:38:04.032 +05:30 [INF] Hosting environment: Development
+2020-09-23 17:38:04.032 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-09-23 17:38:04.167 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-09-23 17:38:04.381 +05:30 [INF] Request finished in 226.3331ms 200 text/html;charset=utf-8
+2020-09-23 17:38:07.612 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-09-23 17:38:07.967 +05:30 [INF] Request finished in 356.1982ms 200 application/json;charset=utf-8
+2020-09-23 17:38:42.112 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-23 17:38:43.061 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-23 17:38:43.061 +05:30 [INF] Hosting environment: Development
+2020-09-23 17:38:43.061 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-09-23 17:38:43.149 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-09-23 17:38:43.514 +05:30 [INF] Request finished in 369.4837ms 200 text/html;charset=utf-8
+2020-09-23 17:38:47.489 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-09-23 17:38:47.826 +05:30 [INF] Request finished in 337.7351ms 200 application/json;charset=utf-8
+2020-09-23 18:26:57.958 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-23 18:26:59.806 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-23 18:26:59.806 +05:30 [INF] Hosting environment: Production
+2020-09-23 18:26:59.806 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-09-23 18:27:00.409 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-09-23 18:27:02.984 +05:30 [INF] Request finished in 2584.3197ms 404 
+2020-09-23 18:27:40.129 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-23 18:27:41.136 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-23 18:27:41.137 +05:30 [INF] Hosting environment: Development
+2020-09-23 18:27:41.219 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-09-23 18:27:41.345 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-09-23 18:27:41.587 +05:30 [INF] Request finished in 246.6813ms 200 text/html;charset=utf-8
+2020-09-23 18:27:42.821 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-09-23 18:27:43.282 +05:30 [INF] Request finished in 467.2329ms 200 application/json;charset=utf-8
+2020-09-23 19:44:33.371 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-23 19:44:34.060 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-23 19:44:34.061 +05:30 [INF] Hosting environment: Development
+2020-09-23 19:44:34.061 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-09-23 19:44:34.163 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-09-23 19:44:34.324 +05:30 [INF] Request finished in 166.5106ms 200 text/html;charset=utf-8
+2020-09-23 19:44:35.281 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-09-23 19:44:35.532 +05:30 [INF] Request finished in 251.5533ms 200 application/json;charset=utf-8

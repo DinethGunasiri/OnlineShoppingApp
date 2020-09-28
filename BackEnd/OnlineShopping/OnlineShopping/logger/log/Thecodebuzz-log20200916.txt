@@ -700,3 +700,37 @@ WHERE [p].[ProductId] = @__p_0
 2020-09-16 15:13:05.432 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping) in 3.1703ms
 2020-09-16 15:13:05.432 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProduct (OnlineShopping)'
 2020-09-16 15:13:05.432 +05:30 [INF] Request finished in 4.2135ms 200 application/json; charset=utf-8
+2020-09-16 15:37:46.924 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-16 15:37:48.608 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-16 15:37:48.609 +05:30 [INF] Hosting environment: Development
+2020-09-16 15:37:48.609 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-09-16 15:37:48.799 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-09-16 15:37:49.031 +05:30 [INF] Request finished in 236.3166ms 200 text/html;charset=utf-8
+2020-09-16 15:37:50.655 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-09-16 15:37:50.968 +05:30 [INF] Request finished in 314.2756ms 200 application/json;charset=utf-8
+2020-09-16 15:37:58.280 +05:30 [INF] Request starting HTTP/2.0 OPTIONS https://localhost:44355/api/product  
+2020-09-16 15:37:58.924 +05:30 [INF] CORS policy execution successful.
+2020-09-16 15:37:58.927 +05:30 [INF] Request finished in 647.6597ms 204 
+2020-09-16 15:37:58.936 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/product  
+2020-09-16 15:37:59.702 +05:30 [INF] Successfully validated the token.
+2020-09-16 15:37:59.706 +05:30 [INF] CORS policy execution successful.
+2020-09-16 15:37:59.711 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping)'
+2020-09-16 15:37:59.792 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShoppind.Business.DTOs.ProductDTO] GetProducts() on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-09-16 15:38:00.703 +05:30 [INF] Start : Getting product details System.Collections.Generic.List`1[OnlineShoppind.Business.DTOs.ProductDTO]
+2020-09-16 15:38:01.938 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-16 15:38:03.283 +05:30 [INF] Executed DbCommand (89ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+2020-09-16 15:38:03.493 +05:30 [INF] Completed : Products System.Collections.Generic.List`1[OnlineShoppind.Business.DTOs.ProductDTO]
+2020-09-16 15:38:03.503 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnlineShoppind.Business.DTOs.ProductDTO, OnlineShopping.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-16 15:38:03.539 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping) in 3733.9735ms
+2020-09-16 15:38:03.539 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping)'
+2020-09-16 15:38:03.546 +05:30 [INF] Request finished in 4609.9988ms 200 application/json; charset=utf-8
+2020-09-16 15:45:35.452 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-16 15:45:36.311 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-16 15:45:36.319 +05:30 [INF] Hosting environment: Development
+2020-09-16 15:45:36.319 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-09-16 15:45:36.418 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-09-16 15:45:36.651 +05:30 [INF] Request finished in 244.7574ms 200 text/html;charset=utf-8
+2020-09-16 15:45:38.034 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-09-16 15:45:38.401 +05:30 [INF] Request finished in 368.5285ms 200 application/json;charset=utf-8

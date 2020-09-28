@@ -104,21 +104,20 @@ export class CustomerRegistrationComponent implements OnInit {
         if (data) {
           this.notifyService.showError('Email already exsists, please log in', 'Password Error');
         }
-        else { // save new user in database
-          this.customerService.postCustomer
-            (this.emailTxt, this.fNameTxt, this.lNameTxt, this.birthDate,
-              this.genderSelect, this.addressTxt1, this.streetTxt,
-              this.cityTxt, this.stateTxt , this.postalCodeTxt, this.telephoneTxt, this.passwordTxt).subscribe((data) => {
-                
-                // if data add successfully navigate back to home page
-                this.router.navigate(['products']);
+       }, error => {
+        this.customerService.postCustomer
+        (this.emailTxt, this.fNameTxt, this.lNameTxt, this.birthDate,
+          this.genderSelect, this.addressTxt1, this.streetTxt,
+          this.cityTxt, this.stateTxt , this.postalCodeTxt, this.telephoneTxt, this.passwordTxt).subscribe((data) => {
+            
+            // if data add successfully navigate back to home page
+            this.router.navigate(['products']);
 
-                // success message
-                this.notifyService.showSuccess('Successfully registered, please log in', 'Registration successful');
-            }, error => { // registration error message
-              this.notifyService.showError('Error', 'Registration Error');
-            });
-        }
+            // success message
+            this.notifyService.showSuccess('Successfully registered, please log in', 'Registration successful');
+        }, error => { // registration error message
+          this.notifyService.showError('Error', 'Registration Error');
+        });
        });
       }
   }

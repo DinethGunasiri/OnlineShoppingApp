@@ -1,0 +1,64 @@
+2020-09-24 13:33:45.983 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-24 13:33:47.395 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-24 13:33:47.397 +05:30 [INF] Hosting environment: Production
+2020-09-24 13:33:47.398 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-09-24 13:33:47.563 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-09-24 13:33:48.736 +05:30 [INF] Request finished in 1178.9639ms 404 
+2020-09-24 13:34:17.330 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-24 13:34:17.952 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-24 13:34:17.952 +05:30 [INF] Hosting environment: Production
+2020-09-24 13:34:17.952 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-09-24 13:34:18.047 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-09-24 13:34:18.383 +05:30 [INF] Request finished in 344.6134ms 404 
+2020-09-24 13:36:51.396 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-24 13:36:52.125 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-24 13:36:52.126 +05:30 [INF] Hosting environment: Development
+2020-09-24 13:36:52.126 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-09-24 13:36:52.228 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-09-24 13:36:52.425 +05:30 [INF] Request finished in 202.0415ms 200 text/html;charset=utf-8
+2020-09-24 13:36:53.370 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-09-24 13:36:53.793 +05:30 [INF] Request finished in 424.9818ms 200 application/json;charset=utf-8
+2020-09-24 14:07:54.275 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-24 14:07:55.250 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-24 14:07:55.251 +05:30 [INF] Hosting environment: Development
+2020-09-24 14:07:55.251 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-09-24 14:07:55.396 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-09-24 14:07:55.596 +05:30 [INF] Request finished in 207.0681ms 200 text/html;charset=utf-8
+2020-09-24 14:07:56.837 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-09-24 14:07:57.227 +05:30 [INF] Request finished in 390.3051ms 200 application/json;charset=utf-8
+2020-09-24 14:08:07.277 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/product  
+2020-09-24 14:08:07.613 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping)'
+2020-09-24 14:08:07.669 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShoppind.Business.DTOs.ProductDTO] GetProducts() on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-09-24 14:08:08.513 +05:30 [INF] Start : Getting product details System.Collections.Generic.List`1[OnlineShoppind.Business.DTOs.ProductDTO]
+2020-09-24 14:08:09.624 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-24 14:08:11.286 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/product  
+2020-09-24 14:08:11.297 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping)'
+2020-09-24 14:08:11.297 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShoppind.Business.DTOs.ProductDTO] GetProducts() on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-09-24 14:08:11.299 +05:30 [INF] Start : Getting product details System.Collections.Generic.List`1[OnlineShoppind.Business.DTOs.ProductDTO]
+2020-09-24 14:08:11.352 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-09-24 14:08:11.544 +05:30 [INF] Executed DbCommand (802ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+2020-09-24 14:08:11.544 +05:30 [INF] Executed DbCommand (168ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+2020-09-24 14:08:11.685 +05:30 [INF] Completed : Products System.Collections.Generic.List`1[OnlineShoppind.Business.DTOs.ProductDTO]
+2020-09-24 14:08:11.685 +05:30 [INF] Completed : Products System.Collections.Generic.List`1[OnlineShoppind.Business.DTOs.ProductDTO]
+2020-09-24 14:08:11.696 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnlineShoppind.Business.DTOs.ProductDTO, OnlineShopping.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-24 14:08:11.697 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnlineShoppind.Business.DTOs.ProductDTO, OnlineShopping.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-24 14:08:11.726 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping) in 416.179ms
+2020-09-24 14:08:11.726 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping) in 4044.721ms
+2020-09-24 14:08:11.726 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping)'
+2020-09-24 14:08:11.726 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping)'
+2020-09-24 14:08:11.732 +05:30 [INF] Request finished in 446.4076ms 200 application/json; charset=utf-8
+2020-09-24 14:08:11.732 +05:30 [INF] Request finished in 4456.0764ms 200 application/json; charset=utf-8
+2020-09-24 14:08:12.343 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/favicon.ico  
+2020-09-24 14:08:12.401 +05:30 [INF] Request finished in 58.3873ms 404 
+2020-09-24 14:23:31.889 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-24 14:23:33.875 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-24 14:23:33.876 +05:30 [INF] Hosting environment: Development
+2020-09-24 14:23:33.876 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-09-24 14:23:34.035 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-09-24 14:23:34.358 +05:30 [INF] Request finished in 358.566ms 200 text/html;charset=utf-8
+2020-09-24 14:23:39.640 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-09-24 14:23:40.116 +05:30 [INF] Request finished in 476.9761ms 200 application/json;charset=utf-8

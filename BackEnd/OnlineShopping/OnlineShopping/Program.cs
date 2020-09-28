@@ -10,6 +10,7 @@ namespace OnlineShopping
     {
         public static void Main(string[] args)
         {
+
             Log.Logger = new LoggerConfiguration()
                 .WriteTo.File("logger/log/Thecodebuzz-log.txt", rollingInterval: RollingInterval.Day)
                 .CreateLogger();
