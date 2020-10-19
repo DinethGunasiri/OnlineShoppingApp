@@ -1,29 +1,23 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { catchError, map } from 'rxjs/operators';
-import { throwError } from 'rxjs';
-import { NotificationService } from '../Services/notification-service.service';
-// import { stat } from 'fs';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CustomerServiceService {
 
- // private customeruri = 'https://localhost:44371/api/customer';
-
- private customeruri = 'https://localhost:44355/api/customer';
 
   constructor(private http: HttpClient) { }
 
   // Get all customers
   getCustomers() {
-    return this.http.get(`${this.customeruri}`);
+    return this.http.get(`${environment.url}/customer`);
   }
 
   // Get customer by email
   getCustomer(email) {
-    return this.http.get(`${this.customeruri}/${email}`);
+    return this.http.get(`${environment.url}/customer/${email}`);
   }
 
   // Save customer to database
@@ -43,7 +37,7 @@ export class CustomerServiceService {
       Password: password
     };
     console.log(customer);
-    return this.http.post(`${this.customeruri}`, customer);
+    return this.http.post(`${environment.url}/customer`, customer);
   }
 
   // Edit customer details
@@ -60,11 +54,11 @@ export class CustomerServiceService {
       ZipCode: zipCode,
       Telephone: telephone
     };
-    return this.http.put(`${this.customeruri}/${email}`, customer);
+    return this.http.put(`${environment.url}/customer/${email}`, customer);
   }
 
   // Delete customer
   deleteCustomer(email) {
-    return this.http.delete(`${this.customeruri}/${email}`);
+    return this.http.delete(`${environment.url}/customer/${email}`);
   }
 }

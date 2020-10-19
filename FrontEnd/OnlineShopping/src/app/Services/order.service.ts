@@ -1,23 +1,22 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class OrderService {
-  // private ordersuri = 'https://localhost:44371/api/order';
-  private ordersuri = 'https://localhost:44355/api/order';
 
   constructor(private http: HttpClient) { }
 
   // Get all orders
   getOrders() {
-    return this.http.get(`${this.ordersuri}`);
+    return this.http.get(`${environment.url}/order`);
   }
 
   // Get order by id
   getOrdeById(id) {
-    return this.http.get(`${this.ordersuri}/${id}`);
+    return this.http.get(`${environment.url}/order/${id}`);
   }
 
   // Save order in database
@@ -29,6 +28,6 @@ export class OrderService {
       TotalPrice: total,
       PaymentType: paymentType
     };
-    return this.http.post(`${this.ordersuri}`, order);
+    return this.http.post(`${environment.url}/order`, order);
   }
 }

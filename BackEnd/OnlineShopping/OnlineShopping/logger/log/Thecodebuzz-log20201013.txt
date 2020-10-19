@@ -1,0 +1,83 @@
+2020-10-13 15:55:18.806 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-10-13 15:55:20.394 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-10-13 15:55:20.395 +05:30 [INF] Hosting environment: Development
+2020-10-13 15:55:20.395 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-10-13 15:55:20.485 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger  
+2020-10-13 15:55:20.599 +05:30 [INF] Request finished in 116.8684ms 301 
+2020-10-13 15:55:20.815 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-10-13 15:55:21.053 +05:30 [INF] Request finished in 238.0034ms 200 text/html;charset=utf-8
+2020-10-13 15:55:21.264 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/swagger-ui.css  
+2020-10-13 15:55:21.268 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/swagger-ui-bundle.js  
+2020-10-13 15:55:21.270 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/swagger-ui-standalone-preset.js  
+2020-10-13 15:55:21.629 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-10-13 15:55:21.629 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-10-13 15:55:21.635 +05:30 [INF] Request finished in 364.2701ms 200 application/javascript
+2020-10-13 15:55:21.635 +05:30 [INF] Request finished in 371.5892ms 200 text/css
+2020-10-13 15:55:21.636 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-10-13 15:55:21.636 +05:30 [INF] Request finished in 368.532ms 200 application/javascript
+2020-10-13 15:55:22.728 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-10-13 15:55:23.239 +05:30 [INF] Request finished in 512.0107ms 200 application/json;charset=utf-8
+2020-10-13 16:10:25.350 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/product  
+2020-10-13 16:10:25.904 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping)'
+2020-10-13 16:10:25.968 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShoppind.Business.DTOs.ProductDTO] GetProducts() on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-10-13 16:10:26.619 +05:30 [INF] Start : Getting product details System.Collections.Generic.List`1[OnlineShoppind.Business.DTOs.ProductDTO]
+2020-10-13 16:10:27.254 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-13 16:10:29.680 +05:30 [INF] Executed DbCommand (1,034ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+2020-10-13 16:10:29.822 +05:30 [INF] Completed : Products System.Collections.Generic.List`1[OnlineShoppind.Business.DTOs.ProductDTO]
+2020-10-13 16:10:29.829 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnlineShoppind.Business.DTOs.ProductDTO, OnlineShopping.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-10-13 16:10:29.850 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping) in 3873.4157ms
+2020-10-13 16:10:29.850 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping)'
+2020-10-13 16:10:29.854 +05:30 [INF] Request finished in 4504.5309ms 200 application/json; charset=utf-8
+2020-10-13 16:10:30.240 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/favicon.ico  
+2020-10-13 16:10:30.255 +05:30 [INF] Request finished in 14.5656ms 404 
+2020-10-13 16:12:30.623 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-10-13 16:12:31.220 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-10-13 16:12:31.220 +05:30 [INF] Hosting environment: Development
+2020-10-13 16:12:31.220 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-10-13 16:12:31.290 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-10-13 16:12:31.378 +05:30 [INF] Request finished in 93.6885ms 200 text/html;charset=utf-8
+2020-10-13 16:12:32.051 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-10-13 16:12:32.246 +05:30 [INF] Request finished in 196.5949ms 200 application/json;charset=utf-8
+2020-10-13 16:52:07.050 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/product  
+2020-10-13 16:52:07.615 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping)'
+2020-10-13 16:52:07.663 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShoppind.Business.DTOs.ProductDTO] GetProducts() on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-10-13 16:52:08.270 +05:30 [INF] Start : Getting product details System.Collections.Generic.List`1[OnlineShoppind.Business.DTOs.ProductDTO]
+2020-10-13 16:52:08.895 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-13 16:52:09.676 +05:30 [INF] Executed DbCommand (44ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+2020-10-13 16:52:09.833 +05:30 [INF] Completed : Products System.Collections.Generic.List`1[OnlineShoppind.Business.DTOs.ProductDTO]
+2020-10-13 16:52:09.839 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnlineShoppind.Business.DTOs.ProductDTO, OnlineShopping.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-10-13 16:52:09.859 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping) in 2187.8912ms
+2020-10-13 16:52:09.859 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping)'
+2020-10-13 16:52:09.862 +05:30 [INF] Request finished in 2812.4324ms 200 application/json; charset=utf-8
+2020-10-13 16:52:29.447 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/product  
+2020-10-13 16:52:29.467 +05:30 [INF] CORS policy execution successful.
+2020-10-13 16:52:29.470 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping)'
+2020-10-13 16:52:29.471 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShoppind.Business.DTOs.ProductDTO] GetProducts() on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-10-13 16:52:29.473 +05:30 [INF] Start : Getting product details System.Collections.Generic.List`1[OnlineShoppind.Business.DTOs.ProductDTO]
+2020-10-13 16:52:29.573 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-13 16:52:29.632 +05:30 [INF] Executed DbCommand (54ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+2020-10-13 16:52:29.633 +05:30 [INF] Completed : Products System.Collections.Generic.List`1[OnlineShoppind.Business.DTOs.ProductDTO]
+2020-10-13 16:52:29.634 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnlineShoppind.Business.DTOs.ProductDTO, OnlineShopping.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-10-13 16:52:29.645 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping) in 173.6855ms
+2020-10-13 16:52:29.645 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping)'
+2020-10-13 16:52:29.646 +05:30 [INF] Request finished in 198.9781ms 200 application/json; charset=utf-8
+2020-10-13 16:52:45.832 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/api/product  
+2020-10-13 16:52:45.835 +05:30 [INF] CORS policy execution successful.
+2020-10-13 16:52:45.835 +05:30 [INF] Executing endpoint 'OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping)'
+2020-10-13 16:52:45.835 +05:30 [INF] Route matched with {action = "GetProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[OnlineShoppind.Business.DTOs.ProductDTO] GetProducts() on controller OnlineShopping.Controllers.ProductController (OnlineShopping).
+2020-10-13 16:52:45.838 +05:30 [INF] Start : Getting product details System.Collections.Generic.List`1[OnlineShoppind.Business.DTOs.ProductDTO]
+2020-10-13 16:52:45.847 +05:30 [INF] Entity Framework Core 3.1.5 initialized 'ShoppingContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: None
+2020-10-13 16:52:45.850 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[CurrentPrice], [p].[Discount], [p].[ProductDescription], [p].[ProductName]
+FROM [Products] AS [p]
+2020-10-13 16:52:45.850 +05:30 [INF] Completed : Products System.Collections.Generic.List`1[OnlineShoppind.Business.DTOs.ProductDTO]
+2020-10-13 16:52:45.851 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[OnlineShoppind.Business.DTOs.ProductDTO, OnlineShopping.Business, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-10-13 16:52:45.853 +05:30 [INF] Executed action OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping) in 17.2382ms
+2020-10-13 16:52:45.853 +05:30 [INF] Executed endpoint 'OnlineShopping.Controllers.ProductController.GetProducts (OnlineShopping)'
+2020-10-13 16:52:45.853 +05:30 [INF] Request finished in 21.1768ms 200 application/json; charset=utf-8

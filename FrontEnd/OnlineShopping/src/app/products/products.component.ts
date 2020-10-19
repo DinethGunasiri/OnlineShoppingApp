@@ -28,19 +28,19 @@ export class ProductsComponent implements OnInit {
 
  // Image urls
   images: any = [
-    {url: '../../assets/banana.jpg'},
-    {url: '../../assets/orange.jpg'},
-    {url: '../../assets/mango.jpg'},
-    {url: '../../assets/chicken.png'},
-    {url: '../../assets/pork.jpg'},
-    {url: '../../assets/prons.jpg'},
-    {url: '../../assets/tikiri_mari.jpg'},
-    {url: '../../assets/lemon puff.jpg'},
-    {url: '../../assets/coca cola.jpg'},
-    {url: '../../assets/sprite.jpg'},
-    {url: '../../assets/fanta.jpg'},
-    {url: '../../assets/cabbage.jpg'},
-    {url: '../../assets/carrots.jpg'}
+    {url: 'assets/banana.jpg'},
+    {url: 'assets/orange.jpg'},
+    {url: 'assets/mango.jpg'},
+    {url: 'assets/chicken.png'},
+    {url: 'assets/pork.jpg'},
+    {url: 'assets/prons.jpg'},
+    {url: 'assets/tikiri_mari.jpg'},
+    {url: 'assets/lemon puff.jpg'},
+    {url: 'assets/coca cola.jpg'},
+    {url: 'assets/sprite.jpg'},
+    {url: 'assets/fanta.jpg'},
+    {url: 'assets/cabbage.jpg'},
+    {url: 'assets/carrots.jpg'}
   ];
 
   ngOnInit(): void {

@@ -1,0 +1,22 @@
+2020-10-12 14:55:03.732 +05:30 [INF] User profile is available. Using 'C:\Users\Dineth Lahiru\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-10-12 14:55:06.441 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2020-10-12 14:55:06.442 +05:30 [INF] Hosting environment: Development
+2020-10-12 14:55:06.776 +05:30 [INF] Content root path: F:\ASP.NET\Virtusa Git Assignment\OnlineShoppingApp\BackEnd\OnlineShopping\OnlineShopping
+2020-10-12 14:55:07.024 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger  
+2020-10-12 14:55:07.288 +05:30 [INF] Request finished in 270.8076ms 301 
+2020-10-12 14:55:07.698 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/index.html  
+2020-10-12 14:55:07.913 +05:30 [INF] Request finished in 215.7162ms 200 text/html;charset=utf-8
+2020-10-12 14:55:08.514 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/swagger-ui-bundle.js  
+2020-10-12 14:55:08.552 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/swagger-ui-standalone-preset.js  
+2020-10-12 14:55:08.555 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/swagger-ui.css  
+2020-10-12 14:55:09.314 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2020-10-12 14:55:09.322 +05:30 [INF] Request finished in 771.018ms 200 application/javascript
+2020-10-12 14:55:09.332 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2020-10-12 14:55:09.356 +05:30 [INF] Request finished in 801.0412ms 200 text/css
+2020-10-12 14:55:09.358 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2020-10-12 14:55:09.361 +05:30 [INF] Request finished in 849.1116ms 200 application/javascript
+2020-10-12 14:55:10.874 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/v1/swagger.json  
+2020-10-12 14:55:11.190 +05:30 [INF] Request starting HTTP/2.0 GET https://localhost:44355/swagger/favicon-32x32.png  
+2020-10-12 14:55:11.205 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2020-10-12 14:55:11.205 +05:30 [INF] Request finished in 15.4603ms 200 image/png
+2020-10-12 14:55:11.315 +05:30 [INF] Request finished in 440.7814ms 200 application/json;charset=utf-8

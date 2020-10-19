@@ -1,12 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LoginServiceService {
-
-  private loginuri = 'https://localhost:44355/api/login';
 
   constructor(private http: HttpClient) { }
 
@@ -15,6 +14,6 @@ export class LoginServiceService {
       Email: email,
       Password: password
     };
-    return this.http.post(`${this.loginuri}`, login);
+    return this.http.post(`${environment.url}/login`, login);
   }
 }
